@@ -281,7 +281,7 @@ LIGHT COLOR
 }
 
 .light, .light h1, .light h2, .light h3, .light h4, .light h5, .light h6, .light p, .light .btn-text, .light .btn-text:hover, .light .btn a, .light .btn:hover, nav.light a, .light .glide__arrow, .light .counter .value span:last-child, .light.counter .value span:last-child, .light .icon-links a i {
-    color: #FFF !important;
+    color: #FFF;
 }
 
 .light .breadcrumb li a:after, .section-image .boxed-area {
@@ -289,7 +289,7 @@ LIGHT COLOR
 }
 
 .light .glide__bullets > button, .light .glide__bullets > button.glide__bullet--active, .section-color .boxed-area, .bg-white {
-    background-color: #FFF !important;
+    background-color: #FFF;
 }
 
 .light .btn-border {
