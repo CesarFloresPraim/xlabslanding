@@ -238,3 +238,13 @@ PROJECT LIST
     background: none;
     opacity: .8;
 }
+
+
+/** make logo occupy all height space **/
+
+@media (min-width: 992px){
+    .menu-top-logo > .container > .menu-brand, .menu-top-logo .menu-right {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
