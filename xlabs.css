@@ -1,0 +1,250 @@
+/*
+
+# PERSONALIZED STYLES TO OVERRIDE 
+===================================================================
+
+*/
+
+.btn {
+    border-radius: 0px; 
+    border-width: 2px;
+}
+
+.grid-item{
+    background-color: transparent;
+}
+
+.cnt-box-top-icon.boxed > i, .cnt-box.boxed .caption, .cnt-box-top-icon.boxed{
+    background-color: #47BBEC;
+}
+
+.cnt-box-top-icon > i {
+    color: white;
+}
+
+.cnt-box .caption p {
+    color: white;
+}
+
+main > section.section-base {
+    background-color:rgb(0, 24, 58);
+}
+
+nav .menu-right .custom-area {
+    border-color: #6FC40E;
+}
+
+.menu-top-logo > .container:before {
+    background-color: #6FC40E;
+}
+
+.white {
+    color: white;
+}
+
+.p-base {
+    color: white;
+}
+
+.blue {
+    color: #03BFCB !important;
+}
+
+.baby-blue {
+    color: #47BBEC !important;
+}
+
+.background-baby-blue {
+    background-color: #47BBEC !important;
+}
+
+.no-border{
+    border: none !important;
+}
+
+.green {
+    color: #6FC40E !important;
+}
+
+main > section.section-base.section-color {
+    background-color: #E6E7E9;
+}
+
+.footer.light a {
+    color: transparent !important;
+}
+
+.icon-links-grid a {
+    border-color: transparent !important;
+    border: none !important;
+}
+
+footer .icon-links-grid a i {
+    font-size: 30px;
+}
+
+footer .icon-list li:before {
+    background-color: #6FC40E;
+}
+
+footer .col-lg-4:last-child {
+    background-color: #E6E7E9;
+    border-radius: 0px;
+}
+
+footer .text-list-line li b, .light .text-list-line li b{
+    color:rgb(0, 24, 58);
+}
+
+.dark-blue {
+    color:rgb(0, 24, 58) !important;
+}
+
+.dotts-baby-blue li hr {
+    border-top: 1px dotted;
+    border-color: #47BBEC;
+    background: none;
+    opacity: .8;
+}
+
+/** CONTACT PAGE **/
+
+.list-nav a:first-child:before, .list-nav a:last-child:before {
+    color: #47BBEC;
+}
+
+.list-nav a.list-archive {
+    background-color: #47BBEC;
+}
+
+.icon-links.icon-lg i {
+    font-size: 25px;
+}
+
+.icon-links-grid.icon-lg a {
+    margin-right: 0;
+    width: 50px;
+    height: 50px;
+}
+
+.icon-links.icon-lg i:hover {
+    color: #47BBEC;
+}
+
+.input-text, .input-textarea {
+    border-bottom: 1.5px solid;
+    border-color: #47BBEC;
+}
+
+/**
+
+PROJECT LIST
+
+**/
+
+.section-color .input-text, .section-color .input-textarea {
+    background-color: transparent;
+}
+
+.table-border td, .table-border th {
+    border-color: #47BBEC;
+    border-width: 1.5px;
+}
+
+.breadcrumb li a:after, .light .breadcrumb li a:after {
+    background-color: #6FC40E !important;
+}
+
+.breadcrumb li:not(:last-child):hover a {
+    color: #6FC40E;
+}
+
+.breadcrumb li:last-child a {
+    color: #6FC40E;
+}
+
+/** ABOUT US PAGE **/
+.counter .value [data-to] {
+    color: #47BBEC;
+}
+
+/** TEAM **/
+
+.cnt-box-side .extra-field {
+    border-bottom: 2px solid #47BBEC;
+}
+
+.cnt-box-team .caption {
+    color: #47BBEC;
+}
+
+.icon-links:not(.social-colors) a i {
+    color: #47BBEC;
+}
+
+
+/* SERVICE */
+.step-item > span {
+    background-color: rgb(0, 24, 58);
+    color: white;
+    box-shadow: 0 0 0 0;
+}
+
+.step-item:before {
+    background-color: rgba(0, 25, 58, 1);
+}
+
+.progress-bar > div > div {
+    background-color: #47BBEC;
+}
+
+.section-color .icon-box i {
+    background-color: rgb(0, 24, 58);
+    color: white;
+}
+
+.transparent-box {
+    background-color: transparent !important;
+    box-shadow: 0 0 0 0;
+    border: 2px solid rgb(0, 24, 58);
+    border-radius: 0px;
+}
+
+.menu-inner li.active > a {
+    color: #47BBEC;
+}
+
+.menu-inner-vertical li.active > a {
+    border: none;
+}
+
+.menu-inner-vertical li > a:hover{
+    color: #47BBEC;
+    border-color: #47BBEC;
+}
+
+.menu-inner li:before:hover {
+    color: #47BBEC;
+}
+
+.menu-inner li:before {
+    background-color: #47BBEC;
+    height: 2px;
+}
+
+.dotts-green li hr {
+    border-top: 1.5px solid;
+    border-color: #6FC40E !important;
+    background: none;
+    opacity: .8;
+}
+
+
+/** make logo occupy all height space **/
+
+@media (min-width: 992px){
+    .menu-top-logo > .container > .menu-brand, .menu-top-logo .menu-right {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
