@@ -5,6 +5,33 @@
 
 */
 
+/** Navbar **/
+.dropdown-submenu > a:after, .menu-side .dropdown > a:after, .menu-side .mega-dropdown > a:after, .menu-inner .dropdown > a:after, .menu-cnt > ul > li.dropdown > a:after {
+    font-family: "Icons";
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(
+90deg
+);
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    right: 10px;
+    transition: transform .5s;
+    text-transform: none;
+    opacity: .7;
+}
+/** Ends Navbar **/
+
+/** Index: Services **/
+.cnt-box-info .cnt-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+}
+/** End Index: Services **/
 .btn {
     border-radius: 0px; 
     border-width: 2px;
