@@ -35,6 +35,22 @@ nav {
 body > nav .menu-brand, .menu-big-box .menu-right {
     height: 130px;
 }
+
+/* in small devices, logo is smaller */
+@media (max-width: 991.98px){
+    body > nav .menu-brand, .menu-big-box .menu-right {
+        height: 80px;
+    }
+
+    body > nav .menu-brand {
+        padding: 0;
+    }
+    
+}
+
+.menu-btn {
+    color:rgba(0, 25, 58, 1);
+}
 /** Ends Navbar **/
 
 /** Index: Services **/
