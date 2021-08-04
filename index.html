@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Xlabs: a software development company</title>
+    <title  data-translate="title"></title>
     <meta name="description" content="Xlabs is a software development company">
     <link rel="stylesheet" href="themekit/css/bootstrap-grid.css">
     <link rel="stylesheet" href="themekit/css/style.css">
@@ -34,22 +34,22 @@
             <div class="menu-cnt">
                 <ul id="main-menu">
                     <li class="dropdown no-after">
-                        <a href="index.html">Home</a>
+                        <a href="index.html" data-translate="home"></a>
                     </li>
                     <li class="dropdown">
-                        <a href="service.html">Servicios</a>
+                        <a href="about.html" data-translate="services"></a>
                     </li>
                     <li class="dropdown">
-                        <a href="about.html">Conócenos</a>
+                        <a href="team.html" data-translate="aboutus"></a>
                     </li>
                     <li class="dropdown">
-                        <a href="team.html">Equipo</a>
+                        <a href="projects.html" data-translate="team"></a>
                     </li>
                     <li class="dropdown">
-                        <a href="projects.html">Proyectos</a>
+                        <a href="projects.html" data-translate="projects"></a>
                     </li>
                     <li class="dropdown">
-                        <a href="contacts.html">Contacto</a>
+                        <a href="contacts.html" data-translate="contactus"></a>
                     </li>
                     <li class="nav-label">
                         <a href="contacts.html"><span>Tel: (614) 170-2665</span> </a>
@@ -63,9 +63,10 @@
                     
                     <ul class="lan-menu">
                         <li class="dropdown">
-                            <a href="#"><img src="media/mx.png" alt="lang" width="20px" />ES</a>
+                            <a><img id="current_lang_img" src="media/us.png" alt="lang" width="20px" />EN</a>
                             <ul>
-                                <li><a href="#"><img src="media/us.png" alt="lang" width="20px" />EN</a></li>
+                                <li><a onclick="change_lang('en');change_lang_image('en');"><img src="media/us.png" alt="lang" width="20px" />EN</a></li>
+                                <li><a onclick="change_lang('es');change_lang_image('es');"><img src="media/mx.png" alt="lang" width="20px" />ES</a></li>
                             </ul>
                         </li>
                     </ul>  
@@ -277,6 +278,7 @@ Desarrollo de herramientas de utilidad para optimización de procesos.
                     </div>
                 </div>
             </div>
+            <hr class="space-lg" />
         </section>
     </main>
     <i class="scroll-top-btn scroll-top show"></i>
@@ -330,5 +332,50 @@ Desarrollo de herramientas de utilidad para optimización de procesos.
         <script src="themekit/scripts/contact-form/contact-form.js" async></script>
         <script src="https://kit.fontawesome.com/5aff25e6c8.js" crossorigin="anonymous"></script>
     </footer>
+
+    <script>
+        var dictionary = {
+        'title': {
+            'en': 'Xlabs: a software development company',
+            'es': 'Xlabs: una compania de desarrollo de software',
+        },
+        'home': {
+            'en': 'Home',
+            'es': 'Inicio',
+        },
+        };
+var langs = ['en', 'es'];
+var current_lang_index = 0;
+var current_lang = langs[current_lang_index];
+
+window.change_lang = function(lang) {
+    if(lang==="en"){
+        current_lang_index = 0;
+    }
+    else {
+        current_lang_index = 1;
+    }
+    current_lang = langs[current_lang_index];
+    translate();
+}
+
+function translate() {
+    $("[data-translate]").each(function(){
+        var key = $(this).data('translate');
+        $(this).html(dictionary[key][current_lang] || "N/A");
+    });
+}
+
+window.change_lang_image = function(lang) {
+    if(lang==="en") {
+        $("#current_lang_img").attr("src","media/us.png");
+    }else {
+        $("#current_lang_img").attr("src","media/mx.png");
+    }
+}
+
+
+translate();
+    </script>
 </body>
 </html>
