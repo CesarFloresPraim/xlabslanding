@@ -23,6 +23,18 @@
     text-transform: none;
     opacity: .7;
 }
+
+.menu-cnt > ul > li > a {
+    color:rgba(0, 25, 58, 1)
+}
+
+nav {
+    background-color: white !important;
+}
+
+body > nav .menu-brand, .menu-big-box .menu-right {
+    height: 130px;
+}
 /** Ends Navbar **/
 
 /** Index: Services **/
@@ -53,16 +65,21 @@
     color: white;
 }
 
+/* background color for main */
 main > section.section-base {
-    background-color:rgb(0, 24, 58);
+    background-color:#E6E7E9;
+}
+
+.menu-cnt > ul > li.nav-label > a span {
+    color: rgb(0, 24, 58);
 }
 
 nav .menu-right .custom-area {
-    border-color: #6FC40E;
+    border-color: transparent;
 }
 
 .menu-top-logo > .container:before {
-    background-color: #6FC40E;
+    background-color: transparent;
 }
 
 .white {
@@ -94,9 +111,21 @@ nav .menu-right .custom-area {
 }
 
 main > section.section-base.section-color {
+    background-color: rgb(0, 24, 58);
+}
+
+
+/* footer background color */
+footer {
     background-color: #E6E7E9;
 }
 
+/* footer links */
+footer > a {
+    color:rgb(0, 24, 58);
+}
+
+/* footer social media icons */
 .footer.light a {
     color: transparent !important;
 }
@@ -115,8 +144,19 @@ footer .icon-list li:before {
 }
 
 footer .col-lg-4:last-child {
-    background-color: #E6E7E9;
+    background-color: transparent;
     border-radius: 0px;
+    padding: 0px;
+}
+
+.blue-border-left {
+    border-left: 2px solid #47BBEC;
+    padding-left: 15px;
+}
+
+/* dots between name and value for info */
+.text-list-line li hr {
+    border-top: 1px dotted #47BBEC;
 }
 
 footer .text-list-line li b, .light .text-list-line li b{
@@ -125,6 +165,10 @@ footer .text-list-line li b, .light .text-list-line li b{
 
 .dark-blue {
     color:rgb(0, 24, 58) !important;
+}
+
+.gray {
+    color: #E6E7E9;
 }
 
 .dotts-baby-blue li hr {
@@ -170,7 +214,7 @@ PROJECT LIST
 **/
 
 .section-color .input-text, .section-color .input-textarea {
-    background-color: transparent;
+    background-color: rgb(0, 24, 58);
 }
 
 .table-border td, .table-border th {
@@ -266,6 +310,10 @@ PROJECT LIST
     opacity: .8;
 }
 
+.white {
+    color: white !important;
+}
+
 
 /** make logo occupy all height space **/
 
@@ -274,4 +322,15 @@ PROJECT LIST
         padding-top: 0;
         padding-bottom: 0;
     }
+}
+
+/** Services card all same height **/
+
+.maximum-height {
+    height: auto;
+    max-height: 220px;
+    width: 100%;
+}
+.full-height {
+    height: 100%;
 }

@@ -1,10 +1,11 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Xlabs: a software development company</title>
+    <title data-translate="title"></title>
     <meta name="description" content="Xlabs is a software development company">
     <link rel="stylesheet" href="themekit/css/bootstrap-grid.css">
     <link rel="stylesheet" href="themekit/css/style.css">
@@ -17,92 +18,97 @@
     <link rel="stylesheet" href="xlabs.css">
     <link rel="icon" href="media/favicon.png">
 </head>
+
 <body>
     <div id="preloader"></div>
     <nav class="menu-top-logo menu-fixed" data-menu-anima="fade-in">
         <div class="container">
             <div class="menu-brand">
                 <a href="index.html">
-                    <img class="logo-default scroll-hide" src="media/logos/Xlabs_logo_blanco.png" alt="logo" />
-                    <img class="logo-retina scroll-hide" src="media/logos/Xlabs_logo_blanco.png" alt="logo" />
-                    <img class="logo-default scroll-show" src="media/logos/Xlabs_logo_blanco.png" alt="logo" />
-                    <img class="logo-retina scroll-show" src="media/logos/Xlabs_logo_blanco.png" alt="logo" />
+                    <img class="logo-default scroll-hide" src="media/logos/Xlabs_logo_normal.png" alt="logo" />
+                    <img class="logo-retina scroll-hide" src="media/logos/Xlabs_logo_normal.png" alt="logo" />
+                    <img class="logo-default scroll-show" src="media/logos/Xlabs_logo_normal.png" alt="logo" />
+                    <img class="logo-retina scroll-show" src="media/logos/Xlabs_logo_normal.png" alt="logo" />
                 </a>
             </div>
             <i class="menu-btn"></i>
             <div class="menu-cnt">
                 <ul id="main-menu">
                     <li class="dropdown no-after">
-                        <a href="index.html">Home</a>
+                        <a href="index.html" data-translate="home"></a>
                     </li>
                     <li class="dropdown">
-                        <a href="about.html">About us</a>
+                        <a href="about.html" data-translate="services"></a>
                     </li>
                     <li class="dropdown">
-                        <a href="team.html">Team</a>
+                        <a href="team.html" data-translate="aboutus"></a>
                     </li>
                     <li class="dropdown">
-                        <a href="projects.html">Projects</a>
+                        <a href="projects.html" data-translate="team"></a>
                     </li>
                     <li class="dropdown">
-                        <a href="contacts.html">Contact</a>
+                        <a href="projects.html" data-translate="projects"></a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="contacts.html" data-translate="contactus"></a>
                     </li>
                     <li class="nav-label">
-                        <a href="contacts.html"><span>Call us: +52 1 (614) 170 - 2665</span> </a>
+                        <a href="contacts.html"><span>Tel: (614) 170-2665</span> </a>
                     </li>
                 </ul>
                 <div class="menu-right">
-                    <div class="custom-area" style="padding-right: 15px;">
+                    <!--<div class="custom-area" style="padding-right: 15px;">
                         Blvd. Lombardo Toledano 6615<br />
                         La Concordia, 31375 Chihuahua, Chih.
-                    </div>
-                    <!--
-                                          <ul class="lan-menu">
+                    </div>-->
+
+                    <ul class="lan-menu">
                         <li class="dropdown">
-                            <a href="#"><img src="media/en.png" alt="lang" />EN </a>
+                            <a><img id="current_lang_img" src="media/us.png" alt="lang" width="20px" />EN</a>
                             <ul>
-                                <li><a href="#"><img src="media/it.png" alt="lang" />IT</a></li>
-                                <li><a href="#"><img src="media/es.png" alt="lang" />ES</a></li>
+                                <li><a onclick="change_lang('en');change_lang_image('en');"><img src="media/us.png"
+                                            alt="lang" width="20px" />EN</a></li>
+                                <li><a onclick="change_lang('es');change_lang_image('es');"><img src="media/mx.png"
+                                            alt="lang" width="20px" />ES</a></li>
                             </ul>
                         </li>
-                    </ul>  
-                    -->
+                    </ul>
+
 
                 </div>
             </div>
         </div>
     </nav>
     <main>
-        <section class="section-image section-home-one no-padding-y" style="background-image:url(media/backgrounds/phone-02.jpg)">
+        <section class="section-image section-home-one no-padding-y"
+            style="background-image:url(media/backgrounds/resources-34.png)">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-7">
+                    <div class="col">
                         <hr class="space-lg" />
-                        <h3 class="text-color-2">
-                            Let the technology empower your ideas
-                        </h3>
                         <ul class="slider" data-options="arrows:false,nav:false,autoplay:3000,controls:out">
                             <li>
-                                <h1 class="text-uppercase">Ecommerce solutions for your business</h1>
-                            </li>
-                            <li>
-                                <h1 class="text-uppercase">Administrative software</h1>
-                            </li>
-                            <li>
-                                <h1 class="text-uppercase">Custom software at your fingertips</h1>
+                                <h1 class="text-uppercase white" data-translate="home_title_1"></h1>
                             </li>
                         </ul>
-                        <p>
-                            Let our advisors contact you so we can transform your businesses with powerful and adaptable digital solutions that satisfy your custom needs.
+                        <ul>
+                            <li class="white" data-translate="home_list_1"></li>
+                            <li class="white" data-translate="home_list_2"></li>
+                            <li class="white" data-translate="home_list_3"></li>
+                            <li class="white" data-translate="home_list_4"></li>
+                        </ul>
+                        <p class="white" data-translate="description_1">
+                            Introducción al mercado digital con e-commerce y posicionamiento de la marca en línea.
+                            Desarrollo de herramientas de utilidad para optimización de procesos.
                         </p>
                         <hr class="space-sm" />
-                        <a href="contacts.html" class="btn btn-sm width-190 full-width-sm">Request a quote</a>
+                        <!--<a href="contacts.html" class="btn btn-sm width-190 full-width-sm">Request a quote</a>-->
                         <hr class="space-lg" />
                         <hr class="space-lg" />
                     </div>
                     <div class="col-lg-5 hidden-md">
                         <hr class="space-sm" />
-                        <img data-anima="fade-bottom" data-time="1000" class="slide-image" src="media/backgrounds/laptop-02.png" alt="" />
+                        <!--<img data-anima="fade-bottom" data-time="1000" class="slide-image" src="media/backgrounds/laptop-02.png" alt="" />-->
                     </div>
                 </div>
             </div>
@@ -112,178 +118,225 @@
                 <div class="grid-list" data-columns="4" data-columns-md="2" data-columns-sm="1">
                     <div class="grid-box">
                         <div class="grid-item">
-                            <div class="cnt-box cnt-box-top-icon boxed">
-                                <i class="im-box-open"></i>
+                            <div class="cnt-box cnt-box-top-icon boxed" style="height: 100%;">
+                                <i class="im-target"></i>
                                 <div class="caption">
-                                    <h2>Custom</h2>
-                                    <p>
-                                        All your needs around the same application
+                                    <h2 data-translate="attr_title_1">Personalizado</h2>
+                                    <p data-translate="attr_description_1">
+                                        Creación de software de acuerdo a las necesidades de la empresa
                                     </p>
                                 </div>
                             </div>
                         </div>
                         <div class="grid-item">
-                            <div class="cnt-box cnt-box-top-icon boxed">
+                            <div class="cnt-box cnt-box-top-icon boxed" style="height: 100%;">
                                 <i class="im-lock"></i>
                                 <div class="caption">
-                                    <h2>Security</h2>
-                                    <p>
-                                        All the security in order to protect your info
+                                    <h2 data-translate="attr_title_2">Confidencial</h2>
+                                    <p data-translate="attr_description_2">
+                                        Código de fuente propio y con seguridad SSL
+                                        &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
                                     </p>
                                 </div>
                             </div>
                         </div>
                         <div class="grid-item">
-                            <div class="cnt-box cnt-box-top-icon boxed">
-                                <i class="im-magnifi-glass2"></i>
+                            <div class="cnt-box cnt-box-top-icon boxed" style="height: 100%;">
+                                <i class="im-idea"></i>
                                 <div class="caption">
-                                    <h2>Innovative</h2>
-                                    <p>
-                                        Using cutting edge technology in all software
+                                    <h2 data-translate="attr_title_3">Innovador</h2>
+                                    <p data-translate="attr_description_3">
+                                        Con la última tendencia en diseño para un mayor alcance
                                     </p>
                                 </div>
                             </div>
                         </div>
                         <div class="grid-item">
-                            <div class="cnt-box cnt-box-top-icon boxed">
-                                <i class="im-laptop-secure"></i>
+                            <div class="cnt-box cnt-box-top-icon boxed" style="height: 100%;">
+                                <i class="im-optimization"></i>
                                 <div class="caption">
-                                    <h2>Transparency</h2>
-                                    <p>
-                                        Follow all the development of your software
+                                    <h2 data-translate="attr_title_4">Eficiente</h2>
+                                    <p data-translate="attr_description_4">
+                                        Carga rápida en cualquier dispositivo móvil y de escritorio
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row row-fit-lg" data-anima="fade-bottom" data-time="1000">
+                <div class="row row-fit-lg bg-gray" data-anima="fade-bottom" data-time="1000">
                     <div class="col-lg-6">
                         <ul class="slider" data-options="arrows:true,nav:false">
                             <li>
-                                <a class="img-box img-box-caption lightbox" href="http://via.placeholder.com/800x500" data-lightbox-anima="fade-top">
-                                    <img src="media/backgrounds/kimchica-01.jpg" alt="">
-                                    <span>Kimchica</span>
+                                <a class="img-box img-box-caption" href="projects.html">
+                                    <img src="media/backgrounds/b1.jpg" alt="">
+                                    <span>Conoce nuestros proyectos</span>
                                 </a>
                             </li>
                         </ul>
                     </div>
                     <div class="col-lg-6">
                         <div class="title">
-                            <h2 class="white">Projects made</h2>
-                            <p class="green">About us</p>
+                            <h2 class="dark-blue text-uppercase">Proyectos</h2>
+                            <p class="dark-blue text-uppercase">Cónocenos</p>
                         </div>
-                        <p class="p-base">
-                            At Xlabs we create software to empower your business presence thorugh developing ecommerce websites and system managment applications.
+                        <p class="dark-blue">
+                            En Xlabs creamos software para que las empresas generen presencia en el mundo digital a
+                            través de e-commerce, análisis de datos y desarrollo de marca.
                         </p>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="section-base section-color">
-            <div class="container">
+        <section class="section-base section-color" style="background-image:url(media/backgrounds/home_bg2.png)">
+            <br>
+            <div class="container-fluid">
                 <div class="row" data-anima="fade-bottom" data-time="1000">
                     <div class="col-lg-6">
                         <div class="title">
-                            <h2>Our services</h2>
-                            <p class="blue">Services</p>
+                            <h2 class="gray" data-translate="services_subtitle">Nuestros servicios</h2>
+                            <p class="baby-blue" data-translate="services_title">Servicios</p>
                         </div>
                     </div>
                     <div class="col-lg-6 align-right align-left-md">
                         <hr class="space-sm hidden-md" />
-                        <a href="projects.html" class="btn-text active">Look at our projects</a>
+                        <a href="service.html" class="btn-text active gray" data-translate="services_projects">Ve nuestros servicios</a>
                     </div>
                 </div>
                 <hr class="space" />
-                <div class="grid-list" data-columns="3" data-columns-md="2" data-columns-sm="1" data-anima="fade-bottom" data-time="1000">
+                <div class="grid-list" data-columns="4" data-columns-md="2" data-columns-sm="1" data-anima="fade-bottom"
+                    data-time="1000">
                     <div class="grid-box">
                         <div class="grid-item">
-                            <div class="cnt-box cnt-box-info boxed" data-href="#">
-                                <a href="#" class="img-box"><img src="http://via.placeholder.com/800x500" alt="" /></a>
-                                <div class="caption">
-                                    <h2 style="text-align: center;">Ecommerce & CMS</h2>
+                            <div class="cnt-box cnt-box-info boxed full-height" data-href="#">
+                                <a href="#" class="img-box maximum-height"><img src="media/backgrounds/ecommerce.jpg"
+                                        alt="" /></a>
+                                <div class="caption full-height">
+                                    <h2 style="text-align: center;" data-translate="services_title_1">Ecommerce & CMS</h2>
                                     <div class="cnt-info">
-                                        <div><span>Type</span><span>Software</span></div>
-                                        <div><span>Client</span><span>Private</span></div>
+                                        <div style="text-align: center;"><span data-translate="type">Type</span><span>Software</span></div>
+                                        <div style="text-align: center;"><span data-translate="goal">Goal</span><span data-translate="goal_1">Engage more
+                                                customers</span></div>
                                     </div>
-                                    <p>
+                                    <!--
+                                    <p class="dark-blue">
                                         Excepteur sint occaecat cupidatat non proidento in culpa qui officia deserunt mollit anim id est laborum.
                                     </p>
+                                    -->
                                 </div>
                             </div>
                         </div>
                         <div class="grid-item">
-                            <div class="cnt-box cnt-box-info boxed" data-href="#">
-                                <a href="#" class="img-box"><img src="http://via.placeholder.com/800x500" alt="" /></a>
-                                <div class="caption">
-                                    <h2>API integration</h2>
+                            <div class="cnt-box cnt-box-info boxed full-height" data-href="#">
+                                <a href="#" class="img-box maximum-height"><img src="media/backgrounds/apis.jpg"
+                                        alt="" /></a>
+                                <div class="caption full-height">
+                                    <h2 style="text-align: center;" data-translate="services_title_2" >API integration</h2>
                                     <div class="cnt-info">
-                                        <div><span>Type</span><span>Software</span></div>
-                                        <div><span>Client</span><span>Private</span></div>
+                                        <div style="text-align: center;"><span data-translate="type" >Type</span><span>Software</span></div>
+                                        <div style="text-align: center;"><span data-translate="goal" >Goal</span><span data-translate="goal_2" >Ease processes</span>
+                                        </div>
                                     </div>
-                                    <p>
+                                    <!--
+                                    <p class="dark-blue">
                                         Excepteur sint occaecat cupidatat non proidento in culpa qui officia deserunt mollit anim id est laborum.
                                     </p>
+                                    -->
                                 </div>
                             </div>
                         </div>
                         <div class="grid-item">
-                            <div class="cnt-box cnt-box-info boxed" data-href="#">
-                                <a href="#" class="img-box"><img src="http://via.placeholder.com/800x500" alt="" /></a>
-                                <div class="caption">
-                                    <h2>Custom solutions</h2>
+                            <div class="cnt-box cnt-box-info boxed full-height" data-href="#">
+                                <a href="#" class="img-box maximum-height"><img
+                                        src="media/backgrounds/data_science.jpeg" alt="" /></a>
+                                <div class="caption full-height">
+                                    <h2 style="text-align: center;" data-translate="services_title_3" >Data science analysis</h2>
                                     <div class="cnt-info">
-                                        <div><span>Type</span><span>Software</span></div>
-                                        <div><span>Client</span><span>Private</span></div>
+                                        <div style="text-align: center;"><span data-translate="type" >Type</span><span>Software</span></div>
+                                        <div style="text-align: center;"><span data-translate="goal" >Goal</span><span data-translate="goal_3" >Identify trends</span>
+                                        </div>
                                     </div>
-                                    <p>
+                                    <!--
+                                    <p class="dark-blue">
                                         Excepteur sint occaecat cupidatat non proidento in culpa qui officia deserunt mollit anim id est laborum.
                                     </p>
+                                    -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="cnt-box cnt-box-info boxed full-height" data-href="#">
+                                <a href="#" class="img-box maximum-height"><img src="media/backgrounds/identity.png"
+                                        alt="" /></a>
+                                <div class="caption full-height">
+                                    <h2 style="text-align: center;" data-translate="services_title_4" >Corporative identity</h2>
+                                    <div class="cnt-info">
+                                        <div style="text-align: center;"><span data-translate="type" >Type</span><span data-translate="design" >Design</span></div>
+                                        <div style="text-align: center;"><span data-translate="goal" >Goal</span><span data-translate="goal_4" >Brand positioning</span>
+                                        </div>
+                                    </div>
+                                    <!--
+                                    <p class="dark-blue">
+                                        Excepteur sint occaecat cupidatat non proidento in culpa qui officia deserunt mollit anim id est laborum.
+                                    </p>
+                                    -->
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <hr class="space-lg" />
         </section>
     </main>
     <i class="scroll-top-btn scroll-top show"></i>
-    <footer class="light">
+    <footer class="dark-blue">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">
-                    <img src="media/logos/Xlabs_logo_blanco.png" alt="X-LABS logo" style="height: 47px;width: 150px; margin-bottom: 25px;">
+                    <img src="media/logos/Xlabs_logo_normal.png" alt="X-LABS logo" style="height: 90px;">
                     <!-- <p>Slogan</p> -->
                     <div class="icon-links icon-social icon-links-grid social-colors">
-                        <a><i class="fab fa-youtube"></i></i></a>
-                        <a><i class="fab fa-twitter"></i></a>
                         <a><i class="fab fa-instagram"></i></a>
                         <a><i class="fab fa-facebook-square"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <h3>Recursos</h3>
-                    <ul class="icon-list icon-line">
-                        <li><a href="about.html">About us and the company</a></li>
-                        <li><a href="service.html">Services</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="contacts.html">Contact us online</a></li>
+                    <h3 data-translate="resources">Recursos</h3>
+                    <ul class="icon-list icon-line" style="margin-top: 0px;">
+                        <li><a href="about.html" data-translate="aboutus">Cónocenos</a></li>
+                        <li><a href="service.html" data-translate="services">Servicios</a></li>
+                        <li><a href="projects.html" data-translate="projects">Proyectos</a></li>
+                        <li><a href="contacts.html" data-translate="contactus">Contacto</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-4" style="padding: 10px;">
-                    <ul class="text-list text-list-line">
-                        <li><b>Address</b><hr /><p class="dark-blue">Blvd. Lombardo Toledano 6615</p></li>
-                        <li><b>Email</b><hr /><p class="dark-blue">contact@xlabs.mx</p></li>
-                        <li><b>Phone</b><hr /><p class="dark-blue">+52 1 (614) 170 - 2665</p></li>
-                        <li><b>Opening hours</b><hr /><p class="dark-blue">8am-5pm Mon - Fri</p></li>
+                <div class="col-lg-4">
+                    <h3 data-translate="information">Información</h3>
+                    <ul class="text-list text-list-line blue-border-left">
+                        <li><b data-translate="address">Dirección</b>
+                            <hr />
+                            <p class="dark-blue">Blvd. Lombardo Toledano 6615</p>
+                        </li>
+                        <li><b>Email</b>
+                            <hr />
+                            <p class="dark-blue">info@xlabs.mx</p>
+                        </li>
+                        <li><b data-translate="telephone">Teléfono</b>
+                            <hr />
+                            <p class="dark-blue">(614) 170 2665</p>
+                        </li>
+                        <li><b data-translate="schedule">Horario</b>
+                            <hr />
+                            <p class="dark-blue" data-translate="open_time">8:00am - 5:00pm Lun - Vie</p>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="footer-bar">
             <div class="container">
-                <span>© 2019 Execoore - Technology And Business Template Handmade by <a href="https://schiocco.com" target="_blank">schiocco.com</a>.</span>
-                <span><a href="contacts.html">Contact us</a> | <a href="#">Privacy policy</a></span>
+                <span>© 2020 <a href="https://xlabs.mx" target="_blank">xlabs.mx</a></span>
+                <span><a href="contacts.html" data-translate="contactus">Contact us</a></span>
             </div>
         </div>
         <link rel="stylesheet" href="themekit/media/icons/iconsmind/line-icons.min.css">
@@ -299,5 +352,206 @@
         <script src="themekit/scripts/contact-form/contact-form.js" async></script>
         <script src="https://kit.fontawesome.com/5aff25e6c8.js" crossorigin="anonymous"></script>
     </footer>
+
+    <script>
+        var dictionary = {
+            'title': {
+                'en': 'Xlabs: a software development company',
+                'es': 'Xlabs: una compania de desarrollo de software',
+            },
+            'home': {
+                'en': 'Home',
+                'es': 'Inicio',
+            },
+            'services': {
+                'en': 'Services',
+                'es': 'Servicios',
+            },
+            'aboutus': {
+                'en': 'About us',
+                'es': 'Conocenos',
+            },
+            'team': {
+                'en': 'Team',
+                'es': 'Equipo',
+            },
+            'projects': {
+                'en': 'Projects',
+                'es': 'Proyectos',
+            },
+            'contactus': {
+                'en': 'Contact Us',
+                'es': 'Contáctanos',
+            },
+            'home_title_1': {
+                'en': 'The best experience for your customers',
+                'es': 'La mejor experiencia para tus clientes',
+            },
+            'home_list_1': {
+                'en': 'E-commerce for your business',
+                'es': 'E-commerce para tu negocio',
+            },
+            'home_list_2': {
+                'en': 'Customized software for PC and mobile',
+                'es': 'Software personalizado para móvil y PC',
+            },
+            'home_list_3': {
+                'en': 'Customer Relation Management Software (CRM)',
+                'es': 'Customer Relation Management Software (CRM)',
+            },
+            'home_list_4': {
+                'en': 'Content Management System (CMS)',
+                'es': 'Content Management System (CMS)',
+            },
+            'description_1': {
+                'en': 'Introduce your business into the digital market with e-commerce and position or brand online <br> Development of tools to optimze processes.',
+                'es': 'Introducción al mercado digital con e-commerce y posicionamiento de la marca en línea. <br>Desarrollo de herramientas de utilidad para optimización de procesos.',
+            },
+            'attr_title_1': {
+                'en': 'Customized',
+                'es': 'Personalizado',
+            },
+            'attr_description_1': {
+                'en': 'Customized software to meet all your needs',
+                'es': 'Creación de software de acuerdo a las necesidades de la empresa',
+            },
+            'attr_title_2': {
+                'en': 'Confidential',
+                'es': 'Confidencial',
+            },
+            'attr_description_2': {
+                'en': 'Own your source code and protected with SSL encryption',
+                'es': 'Código de fuente propio y con seguridad SSL',
+            },
+            'attr_title_3': {
+                'en': 'Innovative',
+                'es': 'Innovador',
+            },
+            'attr_description_3': {
+                'en': 'With trending designs for a greater reach',
+                'es': 'Con la última tendencia en diseño para un mayor alcance',
+            },
+            'attr_title_4': {
+                'en': 'Efficient',
+                'es': 'Eficiente',
+            },
+            'attr_description_4': {
+                'en': 'Fast loading on any device (desktop or mobile)',
+                'es': 'Carga rápida en cualquier dispositivo móvil y de escritorio',
+            },
+            'services_subtitle': {
+                'en': 'Services',
+                'es': 'Servicios',
+            },
+            'services_title': {
+                'en': 'Our services',
+                'es': 'Nuestros servicios',
+            },
+            'services_projects': {
+                'en': 'Look at our services',
+                'es': 'Ver nuestros servicios',
+            },
+            'goal': {
+                'en': 'Goal',
+                'es': 'Objetivo',
+            },
+            'type': {
+                'en': 'Type',
+                'es': 'Tipo',
+            },
+            'design': {
+                'en': 'Design',
+                'es': 'Diseño',
+            },
+            'services_title_1': {
+                'en': 'Ecommerce & CMS',
+                'es': 'Ecommerce & CMS',
+            },
+            'goal_1': {
+                'en': 'Engage more customers',
+                'es': 'Atraer mas clientes',
+            },
+            'services_title_2': {
+                'en': 'API integration',
+                'es': 'Integración de APIs',
+            },
+            'goal_2': {
+                'en': 'Ease processes',
+                'es': 'Facilitar procesos',
+            },
+            'services_title_3': {
+                'en': 'Data science analysis',
+                'es': 'Análisis con cienca de datos',
+            },
+            'goal_3': {
+                'en': 'Identify trends',
+                'es': 'Identificar tendencias',
+            },
+            'services_title_4': {
+                'en': 'Corporative identity',
+                'es': 'Identidad corporativa',
+            },
+            'goal_4': {
+                'en': 'Brand positioning',
+                'es': 'Posicionar tu marca',
+            },
+            'open_time': {
+                'en': '8:00am - 5:00pm Mon - Fri',
+                'es': '8:00am - 5:00pm Lun - Vie',
+            },
+            'schedule': {
+                'en': 'Schedule',
+                'es': 'Horario',
+            },
+            'address': {
+                'en': 'Address',
+                'es': 'Dirección',
+            },
+            'telephone': {
+                'en': 'Telephone',
+                'es': 'Teléfono',
+            },
+            'information': {
+                'en': 'Information',
+                'es': 'Información',
+            },
+            'resources': {
+                'en': 'Resources',
+                'es': 'Recursos',
+            },
+        };
+        var langs = ['en', 'es'];
+        var current_lang_index = 0;
+        var current_lang = langs[current_lang_index];
+
+        window.change_lang = function (lang) {
+            if (lang === "en") {
+                current_lang_index = 0;
+            } else {
+                current_lang_index = 1;
+            }
+            current_lang = langs[current_lang_index];
+            translate();
+        }
+
+        function translate() {
+            $("[data-translate]").each(function () {
+                var key = $(this).data('translate');
+                $(this).html(dictionary[key][current_lang] || "N/A");
+            });
+        }
+
+        window.change_lang_image = function (lang) {
+            if (lang === "en") {
+                $("#current_lang_img").attr("src", "media/us.png");
+            } else {
+                $("#current_lang_img").attr("src", "media/mx.png");
+            }
+        }
+
+
+        translate();
+    </script>
 </body>
+
 </html>
