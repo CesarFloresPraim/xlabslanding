@@ -1,96 +1,110 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Contacts | 1 | Execoore | Technology And Business Template</title>
-    <meta name="description" content="">
+    <title data-translate="title"></title>
+    <meta name="description" content="Xlabs is a software development company">
     <link rel="stylesheet" href="themekit/css/bootstrap-grid.css">
     <link rel="stylesheet" href="themekit/css/style.css">
     <link rel="stylesheet" href="themekit/css/glide.css">
     <link rel="stylesheet" href="themekit/css/magnific-popup.css">
     <link rel="stylesheet" href="themekit/css/content-box.css">
-    <link rel="stylesheet" href="themekit/css/media-box.css">
     <link rel="stylesheet" href="themekit/css/contact-form.css">
+    <link rel="stylesheet" href="themekit/css/media-box.css">
     <link rel="stylesheet" href="skin.css">
     <link rel="stylesheet" href="xlabs.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="icon" href="media/favicon.png">
 </head>
+
 <body>
     <div id="preloader"></div>
     <nav class="menu-top-logo menu-fixed" data-menu-anima="fade-in">
         <div class="container">
             <div class="menu-brand">
                 <a href="index.html">
-                    <img class="logo-default scroll-hide" src="media/logos/Xlabs_logo_blanco.png" alt="logo" />
-                    <img class="logo-retina scroll-hide" src="media/logos/Xlabs_logo_blanco.png" alt="logo" />
-                    <img class="logo-default scroll-show" src="media/logos/Xlabs_logo_blanco.png" alt="logo" />
-                    <img class="logo-retina scroll-show" src="media/logos/Xlabs_logo_blanco.png" alt="logo" />
+                    <img class="logo-default scroll-hide" src="media/logos/Xlabs_logo_normal.png" alt="logo" />
+                    <img class="logo-retina scroll-hide" src="media/logos/Xlabs_logo_normal.png" alt="logo" />
+                    <img class="logo-default scroll-show" src="media/logos/Xlabs_logo_normal.png" alt="logo" />
+                    <img class="logo-retina scroll-show" src="media/logos/Xlabs_logo_normal.png" alt="logo" />
                 </a>
             </div>
             <i class="menu-btn"></i>
             <div class="menu-cnt">
                 <ul id="main-menu">
                     <li class="dropdown no-after">
-                        <a href="index.html">Home</a>
+                        <a href="index.html" data-translate="home"></a>
                     </li>
                     <li class="dropdown">
-                        <a href="about.html">About us</a>
+                        <a href="service.html" data-translate="services"></a>
                     </li>
                     <li class="dropdown">
-                        <a href="team.html">Team</a>
+                        <a href="about.html" data-translate="aboutus"></a>
                     </li>
                     <li class="dropdown">
-                        <a href="projects.html">Projects</a>
+                        <a href="team.html" data-translate="team"></a>
                     </li>
                     <li class="dropdown">
-                        <a href="contacts.html">Contact</a>
+                        <a href="projects.html" data-translate="projects"></a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="contacts.html" data-translate="contactus"></a>
                     </li>
                     <li class="nav-label">
-                        <a href="contacts.html"><span>Call us: +52 1 (614) 170 - 2665</span> </a>
+                        <a href="contacts.html"><span>Tel: (614) 170-2665</span> </a>
                     </li>
                 </ul>
                 <div class="menu-right">
-                    <div class="custom-area" style="padding-right: 15px;">
+                    <!--<div class="custom-area" style="padding-right: 15px;">
                         Blvd. Lombardo Toledano 6615<br />
                         La Concordia, 31375 Chihuahua, Chih.
-                    </div>
-                    <!--
-                                          <ul class="lan-menu">
+                    </div>-->
+
+                    <ul class="lan-menu">
                         <li class="dropdown">
-                            <a href="#"><img src="media/en.png" alt="lang" />EN </a>
+                            <a><img id="current_lang_img" src="media/us.png" alt="lang" width="20px" />EN</a>
                             <ul>
-                                <li><a href="#"><img src="media/it.png" alt="lang" />IT</a></li>
-                                <li><a href="#"><img src="media/es.png" alt="lang" />ES</a></li>
+                                <li><a onclick="change_lang('en');change_lang_image('en');"><img src="media/us.png"
+                                            alt="lang" width="20px" />EN</a></li>
+                                <li><a onclick="change_lang('es');change_lang_image('es');"><img src="media/mx.png"
+                                            alt="lang" width="20px" />ES</a></li>
                             </ul>
                         </li>
-                    </ul>  
-                    -->
+                    </ul>
+
 
                 </div>
             </div>
         </div>
     </nav>
     <main>
-        <section class="section-map section-map-right">
-            <div class="google-map" data-marker="media/marker.png" data-coords="51.5156177,-0.0919983" data-zoom="12" data-marker-pos="left"></div>
+        <section class="section-base">
             <div class="container">
-                <div class="title">
-                    <h2>Contacto</h2>
-                </div>
-                <ul class="text-list text-list-line dotts-baby-blue">
-                    <li><b>Dirección</b><hr /><p>139 Baker St, E1 7PT, London</p></li>
-                    <li><b>Web</b><hr /><p>domain.com</p></li>
-                    <li><b>Email</b><hr /><p>info@domain.com</p></li>
-                    <li><b>Teléfono</b><hr /><p>(02) 123 456 789999</p></li>
-                </ul>
-                <hr class="space-sm" />
-                <div class="icon-links icon-social icon-lg social-colors">
-                    <a><i class="fab fa-youtube"></i></i></a>
-                    <a><i class="fab fa-twitter"></i></a>
-                    <a><i class="fab fa-instagram"></i></a>
-                    <a><i class="fab fa-facebook-square"></i></a>
+                <div class="row">
+                    <div class="col">
+                        <img src="media/backgrounds/contactus.jpg" width="470px" alt="" style="box-shadow: 0 5px 5px rgba(0, 0, 0, 0.06);">
+                    </div>
+                    <div class="col">
+                        <div class="title" style="padding-top: 20px;">
+                            <h2>Contacto</h2>
+                        </div>
+                        <div class="blue-border-left">
+                            <ul class="text-list text-list-line dotts-baby-blue">
+                                <li><b>Dirección</b><hr /><p>Blvd. Lombardo Toledano 6615</p></li>
+                                <li><b>Web</b><hr /><p>xlabs.mx</p></li>
+                                <li><b>Email</b><hr /><p>info@xlabs.mx</p></li>
+                                <li><b>Teléfono</b><hr /><p>(614) 170 2665</p></li>
+                            </ul>
+                            <hr class="space-sm" />
+                            <div class="icon-links icon-social icon-lg social-colors">
+                                <a><i class="fab fa-instagram"></i></a>
+                                <a><i class="fab fa-facebook-square"></i></a>
+                            </div>
+                    </div>
+                    </div>
                 </div>
             </div>
         </section>  
@@ -99,22 +113,22 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="title">
-                            <h2>Contáctanos</h2>
+                            <h2 class="white">CONTÁCTANOS</h2>
                             <p class="baby-blue">Información</p>
                         </div>
                         <form action="themekit/scripts/contact-form/contact-form.php" class="form-box form-ajax" method="post" data-email="example@domain.com">
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <p>Nombre</p>
-                                    <input id="name" name="name" placeholder="" type="text" class="input-text" required>
+                                    <p class="white">Nombre</p>
+                                    <input id="name" name="name" placeholder="" type="text" class="input-text white" required>
                                 </div>
                                 <div class="col-lg-6">
-                                    <p>Correo</p>
-                                    <input id="email" name="email" placeholder="" type="email" class="input-text" required>
+                                    <p class="white">Correo</p>
+                                    <input id="email" name="email" placeholder="" type="email" class="input-text white" required>
                                 </div>
                             </div>
                             <p>Mensaje</p>
-                            <textarea id="messagge" name="messagge" class="input-textarea" placeholder="" required></textarea>
+                            <textarea id="messagge" name="messagge" class="input-textarea white" placeholder="" required></textarea>
                             <button class="btn btn-xs background-baby-blue no-border" type="submit">Enviar mensaje</button>
                             <div class="success-box">
                                 <div class="alert alert-success">Congratulations. Your message has been sent successfully</div>
@@ -127,25 +141,20 @@
                     <div class="col-lg-6">
                         <hr class="space visible-md" />
                         <div class="title">
-                            <h2>¿Cuándo abrimos?</h2>
+                            <h2 class="white">HORARIO DE ATENCIÓN</h2>
                             <p class="baby-blue">Información</p>
                         </div>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipiscing elitsed do eiusmod tempor incididunt utlabore et dolore magna aliqua.
-                            Utenim ad minim veniam quis nostrud exercitation ullama.
-                        </p>
-                        <table class="table table-border table-time">
+                        <table class="table table-border table-time gray">
                             <thead>
                                 <tr>
-                                    <th>Día</th>
-                                    <th>Mañana</th>
-                                    <th>Tarde</th>
+                                    <th class="white">Día</th>
+                                    <th class="white">Horario</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr><td>Lunes - Viernes</td><td>8am - 12am</td><td>5pm - 9pm</td></tr>
-                                <tr><td>Sábado</td><td>Cerrado</td><td>5pm - 9pm</td></tr>
-                                <tr><td>Domingo</td><td>Cerrado</td><td>Cerrado</td></tr>
+                                <tr><td>Lunes - Viernes</td><td>8:00 - 17:00</td></tr>
+                                <tr><td>Sábado</td><td>8:00 - 14:00</td></tr>
+                                <tr><td>Domingo</td><td>Cerrado</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -153,42 +162,53 @@
             </div>
         </section>
     </main>
-    <footer class="light">
+    <footer class="dark-blue">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">
-                    <img src="media/logos/Xlabs_logo_blanco.png" alt="X-LABS logo" style="height: 47px;width: 150px; margin-bottom: 25px;">
+                    <img src="media/logos/Xlabs_logo_normal.png" alt="X-LABS logo" style="height: 90px;">
                     <!-- <p>Slogan</p> -->
                     <div class="icon-links icon-social icon-links-grid social-colors">
-                        <a><i class="fab fa-youtube"></i></i></a>
-                        <a><i class="fab fa-twitter"></i></a>
                         <a><i class="fab fa-instagram"></i></a>
                         <a><i class="fab fa-facebook-square"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <h3>Recursos</h3>
-                    <ul class="icon-list icon-line">
-                        <li><a href="about.html">About us and the company</a></li>
-                        <li><a href="service.html">Services</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="contacts.html">Contact us online</a></li>
+                    <h3 data-translate="resources">Recursos</h3>
+                    <ul class="icon-list icon-line" style="margin-top: 0px;">
+                        <li><a href="about.html" data-translate="aboutus">Cónocenos</a></li>
+                        <li><a href="service.html" data-translate="services">Servicios</a></li>
+                        <li><a href="projects.html" data-translate="projects">Proyectos</a></li>
+                        <li><a href="contacts.html" data-translate="contactus">Contacto</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-4" style="padding: 10px;">
-                    <ul class="text-list text-list-line">
-                        <li><b>Address</b><hr /><p class="dark-blue">Blvd. Lombardo Toledano 6615</p></li>
-                        <li><b>Email</b><hr /><p class="dark-blue">contact@xlabs.mx</p></li>
-                        <li><b>Phone</b><hr /><p class="dark-blue">+52 1 (614) 170 - 2665</p></li>
-                        <li><b>Opening hours</b><hr /><p class="dark-blue">8am-5pm Mon - Fri</p></li>
+                <div class="col-lg-4">
+                    <h3 data-translate="information">Información</h3>
+                    <ul class="text-list text-list-line blue-border-left">
+                        <li><b data-translate="address">Dirección</b>
+                            <hr />
+                            <p class="dark-blue">Blvd. Lombardo Toledano 6615</p>
+                        </li>
+                        <li><b>Email</b>
+                            <hr />
+                            <p class="dark-blue">info@xlabs.mx</p>
+                        </li>
+                        <li><b data-translate="telephone">Teléfono</b>
+                            <hr />
+                            <p class="dark-blue">(614) 170 2665</p>
+                        </li>
+                        <li><b data-translate="schedule">Horario</b>
+                            <hr />
+                            <p class="dark-blue" data-translate="open_time">8:00am - 5:00pm Lun - Vie</p>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="footer-bar">
             <div class="container">
-                <span>© 2019 Execoore - Technology And Business Template Handmade by <a href="https://schiocco.com" target="_blank">schiocco.com</a>.</span>
-                <span><a href="#">Contact us</a> | <a href="#">Privacy policy</a></span>
+                <span>© 2020 <a href="https://xlabs.mx" target="_blank">xlabs.mx</a></span>
+                <span><a href="contacts.html" data-translate="contactus">Contact us</a></span>
             </div>
         </div>
         <link rel="stylesheet" href="themekit/media/icons/iconsmind/line-icons.min.css">
@@ -196,13 +216,100 @@
         <script src="themekit/scripts/main.js"></script>
         <script src="themekit/scripts/parallax.min.js"></script>
         <script src="themekit/scripts/glide.min.js"></script>
-        <script src="themekit/scripts/magnific-popup.min.js"></script>
+        <script src="themekit/scripts/pagination.min.js"></script>
         <script src="themekit/scripts/tab-accordion.js"></script>
         <script src="themekit/scripts/imagesloaded.min.js"></script>
-        <script src="themekit/scripts/progress.js" async></script>
         <script src="themekit/scripts/custom.js" async></script>
-        <script src="themekit/scripts/contact-form/contact-form.js" async></script>
         <script src="https://kit.fontawesome.com/5aff25e6c8.js" crossorigin="anonymous"></script>
     </footer>
+
+
+    <script>
+        var dictionary = {
+            'title': {
+                'en': 'Xlabs: a software development company',
+                'es': 'Xlabs: una compania de desarrollo de software',
+            },
+            'home': {
+                'en': 'Home',
+                'es': 'Inicio',
+            },
+            'services': {
+                'en': 'Services',
+                'es': 'Servicios',
+            },
+            'aboutus': {
+                'en': 'About us',
+                'es': 'Conócenos',
+            },
+            'team': {
+                'en': 'Team',
+                'es': 'Equipo',
+            },
+            'projects': {
+                'en': 'Projects',
+                'es': 'Proyectos',
+            },
+            'contactus': {
+                'en': 'Contact us',
+                'es': 'Contáctanos',
+            },
+            
+            'open_time': {
+                'en': '8:00am - 5:00pm Mon - Fri',
+                'es': '8:00am - 5:00pm Lun - Vie',
+            },
+            'schedule': {
+                'en': 'Schedule',
+                'es': 'Horario',
+            },
+            'address': {
+                'en': 'Address',
+                'es': 'Dirección',
+            },
+            'telephone': {
+                'en': 'Telephone',
+                'es': 'Teléfono',
+            },
+            'information': {
+                'en': 'Information',
+                'es': 'Información',
+            },
+            'resources': {
+                'en': 'Resources',
+                'es': 'Recursos',
+            },
+        };
+        var langs = ['en', 'es'];
+        var current_lang_index = 0;
+        var current_lang = langs[current_lang_index];
+
+        window.change_lang = function (lang) {
+            if (lang === "en") {
+                current_lang_index = 0;
+            } else {
+                current_lang_index = 1;
+            }
+            current_lang = langs[current_lang_index];
+            translate();
+        }
+
+        function translate() {
+            $("[data-translate]").each(function () {
+                var key = $(this).data('translate');
+                $(this).html(dictionary[key][current_lang] || "N/A");
+            });
+        }
+
+        window.change_lang_image = function (lang) {
+            if (lang === "en") {
+                $("#current_lang_img").attr("src", "media/us.png");
+            } else {
+                $("#current_lang_img").attr("src", "media/mx.png");
+            }
+        }
+
+        translate();
+        </script>
 </body>
 </html>
