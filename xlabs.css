@@ -323,3 +323,14 @@ PROJECT LIST
         padding-bottom: 0;
     }
 }
+
+/** Services card all same height **/
+
+.maximum-height {
+    height: auto;
+    max-height: 220px;
+    width: 100%;
+}
+.full-height {
+    height: 100%;
+}
