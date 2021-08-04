@@ -69,10 +69,6 @@ body > nav .menu-brand, .menu-big-box .menu-right {
     background-color: transparent;
 }
 
-.cnt-box-top-icon.boxed > i, .cnt-box.boxed .caption, .cnt-box-top-icon.boxed{
-    background-color: #47BBEC;
-}
-
 .cnt-box-top-icon > i {
     color: white;
 }
@@ -257,8 +253,19 @@ PROJECT LIST
 
 /** TEAM **/
 
+.blue-border-bottom {
+    border-bottom: 2px solid rgb(0, 24, 58);
+}
+
+.service-info {
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 11px;
+    font-weight: 700 !important;
+}
+
 .cnt-box-side .extra-field {
-    border-bottom: 2px solid #47BBEC;
+    border-bottom: 2px solid rgb(0, 24, 58);
 }
 
 .cnt-box-team .caption {
