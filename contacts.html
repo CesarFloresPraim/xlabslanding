@@ -89,14 +89,14 @@
                     </div>
                     <div class="col">
                         <div class="title" style="padding-top: 20px;">
-                            <h2>Contacto</h2>
+                            <h2 data-translate="contact">Contacto</h2>
                         </div>
                         <div class="blue-border-left">
                             <ul class="text-list text-list-line dotts-baby-blue">
-                                <li><b>Dirección</b><hr /><p>Blvd. Lombardo Toledano 6615</p></li>
+                                <li><b data-translate="address">Dirección</b><hr /><p>Blvd. Lombardo Toledano 6615</p></li>
                                 <li><b>Web</b><hr /><p>xlabs.mx</p></li>
                                 <li><b>Email</b><hr /><p>info@xlabs.mx</p></li>
-                                <li><b>Teléfono</b><hr /><p>(614) 170 2665</p></li>
+                                <li><b data-translate="telephone">Teléfono</b><hr /><p>(614) 170 2665</p></li>
                             </ul>
                             <hr class="space-sm" />
                             <div class="icon-links icon-social icon-lg social-colors">
@@ -113,23 +113,23 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="title">
-                            <h2 class="white">CONTÁCTANOS</h2>
-                            <p class="baby-blue">Información</p>
+                            <h2 class="white" data-translate="contactus" style="text-transform: uppercase;">CONTÁCTANOS</h2>
+                            <p class="baby-blue" data-translate="information">Información</p>
                         </div>
                         <form action="themekit/scripts/contact-form/contact-form.php" class="form-box form-ajax" method="post" data-email="example@domain.com">
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <p class="white">Nombre</p>
+                                    <p class="white" data-translate="name">Nombre</p>
                                     <input id="name" name="name" placeholder="" type="text" class="input-text white" required>
                                 </div>
                                 <div class="col-lg-6">
-                                    <p class="white">Correo</p>
+                                    <p class="white" data-translate="email">Correo</p>
                                     <input id="email" name="email" placeholder="" type="email" class="input-text white" required>
                                 </div>
                             </div>
                             <p>Mensaje</p>
                             <textarea id="messagge" name="messagge" class="input-textarea white" placeholder="" required></textarea>
-                            <button class="btn btn-xs background-baby-blue no-border" type="submit">Enviar mensaje</button>
+                            <button class="btn btn-xs background-baby-blue no-border" type="submit" data-translate="send_message">Enviar mensaje</button>
                             <div class="success-box">
                                 <div class="alert alert-success">Congratulations. Your message has been sent successfully</div>
                             </div>
@@ -141,20 +141,20 @@
                     <div class="col-lg-6">
                         <hr class="space visible-md" />
                         <div class="title">
-                            <h2 class="white">HORARIO DE ATENCIÓN</h2>
-                            <p class="baby-blue">Información</p>
+                            <h2 class="white" data-translate="business_hours" style="text-transform: uppercase;">HORARIO DE ATENCIÓN</h2>
+                            <p class="baby-blue" data-translate="information">Información</p>
                         </div>
                         <table class="table table-border table-time gray">
                             <thead>
                                 <tr>
-                                    <th class="white">Día</th>
-                                    <th class="white">Horario</th>
+                                    <th class="white" data-translate="day">Día</th>
+                                    <th class="white" data-translate="schedule">Horario</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr><td>Lunes - Viernes</td><td>8:00 - 17:00</td></tr>
-                                <tr><td>Sábado</td><td>8:00 - 14:00</td></tr>
-                                <tr><td>Domingo</td><td>Cerrado</td></tr>
+                                <tr><td data-translate="mon_fri">Lunes - Viernes</td><td>8:00 - 17:00</td></tr>
+                                <tr><td data-translate="sat">Sábado</td><td>8:00 - 14:00</td></tr>
+                                <tr><td data-translate="sun">Domingo</td><td data-translate="closed">Cerrado</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -278,6 +278,54 @@
             'resources': {
                 'en': 'Resources',
                 'es': 'Recursos',
+            },
+            'contact': {
+                'en': 'Contact',
+                'es': 'Contacto'
+            },
+            'information': {
+                'en': 'Information',
+                'es': 'Información'
+            },
+            'name': {
+                'en': 'Name',
+                'es': 'Nombre'
+            },
+            'email': {
+                'en': 'Email',
+                'es': 'Correo'
+            },
+            'send_message': {
+                'en': 'Send message',
+                'es': 'Enviar mensaje'
+            },
+            'business_hours': {
+                'en': 'Business hours',
+                'es': 'Horario de atención'
+            },
+            'day': {
+                'en': 'Day',
+                'es': 'Día'
+            },
+            'mon_fri': {
+                'en': 'Monday - Friday',
+                'es': 'Lunes - Viernes'
+            },
+            'sat': {
+                'en': 'Saturday',
+                'es': 'Sábado'
+            },
+            'sun': {
+                'en': 'Sunday',
+                'es': 'Domingo'
+            },
+            'closed': {
+                'en': 'Closed',
+                'es': 'Cerrado'
+            },
+            '': {
+                'en': '',
+                'es': ''
             },
         };
         var langs = ['en', 'es'];
