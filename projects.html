@@ -17,6 +17,9 @@
     <link rel="stylesheet" href="skin.css">
     <link rel="stylesheet" href="xlabs.css">
     <link rel="icon" href="media/favicon.png">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+
 </head>
 
 <body>
@@ -82,7 +85,7 @@
     <header class="header-image ken-burn-center light" data-parallax="true" data-natural-height="500" data-natural-width="1920" data-bleed="0" data-image-src="media/backgrounds/all-01.jpg" data-offset="0">
         <div class="container">
             <h1 data-translate="projects">Proyectos</h1>
-            <h2 class="baby-blue" data-translate="our_clients">Para nuestros clientes</h2>
+            <h2 class="baby-blue" data-translate="for_our_clients">Para nuestros clientes</h2>
             <!--
             <ol class="breadcrumb">
                 <li><a href="index.html">Home</a></li>
@@ -186,6 +189,30 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="container" style="margin-top: 7em;">
+                    <div class="title">
+                        <h2 data-translate="our_clients" style="text-transform: uppercase;">Nuestros clientes</h2>
+                    </div>
+
+                    <div class="row d-flex justify-content-center align-content-center">
+                        <div class="col-lg-10">
+                            <div class="splide">
+                                <div class="splide__track">
+                                    <ul class="splide__list">
+                                        <li class="splide__slide"><img src="media/projects/valentinos2.png"></li>
+                                        <li class="splide__slide"><img src="media/projects/rivadi2.png"></li>
+                                        <li class="splide__slide"><img src="media/projects/alifera2.png"></li>
+                                        <li class="splide__slide"><img src="media/projects/happy_korea2.png"></li>
+                                        <li class="splide__slide"><img src="media/projects/kimchica2.png"></li>                        </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                
             </div>
         </section>
     </main>
@@ -250,6 +277,7 @@
         <script src="https://kit.fontawesome.com/5aff25e6c8.js" crossorigin="anonymous"></script>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
 
     <script>
         var dictionary = {
@@ -346,9 +374,13 @@
                 'en': 'Projects',
                 'es': 'Proyectos'
             },
-            'our_clients': {
+            'for_our_clients': {
                 'en': 'For our clients',
                 'es': 'Para nuestros clientes'
+            },
+            'our_clients': {
+                'en': 'Our clients',
+                'es': 'Nuestros clientes'
             }
         };
         var langs = ['en', 'es'];
@@ -381,6 +413,15 @@
         }
 
         translate();
+        </script>
+
+        <script>
+            new Splide( '.splide', {
+                perPage: 4,
+                type: 'loop',
+                autoplay: true,
+                pagination: false
+            } ).mount();
         </script>
 </body>
 </html>
