@@ -1,11 +1,12 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Service | 2 | Execoore | Technology And Business Template</title>
-    <meta name="description" content="">
+    <title data-translate="title"></title>
+    <meta name="description" content="Xlabs is a software development company">
     <link rel="stylesheet" href="themekit/css/bootstrap-grid.css">
     <link rel="stylesheet" href="themekit/css/style.css">
     <link rel="stylesheet" href="themekit/css/glide.css">
@@ -17,56 +18,62 @@
     <link rel="stylesheet" href="xlabs.css">
     <link rel="icon" href="media/favicon.png">
 </head>
+
 <body>
     <div id="preloader"></div>
     <nav class="menu-top-logo menu-fixed" data-menu-anima="fade-in">
         <div class="container">
             <div class="menu-brand">
                 <a href="index.html">
-                    <img class="logo-default scroll-hide" src="media/logos/Xlabs_logo_blanco.png" alt="logo" />
-                    <img class="logo-retina scroll-hide" src="media/logos/Xlabs_logo_blanco.png" alt="logo" />
-                    <img class="logo-default scroll-show" src="media/logos/Xlabs_logo_blanco.png" alt="logo" />
-                    <img class="logo-retina scroll-show" src="media/logos/Xlabs_logo_blanco.png" alt="logo" />
+                    <img class="logo-default scroll-hide" src="media/logos/Xlabs_logo_normal.png" alt="logo" />
+                    <img class="logo-retina scroll-hide" src="media/logos/Xlabs_logo_normal.png" alt="logo" />
+                    <img class="logo-default scroll-show" src="media/logos/Xlabs_logo_normal.png" alt="logo" />
+                    <img class="logo-retina scroll-show" src="media/logos/Xlabs_logo_normal.png" alt="logo" />
                 </a>
             </div>
             <i class="menu-btn"></i>
             <div class="menu-cnt">
                 <ul id="main-menu">
                     <li class="dropdown no-after">
-                        <a href="index.html">Home</a>
+                        <a href="index.html" data-translate="home"></a>
                     </li>
                     <li class="dropdown">
-                        <a href="about.html">About us</a>
+                        <a href="service.html" data-translate="services"></a>
                     </li>
                     <li class="dropdown">
-                        <a href="team.html">Team</a>
+                        <a href="about.html" data-translate="aboutus"></a>
                     </li>
                     <li class="dropdown">
-                        <a href="projects.html">Projects</a>
+                        <a href="team.html" data-translate="team"></a>
                     </li>
                     <li class="dropdown">
-                        <a href="contacts.html">Contact</a>
+                        <a href="projects.html" data-translate="projects"></a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="contacts.html" data-translate="contactus"></a>
                     </li>
                     <li class="nav-label">
-                        <a href="contacts.html"><span>Call us: +52 1 (614) 170 - 2665</span> </a>
+                        <a href="contacts.html"><span>Tel: (614) 170-2665</span> </a>
                     </li>
                 </ul>
                 <div class="menu-right">
-                    <div class="custom-area" style="padding-right: 15px;">
+                    <!--<div class="custom-area" style="padding-right: 15px;">
                         Blvd. Lombardo Toledano 6615<br />
                         La Concordia, 31375 Chihuahua, Chih.
-                    </div>
-                    <!--
-                                          <ul class="lan-menu">
+                    </div>-->
+
+                    <ul class="lan-menu">
                         <li class="dropdown">
-                            <a href="#"><img src="media/en.png" alt="lang" />EN </a>
+                            <a><img id="current_lang_img" src="media/us.png" alt="lang" width="20px" />EN</a>
                             <ul>
-                                <li><a href="#"><img src="media/it.png" alt="lang" />IT</a></li>
-                                <li><a href="#"><img src="media/es.png" alt="lang" />ES</a></li>
+                                <li><a onclick="change_lang('en');change_lang_image('en');"><img src="media/us.png"
+                                            alt="lang" width="20px" />EN</a></li>
+                                <li><a onclick="change_lang('es');change_lang_image('es');"><img src="media/mx.png"
+                                            alt="lang" width="20px" />ES</a></li>
                             </ul>
                         </li>
-                    </ul>  
-                    -->
+                    </ul>
+
 
                 </div>
             </div>
@@ -74,259 +81,184 @@
     </nav>
     <header class="header-image ken-burn-center light" data-parallax="true" data-natural-height="500" data-natural-width="1920" data-bleed="0" data-image-src="media/backgrounds/all-01.jpg" data-offset="0">
         <div class="container">
-            <h1>Nuestro servicio</h1>
-            <h2 class="baby-blue">Lo que te ofrecemos</h2>
+            <h1 data-translate="services">Servicios</h1>
+            <h2 class="baby-blue" data-translate="for_our_clients">Para nuestros clientes</h2>
+            <!-- path 
+            <ol class="breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Proyectos</a></li>
+                <li><a href="#">Todos</a></li>
+            </ol>
+            -->
         </div>
     </header>
     <main>
-        <section class="section-base section-color">
+        <section class="section-base" style="background-color: rgba(207,208,210,255);">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-8">
-                        <h3>Detalles del servicio</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipiscing elitsed do eiusmod tempor incididunt utlabore et dolore magna aliqua.
-                            Utenim ad minim veniam quis nostrud exercitation ullamco laboris. Lorem ipsum dolor sit amet consectetur adipiscing elitsed do eiusmod tempor incididunt utlabore et dolore magna aliqua.
-                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolore.
-                        </p>
-                        <hr class="space" />
-                        <h3>Nuestro proceso</h3>
-                        <hr class="space-sm" />
-                        <div class="box-steps">
-                            <div class="step-item">
-                                <span>1</span>
-                                <div class="content">
-                                    <h3 class="baby-blue">Client meeting</h3>
-                                    <div>
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur eiusmodua ciolo.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="step-item">
-                                <span>2</span>
-                                <div class="content">
-                                    <h3 class="baby-blue">Quotation</h3>
-                                    <div>
-                                        <p>
-                                            Ostreta ipsum dolor sit amet cing elitsedero do.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="step-item">
-                                <span>3</span>
-                                <div class="content">
-                                    <h3 class="baby-blue">Initialization</h3>
-                                    <div>
-                                        <p>
-                                            Artesio maggiore ipsum dolor sit adipiscing elitsed do.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="step-item">
-                                <span>4</span>
-                                <div class="content">
-                                    <h3 class="baby-blue">Feedbacks</h3>
-                                    <div>
-                                        <p>
-                                            Ostreta ipsum dolor sit amet consectetue artifico.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="step-item">
-                                <span>5</span>
-                                <div class="content">
-                                    <h3 class="baby-blue">Debug</h3>
-                                    <div>
-                                        <p>
-                                            Ostreta ipsum dolor sit amet  elitsedero do artifico.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="step-item">
-                                <span>6</span>
-                                <div class="content">
-                                    <h3 class="baby-blue">Deadline</h3>
-                                    <div>
-                                        <p>
-                                            Ostreta ipsum dolor sit amet consecteture artifico.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <hr class="space" />
-                        <h3>Análisis</h3>
-                        <hr class="space-sm" />
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="progress-bar">
-                                    <h4>Clientes que regresan</h4>
-                                    <div>
-                                        <div data-progress="70">
-                                            <span class="counter" data-to="70" data-speed="2000" data-unit="%">70%</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <hr class="space-sm" />
-                                <div class="progress-bar">
-                                    <h4>Porcentaje de éxito</h4>
-                                    <div>
-                                        <div data-progress="95">
-                                            <span class="counter" data-to="95" data-speed="2000" data-unit="%">95%</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="progress-bar">
-                                    <h4>Porcentaje de éxito</h4>
-                                    <div>
-                                        <div data-progress="95">
-                                            <span class="counter" data-to="95" data-speed="2000" data-unit="%">95%</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <hr class="space-sm" />
-                                <div class="progress-bar">
-                                    <h4>Proyectos terminados</h4>
-                                    <div>
-                                        <div data-progress="85">
-                                            <span class="counter" data-to="85" data-speed="2000" data-unit="%">85%</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <hr class="space" />
-                        <h3>Trabaja con nosotros</h3>
-                        <hr class="space-sm" />
-                        <div class="grid-list" data-columns="3" data-columns-lg="2" data-columns-sm="2"  data-columns-xs="1">
+                
+                <div class="tab-box" data-tab-anima="fade-in">
+                    <!--
+                    <ul class="tab-nav">
+                        <li class="active"><a href="#">Web</a></li>
+                        <li><a href="#">Móvil</a></li>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="#">Hardware</a></li>
+                    </ul>
+                    -->
+                    <div class="panel active">
+                        <div class="grid-list" data-columns="2" data-columns-lg="1">
                             <div class="grid-box">
                                 <div class="grid-item">
-                                    <div class="icon-box icon-box-left">
-                                        <i class="im-pen"></i>
+                                    <div class="cnt-box cnt-box-side boxed" data-href="">
+                                        <a href="#" class="img-box"><img src="media/backgrounds/ecommerce-2.jpg" alt="" /></a>
                                         <div class="caption">
-                                            <h3>Regulado</h3>
-                                            <p>Officially certified</p>
+                                            <h2>E-Commerce & CRM</h2>
+                                                <div class="row service-info blue-border-bottom">
+                                                    <div class="col">
+                                                        <div class="row dark-blue" data-translate="type" style="text-transform: uppercase;">TIPO</div>
+                                                        <div class="row baby-blue" style="text-transform: uppercase;">SOFTWARE</div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="row dark-blue" data-translate="objective" style="text-transform: uppercase;">OBJETIVO</div>
+                                                        <div class="row baby-blue" data-translate="customer_acquisition">Generar más clientes</div>
+                                                    </div>
+                                                </div>
+
+                                            
+                                            <p class="dark-blue" data-translate="ecommerce_text">
+                                                Desarrollo de páginas web que interactúen con el cliente para generar más ventas. Carrito de compras virtual con métodos de pago convencionales y modernos. Plataforma de administración de inventario, catálogos, clientes y promociones para editar el contenido.
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="grid-item">
-                                    <div class="icon-box icon-box-left">
-                                        <i class="im-security-camera"></i>
+                                    <div class="cnt-box cnt-box-side boxed" data-href="">
+                                        <a href="#" class="img-box"><img src="media/backgrounds/apis-2.jpg" alt="" /></a>
                                         <div class="caption">
-                                            <h3>Seguro</h3>
-                                            <p>Total secuirity</p>
+                                            <h2 data-translate="api_integration">Integración de API</h2>
+                                                <div class="row service-info blue-border-bottom">
+                                                    <div class="col">
+                                                        <div class="row dark-blue" data-translate="type" style="text-transform: uppercase;">TIPO</div>
+                                                        <div class="row baby-blue">SOFTWARE</div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="row dark-blue" data-translate="objective" style="text-transform: uppercase;">OBJETIVO</div>
+                                                        <div class="row baby-blue" data-translate="facilitate_the_process">Facilitar procesos</div>
+                                                    </div>
+                                                </div>
+
+                                            
+                                            <p class="dark-blue" data-translate="api_text">
+                                                Introducción de aplicaciones de terceros a una página propia para obtener y ligar sus beneficios y obtener información de clientes. UPS – DHL Tracking, Uber, Facebook, Instagram, etc. Ideal para optimización de procesos repetitivos.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="grid-item">
+                                    <div class="cnt-box cnt-box-side boxed" data-href="">
+                                        <a href="#" class="img-box"><img src="media/backgrounds/data_science2.jpg" alt="" /></a>
+                                        <div class="caption">
+                                            <h2 data-translate="data_science_analysis">Análisis de ciencia de datos</h2>
+                                                <div class="row service-info blue-border-bottom">
+                                                    <div class="col">
+                                                        <div class="row dark-blue" data-translate="type" style="text-transform: uppercase;">TIPO</div>
+                                                        <div class="row baby-blue">SOFTWARE</div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="row dark-blue" data-translate="objective" style="text-transform: uppercase;">OBJETIVO</div>
+                                                        <div class="row baby-blue" data-translate="identify_tendencies">Identificar tendencias</div>
+                                                    </div>
+                                                </div>
+
+                                            
+                                            <p class="dark-blue" data-translate="data_science_text">
+                                                Análisis profundo de información cuantitativa para creación de tendencias de compa y comportamiento del cliente para creación de campañas de marketing y estrategias de venta efectivas.
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="grid-item">
-                                    <div class="icon-box icon-box-left">
-                                        <i class="im-gears"></i>
+                                    <div class="cnt-box cnt-box-side boxed" data-href="">
+                                        <a href="#" class="img-box"><img src="media/backgrounds/identity2.jpg" alt="" /></a>
                                         <div class="caption">
-                                            <h3>Top hardware</h3>
-                                            <p>Built from scratch</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid-item">
-                                    <div class="icon-box icon-box-left">
-                                        <i class="im-data-refresh"></i>
-                                        <div class="caption">
-                                            <h3>Actualizado</h3>
-                                            <p>Two times per day</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid-item">
-                                    <div class="icon-box icon-box-left">
-                                        <i class="im-support"></i>
-                                        <div class="caption">
-                                            <h3>Soporte técnico</h3>
-                                            <p>Dedicated support</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid-item">
-                                    <div class="icon-box icon-box-left">
-                                        <i class="im-coins"></i>
-                                        <div class="caption">
-                                            <h3>Reembolsos</h3>
-                                            <p>Fully guaranted</p>
+                                            <h2 data-translate="corporate_identity">Identidad corporativa</h2>
+                                                <div class="row service-info blue-border-bottom">
+                                                    <div class="col">
+                                                        <div class="row dark-blue" data-translate="type" style="text-transform: uppercase;">TIPO</div>
+                                                        <div class="row baby-blue" data-translate="design" style="text-transform: uppercase;">DISEÑO</div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="row dark-blue" data-translate="objective" style="text-transform: uppercase;">OBJETIVO</div>
+                                                        <div class="row baby-blue" data-translate="brand_positioning">Posicionar marca</div>
+                                                    </div>
+                                                </div>
+
+                                            
+                                            <p class="dark-blue" data-translate="corporate_identity_text">
+                                                Creación de marca e imagen. Logo, paleta de colores, fuentes, diseño de etiquetas, personalización de redes sociales y otros contenidos. El diseño se justifica e implementa de acuerdo al objetivo de la empresa.
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <hr class="space visible-sm" />
-                        <div class="fixed-area" data-offset="80">
-                            <div class="menu-inner menu-inner-vertical boxed-area transparent-box">
-                                <ul>
-                                    <li><a href="service-1.html">Security audits</a></li>
-                                    <li class="active"><a href="service-2.html">Artificial intelligence</a></li>
-                                    <li><a href="service-3.html">Bots and support</a></li>
-                                    <li><a href="#">Financial advises</a></li>
-                                </ul>
+                            <!--
+                            <div class="list-pagination">
+                                <ul class="pagination pagination-lg" data-page-items="4" data-pagination-anima="fade-bottom"></ul>
                             </div>
-                            <hr class="space-sm" />
-                            <div class="boxed-area light">
-                                <ul class="text-list text-list-bold text-list-line dotts-green">
-                                    <li><p>Address:</p><hr /><p>139 Baker St, E17PT, London</p></li>
-                                    <li><p>Email:</p><hr /><p>support@example.com</p></li>
-                                    <li><p>Phone line:</p><hr /><p>(02) 123 333 444</p></li>
-                                    <li><p>Opening hours</p><hr /><p>8am-5pm Mon - Fri</p></li>
-                                </ul>
-                            </div>
+                            -->
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-    </main>
-    <footer class="light">
+    </main>    <footer class="dark-blue">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">
-                    <img src="media/logos/Xlabs_logo_blanco.png" alt="X-LABS logo" style="height: 47px;width: 150px; margin-bottom: 25px;">
+                    <img src="media/logos/Xlabs_logo_normal.png" alt="X-LABS logo" style="height: 90px;">
                     <!-- <p>Slogan</p> -->
                     <div class="icon-links icon-social icon-links-grid social-colors">
-                        <a><i class="fab fa-youtube"></i></i></a>
-                        <a><i class="fab fa-twitter"></i></a>
                         <a><i class="fab fa-instagram"></i></a>
                         <a><i class="fab fa-facebook-square"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <h3>Recursos</h3>
-                    <ul class="icon-list icon-line">
-                        <li><a href="about.html">About us and the company</a></li>
-                        <li><a href="service.html">Services</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="contacts.html">Contact us online</a></li>
+                    <h3 data-translate="resources">Recursos</h3>
+                    <ul class="icon-list icon-line" style="margin-top: 0px;">
+                        <li><a href="about.html" data-translate="aboutus">Cónocenos</a></li>
+                        <li><a href="service.html" data-translate="services">Servicios</a></li>
+                        <li><a href="projects.html" data-translate="projects">Proyectos</a></li>
+                        <li><a href="contacts.html" data-translate="contactus">Contacto</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-4" style="padding: 10px;">
-                    <ul class="text-list text-list-line">
-                        <li><b>Address</b><hr /><p class="dark-blue">Blvd. Lombardo Toledano 6615</p></li>
-                        <li><b>Email</b><hr /><p class="dark-blue">contact@xlabs.mx</p></li>
-                        <li><b>Phone</b><hr /><p class="dark-blue">+52 1 (614) 170 - 2665</p></li>
-                        <li><b>Opening hours</b><hr /><p class="dark-blue">8am-5pm Mon - Fri</p></li>
+                <div class="col-lg-4">
+                    <h3 data-translate="information">Información</h3>
+                    <ul class="text-list text-list-line blue-border-left">
+                        <li><b data-translate="address">Dirección</b>
+                            <hr />
+                            <p class="dark-blue">Blvd. Lombardo Toledano 6615</p>
+                        </li>
+                        <li><b>Email</b>
+                            <hr />
+                            <p class="dark-blue">info@xlabs.mx</p>
+                        </li>
+                        <li><b data-translate="telephone">Teléfono</b>
+                            <hr />
+                            <p class="dark-blue">(614) 170 2665</p>
+                        </li>
+                        <li><b data-translate="schedule">Horario</b>
+                            <hr />
+                            <p class="dark-blue" data-translate="open_time">8:00am - 5:00pm Lun - Vie</p>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="footer-bar">
             <div class="container">
-                <span>© 2019 Execoore - Technology And Business Template Handmade by <a href="https://schiocco.com" target="_blank">schiocco.com</a>.</span>
-                <span><a href="#">Contact us</a> | <a href="#">Privacy policy</a></span>
+                <span>© 2020 <a href="https://xlabs.mx" target="_blank">xlabs.mx</a></span>
+                <span><a href="contacts.html" data-translate="contactus">Contact us</a></span>
             </div>
         </div>
         <link rel="stylesheet" href="themekit/media/icons/iconsmind/line-icons.min.css">
@@ -334,13 +266,165 @@
         <script src="themekit/scripts/main.js"></script>
         <script src="themekit/scripts/parallax.min.js"></script>
         <script src="themekit/scripts/glide.min.js"></script>
-        <script src="themekit/scripts/magnific-popup.min.js"></script>
+        <script src="themekit/scripts/pagination.min.js"></script>
         <script src="themekit/scripts/tab-accordion.js"></script>
         <script src="themekit/scripts/imagesloaded.min.js"></script>
-        <script src="themekit/scripts/progress.js" async></script>
         <script src="themekit/scripts/custom.js" async></script>
-        <script src="themekit/scripts/contact-form/contact-form.js" async></script>
         <script src="https://kit.fontawesome.com/5aff25e6c8.js" crossorigin="anonymous"></script>
     </footer>
+
+
+    <script>
+        var dictionary = {
+            'title': {
+                'en': 'Xlabs: a software development company',
+                'es': 'Xlabs: una compania de desarrollo de software',
+            },
+            'home': {
+                'en': 'Home',
+                'es': 'Inicio',
+            },
+            'services': {
+                'en': 'Services',
+                'es': 'Servicios',
+            },
+            'aboutus': {
+                'en': 'About us',
+                'es': 'Conócenos',
+            },
+            'team': {
+                'en': 'Team',
+                'es': 'Equipo',
+            },
+            'projects': {
+                'en': 'Projects',
+                'es': 'Proyectos',
+            },
+            'contactus': {
+                'en': 'Contact us',
+                'es': 'Contáctanos',
+            },
+            
+            'open_time': {
+                'en': '8:00am - 5:00pm Mon - Fri',
+                'es': '8:00am - 5:00pm Lun - Vie',
+            },
+            'schedule': {
+                'en': 'Schedule',
+                'es': 'Horario',
+            },
+            'address': {
+                'en': 'Address',
+                'es': 'Dirección',
+            },
+            'telephone': {
+                'en': 'Telephone',
+                'es': 'Teléfono',
+            },
+            'information': {
+                'en': 'Information',
+                'es': 'Información',
+            },
+            'resources': {
+                'en': 'Resources',
+                'es': 'Recursos',
+            },
+            'services': {
+                'en': 'Services',
+                'es': 'Servicios'
+            },
+            'for_our_clients': {
+                'en': 'For our clients',
+                'es': 'Para nuestros clientes'
+            },
+            'type': {
+                'en': 'Type',
+                'es': 'Tipo'
+            },
+            'objective': {
+                'en': 'Objective',
+                'es': 'Objetivo'
+            },
+            'customer_acquisition': {
+                'en': 'Customer acquisition',
+                'es': 'Generar más clientes'
+            },
+            'facilitate_the_process': {
+                'en': 'Facilitate the process',
+                'es': 'Facilitar el proceso'
+            },
+            'data_science_analysis': {
+                'en': 'Data Science Analysis',
+                'es': 'Análisis de Ciencia de Datos'
+            },
+            'identify_tendencies': {
+                'en': 'Identify tendencies',
+                'es': 'Identificar tendencias'
+            },
+            'corporate_identity': {
+                'en': 'Corporate identity',
+                'es': 'Identidad corporativa'
+            },
+            'ecommerce_text': {
+                'en': 'Development of web pages that interact with the client to generate more sales. Virtual shopping cart with conventional and modern payment methods. Platform to manage and edit stock, catalogues, clients and promotions.',
+                'es': 'Desarrollo de páginas web que interactúen con el cliente para generar más ventas. Carrito de compras virtual con métodos de pago convencionales y modernos. Plataforma de administración de inventario, catálogos, clientes y promociones para editar el contenido.'
+            },
+            'api_text': {
+                'en': 'Incorporation of third party apps to own website in order to get their benefits and obtain client information. UPS - DHL Tracking, Uber, Facebook, Instagram, etc. Ideal to optimize repetitive processes.',
+                'es': 'Introducción de aplicaciones de terceros a una página propia para obtener y ligar sus beneficios y obtener información de clientes. UPS – DHL Tracking, Uber, Facebook, Instagram, etc. Ideal para optimización de procesos repetitivos.'
+            },
+            'api_integration': {
+                'en': 'API integration',
+                'es': 'Integración de API'
+            },
+            'data_science_text': {
+                'en': 'Deep analysis of cuantitative data to identify client shopping and behaviour tendencies to create marketing campaigns and effective sale estrategies.',
+                'es': 'Análisis profundo de información cuantitativa para creación de tendencias de compra y comportamiento del cliente para creación de campañas de marketing y estrategias de venta efectivas.'
+            },
+            'design': {
+                'en': 'Design',
+                'es': 'Diseño'
+            },
+            'brand_positioning': {
+                'en': 'Brand positioning',
+                'es': 'Posicionar marca'
+            },
+            'corporate_identity_text': {
+                'en': 'Creation of brand and image. Logo, color palette, fonts, label design, social media personalization, and other contents. Design is justified in accordance with with the company\'s objective',
+                'es': 'Creación de marca e imagen. Logo, paleta de colores, fuentes, diseño de etiquetas, personalización de redes sociales y otros contenidos. El diseño se justifica e implementa de acuerdo al objetivo de la empresa.'
+            },
+
+        };
+        var langs = ['en', 'es'];
+        var current_lang_index = 0;
+        var current_lang = langs[current_lang_index];
+
+        window.change_lang = function (lang) {
+            if (lang === "en") {
+                current_lang_index = 0;
+            } else {
+                current_lang_index = 1;
+            }
+            current_lang = langs[current_lang_index];
+            translate();
+        }
+
+        function translate() {
+            $("[data-translate]").each(function () {
+                var key = $(this).data('translate');
+                $(this).html(dictionary[key][current_lang] || "N/A");
+            });
+        }
+
+        window.change_lang_image = function (lang) {
+            if (lang === "en") {
+                $("#current_lang_img").attr("src", "media/us.png");
+            } else {
+                $("#current_lang_img").attr("src", "media/mx.png");
+            }
+        }
+
+        translate();
+        </script>
 </body>
 </html>

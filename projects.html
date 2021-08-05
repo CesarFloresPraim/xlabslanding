@@ -1,11 +1,12 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Projects | 3 | Execoore | Technology And Business Template</title>
-    <meta name="description" content="">
+    <title data-translate="title"></title>
+    <meta name="description" content="Xlabs is a software development company">
     <link rel="stylesheet" href="themekit/css/bootstrap-grid.css">
     <link rel="stylesheet" href="themekit/css/style.css">
     <link rel="stylesheet" href="themekit/css/glide.css">
@@ -16,57 +17,66 @@
     <link rel="stylesheet" href="skin.css">
     <link rel="stylesheet" href="xlabs.css">
     <link rel="icon" href="media/favicon.png">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+
 </head>
+
 <body>
     <div id="preloader"></div>
     <nav class="menu-top-logo menu-fixed" data-menu-anima="fade-in">
         <div class="container">
             <div class="menu-brand">
                 <a href="index.html">
-                    <img class="logo-default scroll-hide" src="media/logos/Xlabs_logo_blanco.png" alt="logo" />
-                    <img class="logo-retina scroll-hide" src="media/logos/Xlabs_logo_blanco.png" alt="logo" />
-                    <img class="logo-default scroll-show" src="media/logos/Xlabs_logo_blanco.png" alt="logo" />
-                    <img class="logo-retina scroll-show" src="media/logos/Xlabs_logo_blanco.png" alt="logo" />
+                    <img class="logo-default scroll-hide" src="media/logos/Xlabs_logo_normal.png" alt="logo" />
+                    <img class="logo-retina scroll-hide" src="media/logos/Xlabs_logo_normal.png" alt="logo" />
+                    <img class="logo-default scroll-show" src="media/logos/Xlabs_logo_normal.png" alt="logo" />
+                    <img class="logo-retina scroll-show" src="media/logos/Xlabs_logo_normal.png" alt="logo" />
                 </a>
             </div>
             <i class="menu-btn"></i>
             <div class="menu-cnt">
                 <ul id="main-menu">
                     <li class="dropdown no-after">
-                        <a href="index.html">Home</a>
+                        <a href="index.html" data-translate="home"></a>
                     </li>
                     <li class="dropdown">
-                        <a href="about.html">About us</a>
+                        <a href="service.html" data-translate="services"></a>
                     </li>
                     <li class="dropdown">
-                        <a href="team.html">Team</a>
+                        <a href="about.html" data-translate="aboutus"></a>
                     </li>
                     <li class="dropdown">
-                        <a href="projects.html">Projects</a>
+                        <a href="team.html" data-translate="team"></a>
                     </li>
                     <li class="dropdown">
-                        <a href="contacts.html">Contact</a>
+                        <a href="projects.html" data-translate="projects"></a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="contacts.html" data-translate="contactus"></a>
                     </li>
                     <li class="nav-label">
-                        <a href="contacts.html"><span>Call us: +52 1 (614) 170 - 2665</span> </a>
+                        <a href="contacts.html"><span>Tel: (614) 170-2665</span> </a>
                     </li>
                 </ul>
                 <div class="menu-right">
-                    <div class="custom-area" style="padding-right: 15px;">
+                    <!--<div class="custom-area" style="padding-right: 15px;">
                         Blvd. Lombardo Toledano 6615<br />
                         La Concordia, 31375 Chihuahua, Chih.
-                    </div>
-                    <!--
-                                          <ul class="lan-menu">
+                    </div>-->
+
+                    <ul class="lan-menu">
                         <li class="dropdown">
-                            <a href="#"><img src="media/en.png" alt="lang" />EN </a>
+                            <a><img id="current_lang_img" src="media/us.png" alt="lang" width="20px" />EN</a>
                             <ul>
-                                <li><a href="#"><img src="media/it.png" alt="lang" />IT</a></li>
-                                <li><a href="#"><img src="media/es.png" alt="lang" />ES</a></li>
+                                <li><a onclick="change_lang('en');change_lang_image('en');"><img src="media/us.png"
+                                            alt="lang" width="20px" />EN</a></li>
+                                <li><a onclick="change_lang('es');change_lang_image('es');"><img src="media/mx.png"
+                                            alt="lang" width="20px" />ES</a></li>
                             </ul>
                         </li>
-                    </ul>  
-                    -->
+                    </ul>
+
 
                 </div>
             </div>
@@ -74,351 +84,100 @@
     </nav>
     <header class="header-image ken-burn-center light" data-parallax="true" data-natural-height="500" data-natural-width="1920" data-bleed="0" data-image-src="media/backgrounds/all-01.jpg" data-offset="0">
         <div class="container">
-            <h1>Proyectos</h1>
-            <h2 class="baby-blue">Para nuestros clientes</h2>
+            <h1 data-translate="projects">Proyectos</h1>
+            <h2 class="baby-blue" data-translate="for_our_clients">Para nuestros clientes</h2>
+            <!--
             <ol class="breadcrumb">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#">Proyectos</a></li>
                 <li><a href="#">Todos</a></li>
             </ol>
+            -->
         </div>
     </header>
     <main>
-        <section class="section-base section-color">
+        <section class="section-base" style="background-color: rgba(207,208,210,255);">
             <div class="container">
                 <div class="tab-box" data-tab-anima="fade-in">
+                    <!--
                     <ul class="tab-nav">
                         <li class="active"><a href="#">Web</a></li>
                         <li><a href="#">Móvil</a></li>
                         <li><a href="#">Business</a></li>
                         <li><a href="#">Hardware</a></li>
                     </ul>
+                    -->
                     <div class="panel active">
                         <div class="grid-list" data-columns="2" data-columns-lg="1">
                             <div class="grid-box">
                                 <div class="grid-item">
                                     <div class="cnt-box cnt-box-side boxed" data-href="">
-                                        <a href="#" class="img-box"><img src="http://via.placeholder.com/800x500" alt="" /></a>
+                                        <a href="#" class="img-box"><img src="media/projects/innovak.png" alt="" /></a>
                                         <div class="caption">
-                                            <h2>Security and technology</h2>
-                                            <div class="extra-field">Google</div>
-                                            <p class="dark-blue">
-                                                Excepteur sint occaecat cupidatat non proidento in culpa qui officia deserunt mollit anim id est laborum.
+                                            <h2>Innovak Global</h2>
+                                            <div class="extra-field">Nutri – Cal</div>
+                                            <p class="dark-blue" data-translate="innovak_text">
+                                                Desarrollo de página estadounidense de bio-fertilizantes, se implementó un “bot” de WhatsApp para hacer campañas de publicidad a grupos específicos de clientes. Con sistema de administración y personalización de contenido.
                                             </p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="grid-item">
                                     <div class="cnt-box cnt-box-side boxed" data-href="">
-                                        <a href="#" class="img-box"><img src="http://via.placeholder.com/800x500" alt="" /></a>
+                                        <a href="#" class="img-box"><img src="media/projects/alifera.png" alt="" /></a>
                                         <div class="caption">
-                                            <h2>Marketing campaign</h2>
-                                            <div class="extra-field">Facebook</div>
-                                            <p class="dark-blue">
-                                                Excepteur sint occaecat cupidatat non proidento in culpa qui officia deserunt mollit anim id est laborum.
+                                            <h2>Alífera</h2>
+                                            <div class="extra-field">Fashion Brand</div>
+                                            <p class="dark-blue" data-translate="alifera_text">
+                                                Tienda digital de ropa de moda con capacidad de envíos nacionales, con un diseño innovador se posiciona la marca de manera digital. Su objetivo principal es exposición de marca.
                                             </p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="grid-item">
                                     <div class="cnt-box cnt-box-side boxed" data-href="">
-                                        <a href="#" class="img-box"><img src="http://via.placeholder.com/800x500" alt="" /></a>
+                                        <a href="#" class="img-box"><img src="media/projects/kimchica.png" alt="" /></a>
                                         <div class="caption">
-                                            <h2>Automated delivering</h2>
-                                            <div class="extra-field">Wallmart</div>
-                                            <p class="dark-blue">
-                                                Excepteur sint occaecat cupidatat non proidento in culpa qui officia deserunt mollit anim id est laborum.
+                                            <h2>Kimchica</h2>
+                                            <div class="extra-field" data-translate="asian_restaurant">Restaurante asiático</div>
+                                            <p class="dark-blue" data-translate="kimchica_text">
+                                                Página de internet e-commerce estilo Uber Eats para la generación de pedidos por parte del cliente para recoger o a domicilio. El menú, categorías, imágenes y otros atributos son totalmente customizables y no hay necesidad de hacer desarrollo extra para editarlo.
                                             </p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="grid-item">
                                     <div class="cnt-box cnt-box-side boxed" data-href="">
-                                        <a href="#" class="img-box"><img src="http://via.placeholder.com/800x500" alt="" /></a>
+                                        <a href="#" class="img-box"><img src="media/projects/rivadi.png" alt="" /></a>
                                         <div class="caption">
-                                            <h2>Open source and blockchain</h2>
-                                            <div class="extra-field">Microsoft</div>
-                                            <p class="dark-blue">
-                                                Excepteur sint occaecat cupidatat non proidento in culpa qui officia deserunt mollit anim id est laborum.
+                                            <h2>Rivadi</h2>
+                                            <div class="extra-field" data-translate="italian_restaurant">Restaurante italiano</div>
+                                            <p class="dark-blue" data-translate="rivadi_text">
+                                                E-commerce propio para gestionar pedidos, diseño intuitivo para facilitar la compra, checkout sencillo con el menor número de clicks para hacer una compra. Optimizado para dispositivos móviles y de escritorio.
                                             </p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="grid-item">
                                     <div class="cnt-box cnt-box-side boxed" data-href="">
-                                        <a href="#" class="img-box"><img src="http://via.placeholder.com/800x500" alt="" /></a>
+                                        <a href="#" class="img-box"><img src="media/projects/valentinos.png" alt="" /></a>
                                         <div class="caption">
-                                            <h2>Neural driven database</h2>
-                                            <div class="extra-field">Oracle</div>
-                                            <p class="dark-blue">
-                                                Excepteur sint occaecat cupidatat non proidento in culpa qui officia deserunt mollit anim id est laborum.
+                                            <h2>Valentinos</h2>
+                                            <div class="extra-field">Fashion Brand</div>
+                                            <p class="dark-blue" data-translate="valentinos_text">
+                                                Estrategias mensuales de marketing y planeación de promociones. Creación de plan de trabajo semanal para implementación de campañas de publicidad, posts de redes sociales, materiales impresos y fotografía para crear una estrategia de venta organizada mes con mes.
                                             </p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="grid-item">
                                     <div class="cnt-box cnt-box-side boxed" data-href="">
-                                        <a href="#" class="img-box"><img src="http://via.placeholder.com/800x500" alt="" /></a>
+                                        <a href="#" class="img-box"><img src="media/projects/happy_korea.png" alt="" /></a>
                                         <div class="caption">
-                                            <h2>Mobile banking app</h2>
-                                            <div class="extra-field">Barcleys</div>
-                                            <p class="dark-blue">
-                                                Excepteur sint occaecat cupidatat non proidento in culpa qui officia deserunt mollit anim id est laborum.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid-item">
-                                    <div class="cnt-box cnt-box-side boxed" data-href="">
-                                        <a href="#" class="img-box"><img src="http://via.placeholder.com/800x500" alt="" /></a>
-                                        <div class="caption">
-                                            <h2>Cryptocurrencies networks</h2>
-                                            <div class="extra-field">Ethereum foundation</div>
-                                            <p class="dark-blue">
-                                                Excepteur sint occaecat cupidatat non proidento in culpa qui officia deserunt mollit anim id est laborum.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="list-pagination">
-                                <ul class="pagination pagination-lg" data-page-items="4" data-pagination-anima="fade-bottom"></ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel">
-                        <div class="grid-list" data-columns="2" data-columns-lg="1">
-                            <div class="grid-box">
-                                <div class="grid-item">
-                                    <div class="cnt-box cnt-box-side boxed" data-href="">
-                                        <a href="#" class="img-box"><img src="http://via.placeholder.com/800x500" alt="" /></a>
-                                        <div class="caption">
-                                            <h2>Security and technology</h2>
-                                            <div class="extra-field">Google</div>
-                                            <p>
-                                                Excepteur sint occaecat cupidatat non proidento in culpa qui officia deserunt mollit anim id est laborum.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid-item">
-                                    <div class="cnt-box cnt-box-side boxed" data-href="">
-                                        <a href="#" class="img-box"><img src="http://via.placeholder.com/800x500" alt="" /></a>
-                                        <div class="caption">
-                                            <h2>Marketing campaign</h2>
-                                            <div class="extra-field">Facebook</div>
-                                            <p>
-                                                Excepteur sint occaecat cupidatat non proidento in culpa qui officia deserunt mollit anim id est laborum.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid-item">
-                                    <div class="cnt-box cnt-box-side boxed" data-href="">
-                                        <a href="#" class="img-box"><img src="http://via.placeholder.com/800x500" alt="" /></a>
-                                        <div class="caption">
-                                            <h2>Automated delivering</h2>
-                                            <div class="extra-field">Wallmart</div>
-                                            <p>
-                                                Excepteur sint occaecat cupidatat non proidento in culpa qui officia deserunt mollit anim id est laborum.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid-item">
-                                    <div class="cnt-box cnt-box-side boxed" data-href="">
-                                        <a href="#" class="img-box"><img src="http://via.placeholder.com/800x500" alt="" /></a>
-                                        <div class="caption">
-                                            <h2>Open source and blockchain</h2>
-                                            <div class="extra-field">Microsoft</div>
-                                            <p>
-                                                Excepteur sint occaecat cupidatat non proidento in culpa qui officia deserunt mollit anim id est laborum.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid-item">
-                                    <div class="cnt-box cnt-box-side boxed" data-href="">
-                                        <a href="#" class="img-box"><img src="http://via.placeholder.com/800x500" alt="" /></a>
-                                        <div class="caption">
-                                            <h2>Neural driven database</h2>
-                                            <div class="extra-field">Oracle</div>
-                                            <p>
-                                                Excepteur sint occaecat cupidatat non proidento in culpa qui officia deserunt mollit anim id est laborum.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid-item">
-                                    <div class="cnt-box cnt-box-side boxed" data-href="">
-                                        <a href="#" class="img-box"><img src="http://via.placeholder.com/800x500" alt="" /></a>
-                                        <div class="caption">
-                                            <h2>Mobile banking app</h2>
-                                            <div class="extra-field">Barcleys</div>
-                                            <p>
-                                                Excepteur sint occaecat cupidatat non proidento in culpa qui officia deserunt mollit anim id est laborum.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid-item">
-                                    <div class="cnt-box cnt-box-side boxed" data-href="">
-                                        <a href="#" class="img-box"><img src="http://via.placeholder.com/800x500" alt="" /></a>
-                                        <div class="caption">
-                                            <h2>Cryptocurrencies networks</h2>
-                                            <div class="extra-field">Ethereum foundation</div>
-                                            <p>
-                                                Excepteur sint occaecat cupidatat non proidento in culpa qui officia deserunt mollit anim id est laborum.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="list-pagination">
-                                <ul class="pagination pagination-lg" data-page-items="4" data-pagination-anima="fade-bottom"></ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel">
-                        <div class="grid-list" data-columns="2" data-columns-lg="1">
-                            <div class="grid-box">
-                                <div class="grid-item">
-                                    <div class="cnt-box cnt-box-side boxed" data-href="">
-                                        <a href="#" class="img-box"><img src="http://via.placeholder.com/800x500" alt="" /></a>
-                                        <div class="caption">
-                                            <h2>Security and technology</h2>
-                                            <div class="extra-field">Google</div>
-                                            <p>
-                                                Excepteur sint occaecat cupidatat non proidento in culpa qui officia deserunt mollit anim id est laborum.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid-item">
-                                    <div class="cnt-box cnt-box-side boxed" data-href="">
-                                        <a href="#" class="img-box"><img src="http://via.placeholder.com/800x500" alt="" /></a>
-                                        <div class="caption">
-                                            <h2>Marketing campaign</h2>
-                                            <div class="extra-field">Facebook</div>
-                                            <p>
-                                                Excepteur sint occaecat cupidatat non proidento in culpa qui officia deserunt mollit anim id est laborum.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid-item">
-                                    <div class="cnt-box cnt-box-side boxed" data-href="">
-                                        <a href="#" class="img-box"><img src="http://via.placeholder.com/800x500" alt="" /></a>
-                                        <div class="caption">
-                                            <h2>Automated delivering</h2>
-                                            <div class="extra-field">Wallmart</div>
-                                            <p>
-                                                Excepteur sint occaecat cupidatat non proidento in culpa qui officia deserunt mollit anim id est laborum.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid-item">
-                                    <div class="cnt-box cnt-box-side boxed" data-href="">
-                                        <a href="#" class="img-box"><img src="http://via.placeholder.com/800x500" alt="" /></a>
-                                        <div class="caption">
-                                            <h2>Open source and blockchain</h2>
-                                            <div class="extra-field">Microsoft</div>
-                                            <p>
-                                                Excepteur sint occaecat cupidatat non proidento in culpa qui officia deserunt mollit anim id est laborum.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid-item">
-                                    <div class="cnt-box cnt-box-side boxed" data-href="">
-                                        <a href="#" class="img-box"><img src="http://via.placeholder.com/800x500" alt="" /></a>
-                                        <div class="caption">
-                                            <h2>Neural driven database</h2>
-                                            <div class="extra-field">Oracle</div>
-                                            <p>
-                                                Excepteur sint occaecat cupidatat non proidento in culpa qui officia deserunt mollit anim id est laborum.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid-item">
-                                    <div class="cnt-box cnt-box-side boxed" data-href="">
-                                        <a href="#" class="img-box"><img src="http://via.placeholder.com/800x500" alt="" /></a>
-                                        <div class="caption">
-                                            <h2>Mobile banking app</h2>
-                                            <div class="extra-field">Barcleys</div>
-                                            <p>
-                                                Excepteur sint occaecat cupidatat non proidento in culpa qui officia deserunt mollit anim id est laborum.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid-item">
-                                    <div class="cnt-box cnt-box-side boxed" data-href="">
-                                        <a href="#" class="img-box"><img src="http://via.placeholder.com/800x500" alt="" /></a>
-                                        <div class="caption">
-                                            <h2>Cryptocurrencies networks</h2>
-                                            <div class="extra-field">Ethereum foundation</div>
-                                            <p>
-                                                Excepteur sint occaecat cupidatat non proidento in culpa qui officia deserunt mollit anim id est laborum.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="list-pagination">
-                                <ul class="pagination pagination-lg" data-page-items="4" data-pagination-anima="fade-bottom"></ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel">
-                        <div class="grid-list" data-columns="2" data-columns-lg="1">
-                            <div class="grid-box">
-                                <div class="grid-item">
-                                    <div class="cnt-box cnt-box-side boxed" data-href="">
-                                        <a href="#" class="img-box"><img src="http://via.placeholder.com/800x500" alt="" /></a>
-                                        <div class="caption">
-                                            <h2>Security and technology</h2>
-                                            <div class="extra-field">Google</div>
-                                            <p>
-                                                Excepteur sint occaecat cupidatat non proidento in culpa qui officia deserunt mollit anim id est laborum.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid-item">
-                                    <div class="cnt-box cnt-box-side boxed" data-href="">
-                                        <a href="#" class="img-box"><img src="http://via.placeholder.com/800x500" alt="" /></a>
-                                        <div class="caption">
-                                            <h2>Marketing campaign</h2>
-                                            <div class="extra-field">Facebook</div>
-                                            <p>
-                                                Excepteur sint occaecat cupidatat non proidento in culpa qui officia deserunt mollit anim id est laborum.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid-item">
-                                    <div class="cnt-box cnt-box-side boxed" data-href="">
-                                        <a href="#" class="img-box"><img src="http://via.placeholder.com/800x500" alt="" /></a>
-                                        <div class="caption">
-                                            <h2>Automated delivering</h2>
-                                            <div class="extra-field">Wallmart</div>
-                                            <p>
-                                                Excepteur sint occaecat cupidatat non proidento in culpa qui officia deserunt mollit anim id est laborum.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid-item">
-                                    <div class="cnt-box cnt-box-side boxed" data-href="">
-                                        <a href="#" class="img-box"><img src="http://via.placeholder.com/800x500" alt="" /></a>
-                                        <div class="caption">
-                                            <h2>Open source and blockchain</h2>
-                                            <div class="extra-field">Microsoft</div>
-                                            <p>
-                                                Excepteur sint occaecat cupidatat non proidento in culpa qui officia deserunt mollit anim id est laborum.
+                                            <h2>Happy Korea</h2>
+                                            <div class="extra-field" data-translate="korean_shop">Mercado coreano</div>
+                                            <p class="dark-blue" data-translate="happy_korea_text">
+                                                Desarrollo de e-commerce de tienda de abarrotes asiáticos para facilitar compras dentro y fuera de la ciudad de ubicación. Al ser productos no perecederos se pueden enviar a toda la república a través de paqueterías profesionales con números de seguimiento.
                                             </p>
                                         </div>
                                     </div>
@@ -430,45 +189,80 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="container" style="margin-top: 7em;">
+                    <div class="title">
+                        <h2 data-translate="our_clients" style="text-transform: uppercase;">Nuestros clientes</h2>
+                    </div>
+
+                    <div class="row d-flex justify-content-center align-content-center">
+                        <div class="col-lg-10">
+                            <div class="splide">
+                                <div class="splide__track">
+                                    <ul class="splide__list">
+                                        <li class="splide__slide"><img src="media/projects/valentinos2.png"></li>
+                                        <li class="splide__slide"><img src="media/projects/rivadi2.png"></li>
+                                        <li class="splide__slide"><img src="media/projects/alifera2.png"></li>
+                                        <li class="splide__slide"><img src="media/projects/happy_korea2.png"></li>
+                                        <li class="splide__slide"><img src="media/projects/kimchica2.png"></li>                        </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                
             </div>
         </section>
     </main>
-    <footer class="light">
+    <footer class="dark-blue">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">
-                    <img src="media/logos/Xlabs_logo_blanco.png" alt="X-LABS logo" style="height: 47px;width: 150px; margin-bottom: 25px;">
+                    <img src="media/logos/Xlabs_logo_normal.png" alt="X-LABS logo" style="height: 90px;">
                     <!-- <p>Slogan</p> -->
                     <div class="icon-links icon-social icon-links-grid social-colors">
-                        <a><i class="fab fa-youtube"></i></i></a>
-                        <a><i class="fab fa-twitter"></i></a>
                         <a><i class="fab fa-instagram"></i></a>
                         <a><i class="fab fa-facebook-square"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <h3>Recursos</h3>
-                    <ul class="icon-list icon-line">
-                        <li><a href="about.html">About us and the company</a></li>
-                        <li><a href="service.html">Services</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="contacts.html">Contact us online</a></li>
+                    <h3 data-translate="resources">Recursos</h3>
+                    <ul class="icon-list icon-line" style="margin-top: 0px;">
+                        <li><a href="about.html" data-translate="aboutus">Cónocenos</a></li>
+                        <li><a href="service.html" data-translate="services">Servicios</a></li>
+                        <li><a href="projects.html" data-translate="projects">Proyectos</a></li>
+                        <li><a href="contacts.html" data-translate="contactus">Contacto</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-4" style="padding: 10px;">
-                    <ul class="text-list text-list-line">
-                        <li><b>Address</b><hr /><p class="dark-blue">Blvd. Lombardo Toledano 6615</p></li>
-                        <li><b>Email</b><hr /><p class="dark-blue">contact@xlabs.mx</p></li>
-                        <li><b>Phone</b><hr /><p class="dark-blue">+52 1 (614) 170 - 2665</p></li>
-                        <li><b>Opening hours</b><hr /><p class="dark-blue">8am-5pm Mon - Fri</p></li>
+                <div class="col-lg-4">
+                    <h3 data-translate="information">Información</h3>
+                    <ul class="text-list text-list-line blue-border-left">
+                        <li><b data-translate="address">Dirección</b>
+                            <hr />
+                            <p class="dark-blue">Blvd. Lombardo Toledano 6615</p>
+                        </li>
+                        <li><b>Email</b>
+                            <hr />
+                            <p class="dark-blue">info@xlabs.mx</p>
+                        </li>
+                        <li><b data-translate="telephone">Teléfono</b>
+                            <hr />
+                            <p class="dark-blue">(614) 170 2665</p>
+                        </li>
+                        <li><b data-translate="schedule">Horario</b>
+                            <hr />
+                            <p class="dark-blue" data-translate="open_time">8:00am - 5:00pm Lun - Vie</p>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="footer-bar">
             <div class="container">
-                <span>© 2019 Execoore - Technology And Business Template Handmade by <a href="https://schiocco.com" target="_blank">schiocco.com</a>.</span>
-                <span><a href="#">Contact us</a> | <a href="#">Privacy policy</a></span>
+                <span>© 2020 <a href="https://xlabs.mx" target="_blank">xlabs.mx</a></span>
+                <span><a href="contacts.html" data-translate="contactus">Contact us</a></span>
             </div>
         </div>
         <link rel="stylesheet" href="themekit/media/icons/iconsmind/line-icons.min.css">
@@ -482,5 +276,152 @@
         <script src="themekit/scripts/custom.js" async></script>
         <script src="https://kit.fontawesome.com/5aff25e6c8.js" crossorigin="anonymous"></script>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+
+    <script>
+        var dictionary = {
+            'title': {
+                'en': 'Xlabs: a software development company',
+                'es': 'Xlabs: una compania de desarrollo de software',
+            },
+            'home': {
+                'en': 'Home',
+                'es': 'Inicio',
+            },
+            'services': {
+                'en': 'Services',
+                'es': 'Servicios',
+            },
+            'aboutus': {
+                'en': 'About us',
+                'es': 'Conócenos',
+            },
+            'team': {
+                'en': 'Team',
+                'es': 'Equipo',
+            },
+            'projects': {
+                'en': 'Projects',
+                'es': 'Proyectos',
+            },
+            'contactus': {
+                'en': 'Contact us',
+                'es': 'Contáctanos',
+            },
+            
+            'open_time': {
+                'en': '8:00am - 5:00pm Mon - Fri',
+                'es': '8:00am - 5:00pm Lun - Vie',
+            },
+            'schedule': {
+                'en': 'Schedule',
+                'es': 'Horario',
+            },
+            'address': {
+                'en': 'Address',
+                'es': 'Dirección',
+            },
+            'telephone': {
+                'en': 'Telephone',
+                'es': 'Teléfono',
+            },
+            'information': {
+                'en': 'Information',
+                'es': 'Información',
+            },
+            'resources': {
+                'en': 'Resources',
+                'es': 'Recursos',
+            },
+            'innovak_text': {
+                'en': 'Development of an american page for bio-fertilizers, a WhatsApp “bot” was implemented to carry out advertising campaigns to specific groups of clients. With content management and customization system.',
+                'es': 'Desarrollo de página estadounidense de bio-fertilizantes, se implementó un “bot” de WhatsApp para hacer campañas de publicidad a grupos específicos de clientes. Con sistema de administración y personalización de contenido.'
+            },
+            'alifera_text': {
+                'en': 'Fashion clothing digital store with capacity for national shipments, the brand is positioned digitally through an innovative design. Its main objective is brand exposure.',
+                'es': 'Tienda digital de ropa de moda con capacidad de envíos nacionales, con un diseño innovador se posiciona la marca de manera digital. Su objetivo principal es exposición de marca.'
+            },
+            'asian_restaurant': {
+                'en': 'Asian restaurant',
+                'es': 'Restaurante asiático'
+            },
+            'kimchica_text': {
+                'en': 'Uber Eats-style e-commerce website for the generation of orders by the customer, for either home delivery or in-store pick up. The menu, categories, images and other attributes are fully customizable and there is no need to do extra development to edit it.',
+                'es': 'Página de internet e-commerce estilo Uber Eats para la generación de pedidos por parte del cliente para recoger o a domicilio. El menú, categorías, imágenes y otros atributos son totalmente customizables y no hay necesidad de hacer desarrollo extra para editarlo.'
+            },
+            'italian_restaurant': {
+                'en': 'Italian restaurant',
+                'es': 'Restaurante italiano'
+            },
+            'rivadi_text': {
+                'en': 'E-commerce store to manage orders, intuitive design to facilitate the purchase, simple checkout with the least number of clicks to make a purchase. Optimized for desktop and mobile devices.',
+                'es': 'E-commerce propio para gestionar pedidos, diseño intuitivo para facilitar la compra, checkout sencillo con el menor número de clicks para hacer una compra. Optimizado para dispositivos móviles y de escritorio.'
+            },
+            'valentinos_text': {
+                'en': 'Monthly marketing strategies and promotion planning. Creation of a weekly work plan for the implementation of advertising campaigns, social media posts, printed materials and photography to create a sales strategy organized month by month.',
+                'es': 'Estrategias mensuales de marketing y planeación de promociones. Creación de plan de trabajo semanal para implementación de campañas de publicidad, posts de redes sociales, materiales impresos y fotografía para crear una estrategia de venta organizada mes con mes.'
+            },
+            'korean_shop': {
+                'en': 'Korean shop',
+                'es': 'Mercado coreano'
+            },
+            'happy_korea_text': {
+                'en': 'Asian grocery store e-commerce development to facilitate purchases in and out of the city of location. As they are non-perishable products, they can be sent throughout the republic through professional parcels with tracking numbers.',
+                'es': 'Desarrollo de e-commerce de tienda de abarrotes asiáticos para facilitar compras dentro y fuera de la ciudad de ubicación. Al ser productos no perecederos se pueden enviar a toda la república a través de paqueterías profesionales con números de seguimiento.'
+            },
+            'projects': {
+                'en': 'Projects',
+                'es': 'Proyectos'
+            },
+            'for_our_clients': {
+                'en': 'For our clients',
+                'es': 'Para nuestros clientes'
+            },
+            'our_clients': {
+                'en': 'Our clients',
+                'es': 'Nuestros clientes'
+            }
+        };
+        var langs = ['en', 'es'];
+        var current_lang_index = 0;
+        var current_lang = langs[current_lang_index];
+
+        window.change_lang = function (lang) {
+            if (lang === "en") {
+                current_lang_index = 0;
+            } else {
+                current_lang_index = 1;
+            }
+            current_lang = langs[current_lang_index];
+            translate();
+        }
+
+        function translate() {
+            $("[data-translate]").each(function () {
+                var key = $(this).data('translate');
+                $(this).html(dictionary[key][current_lang] || "N/A");
+            });
+        }
+
+        window.change_lang_image = function (lang) {
+            if (lang === "en") {
+                $("#current_lang_img").attr("src", "media/us.png");
+            } else {
+                $("#current_lang_img").attr("src", "media/mx.png");
+            }
+        }
+
+        translate();
+        </script>
+
+        <script>
+            new Splide( '.splide', {
+                perPage: 4,
+                type: 'loop',
+                autoplay: true,
+                pagination: false
+            } ).mount();
+        </script>
 </body>
 </html>

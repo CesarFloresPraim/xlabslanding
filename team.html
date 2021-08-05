@@ -1,72 +1,79 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Team | Execoore | Technology And Business Template</title>
-    <meta name="description" content="">
+    <title data-translate="title"></title>
+    <meta name="description" content="Xlabs is a software development company">
     <link rel="stylesheet" href="themekit/css/bootstrap-grid.css">
     <link rel="stylesheet" href="themekit/css/style.css">
     <link rel="stylesheet" href="themekit/css/glide.css">
     <link rel="stylesheet" href="themekit/css/magnific-popup.css">
     <link rel="stylesheet" href="themekit/css/content-box.css">
-    <link rel="stylesheet" href="themekit/css/media-box.css">
     <link rel="stylesheet" href="themekit/css/contact-form.css">
+    <link rel="stylesheet" href="themekit/css/media-box.css">
     <link rel="stylesheet" href="skin.css">
     <link rel="stylesheet" href="xlabs.css">
     <link rel="icon" href="media/favicon.png">
 </head>
+
 <body>
     <div id="preloader"></div>
     <nav class="menu-top-logo menu-fixed" data-menu-anima="fade-in">
         <div class="container">
             <div class="menu-brand">
                 <a href="index.html">
-                    <img class="logo-default scroll-hide" src="media/logos/Xlabs_logo_blanco.png" alt="logo" />
-                    <img class="logo-retina scroll-hide" src="media/logos/Xlabs_logo_blanco.png" alt="logo" />
-                    <img class="logo-default scroll-show" src="media/logos/Xlabs_logo_blanco.png" alt="logo" />
-                    <img class="logo-retina scroll-show" src="media/logos/Xlabs_logo_blanco.png" alt="logo" />
+                    <img class="logo-default scroll-hide" src="media/logos/Xlabs_logo_normal.png" alt="logo" />
+                    <img class="logo-retina scroll-hide" src="media/logos/Xlabs_logo_normal.png" alt="logo" />
+                    <img class="logo-default scroll-show" src="media/logos/Xlabs_logo_normal.png" alt="logo" />
+                    <img class="logo-retina scroll-show" src="media/logos/Xlabs_logo_normal.png" alt="logo" />
                 </a>
             </div>
             <i class="menu-btn"></i>
             <div class="menu-cnt">
                 <ul id="main-menu">
                     <li class="dropdown no-after">
-                        <a href="index.html">Home</a>
+                        <a href="index.html" data-translate="home"></a>
                     </li>
                     <li class="dropdown">
-                        <a href="about.html">About us</a>
+                        <a href="service.html" data-translate="services"></a>
                     </li>
                     <li class="dropdown">
-                        <a href="team.html">Team</a>
+                        <a href="about.html" data-translate="aboutus"></a>
                     </li>
                     <li class="dropdown">
-                        <a href="projects.html">Projects</a>
+                        <a href="team.html" data-translate="team"></a>
                     </li>
                     <li class="dropdown">
-                        <a href="contacts.html">Contact</a>
+                        <a href="projects.html" data-translate="projects"></a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="contacts.html" data-translate="contactus"></a>
                     </li>
                     <li class="nav-label">
-                        <a href="contacts.html"><span>Call us: +52 1 (614) 170 - 2665</span> </a>
+                        <a href="contacts.html"><span>Tel: (614) 170-2665</span> </a>
                     </li>
                 </ul>
                 <div class="menu-right">
-                    <div class="custom-area" style="padding-right: 15px;">
+                    <!--<div class="custom-area" style="padding-right: 15px;">
                         Blvd. Lombardo Toledano 6615<br />
                         La Concordia, 31375 Chihuahua, Chih.
-                    </div>
-                    <!--
-                                          <ul class="lan-menu">
+                    </div>-->
+
+                    <ul class="lan-menu">
                         <li class="dropdown">
-                            <a href="#"><img src="media/en.png" alt="lang" />EN </a>
+                            <a><img id="current_lang_img" src="media/us.png" alt="lang" width="20px" />EN</a>
                             <ul>
-                                <li><a href="#"><img src="media/it.png" alt="lang" />IT</a></li>
-                                <li><a href="#"><img src="media/es.png" alt="lang" />ES</a></li>
+                                <li><a onclick="change_lang('en');change_lang_image('en');"><img src="media/us.png"
+                                            alt="lang" width="20px" />EN</a></li>
+                                <li><a onclick="change_lang('es');change_lang_image('es');"><img src="media/mx.png"
+                                            alt="lang" width="20px" />ES</a></li>
                             </ul>
                         </li>
-                    </ul>  
-                    -->
+                    </ul>
+
 
                 </div>
             </div>
@@ -74,24 +81,18 @@
     </nav>
     <header class="header-image ken-burn-center light" data-parallax="true" data-natural-height="500" data-natural-width="1920" data-bleed="0" data-image-src="media/backgrounds/all-01.jpg" data-offset="0">
         <div class="container">
-            <h1>Nuestro equipo</h1>
-            <h2 class="baby-blue">Cónocenos</h2>
+            <h1 data-translate="our_team">Nuestro equipo</h1>
+            <h2 class="baby-blue" data-translate="know_us">Cónocenos</h2>
         </div>
     </header>
     <main>
-        <section class="section-base section-color">
+        <section class="section-base" style="background-color: rgba(207,208,210,255);">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipiscing elitsed do eiusmod tempor incididunt utlabore et dolore magna aliqua.
-                            Utenim ad minim veniam quis nostrude. Duis aute irure dolore.
-                        </p>
-                    </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-12">
                         <div class="title">
-                            <h2>Fundadores de la compañía</h2>
-                            <p class="baby-blue">Líderes</p>
+                            <h2 data-translate="company_founders">Fundadores de la compañía</h2>
+                            <p class="baby-blue" data-translate="leaders">Líderes</p>
                         </div>
                     </div>
                 </div>
@@ -101,10 +102,10 @@
                         <div class="cnt-box cnt-box-side boxed">
                             <a href="#" class="img-box"><img src="http://via.placeholder.com/450x450" alt="" /></a>
                             <div class="caption">
-                                <h2>Albert Patterson</h2>
-                                <div class="extra-field baby-blue">Fundador & CEO</div>
-                                <p class="dark-blue">
-                                    Lorem ipsum dolor sitamet consectetur adipisicing elito sed do eiusmod tempore met consectetur adipiscing elitse.
+                                <h2>Dr. Alberto Araujo</h2>
+                                <div class="extra-field baby-blue" data-translate="founder_ceo">Fundador & CEO</div>
+                                <p class="dark-blue" data-translate="founder1_text">
+                                    Asesor de múltiples empresas en Estrategia, Planeación, Innovación y competitividad. Ha impartido un gran número de cátedras y cursos para el Tecnológico de Monterrey y otras organizaciones de prestigio, así como ponencias en el Congreso ICM en Chihuahua y el Congreso GASEMAP en La Habana, Cuba. Basta experiencia en planeación estratégica y misiones para la Innovación y el emprendimiento.
                                 </p>
 
                             </div>
@@ -114,10 +115,10 @@
                         <div class="cnt-box cnt-box-side boxed">
                             <a href="#" class="img-box"><img src="http://via.placeholder.com/450x450" alt="" /></a>
                             <div class="caption">
-                                <h2>Alexandra Cortez</h2>
-                                <div class="extra-field baby-blue">Fundador & CEO</div>
-                                <p class="dark-blue">
-                                    Lorem ipsum dolor sitamet consectetur adipisicing elito sed do eiusmod tempore met consectetur adipiscing elitse.
+                                <h2>Ing. Andrés Lara</h2>
+                                <div class="extra-field baby-blue" data-translate="operations_manager">Gerente de operaciones</div>
+                                <p class="dark-blue" data-translate="founder2_text">
+                                    Empresario multilingüe en la industria de servicio y logística. Visionario enfocado en crear soluciones prácticas para mejorar la efectividad y crear un ambiente de trabajo agradable. Los procesos son importantes pero las personas lo son aun más.
                                 </p>
                             </div>
                         </div>
@@ -125,8 +126,8 @@
                 </div>
                 <hr class="space" />
                 <div class="title">
-                    <h2>Nuestro equipo de expertos</h2>
-                    <p class="baby-blue">Miembros del equipo</p>
+                    <h2 data-translate="expert_team">Nuestro equipo de expertos</h2>
+                    <p class="baby-blue" data-translate="team_members">Miembros del equipo</p>
                 </div>
                 <div class="grid-list" data-columns="4" data-columns-md="2" data-columns-sm="1">
                     <div class="grid-box">
@@ -134,8 +135,8 @@
                             <div class="cnt-box cnt-box-team boxed">
                                 <img src="http://via.placeholder.com/450x450" alt="" />
                                 <div class="caption">
-                                    <h2>Jessica Parker</h2>
-                                    <span>Terapist</span>
+                                    <h2>César</h2>
+                                    <span data-translate="technical_coordinator">Coordinador Técnico</span>
                                     <span class="icon-links">
                                         <a href="#" target="_blank"><i class="icon-facebook"></i></a>
                                         <a href="#" target="_blank"><i class="icon-twitter"></i></a>
@@ -151,8 +152,8 @@
                             <div class="cnt-box cnt-box-team boxed">
                                 <img src="http://via.placeholder.com/450x450" alt="" />
                                 <div class="caption">
-                                    <h2>Albert Travolta</h2>
-                                    <span>Climber</span>
+                                    <h2>Giovanny</h2>
+                                    <span data-translate="developer_m">...</span>
                                     <span class="icon-links">
                                         <a href="#" target="_blank"><i class="icon-facebook"></i></a>
                                         <a href="#" target="_blank"><i class="icon-twitter"></i></a>
@@ -168,8 +169,8 @@
                             <div class="cnt-box cnt-box-team boxed">
                                 <img src="http://via.placeholder.com/450x450" alt="" />
                                 <div class="caption">
-                                    <h2>Alessia Cort</h2>
-                                    <span>Climber</span>
+                                    <h2>Ericka</h2>
+                                    <span data-translate="developer_f">...</span>
                                     <span class="icon-links">
                                         <a href="#" target="_blank"><i class="icon-facebook"></i></a>
                                         <a href="#" target="_blank"><i class="icon-twitter"></i></a>
@@ -185,8 +186,8 @@
                             <div class="cnt-box cnt-box-team boxed">
                                 <img src="http://via.placeholder.com/450x450" alt="" />
                                 <div class="caption">
-                                    <h2>Alexa Nigarra</h2>
-                                    <span>Climber</span>
+                                    <h2>Jorge</h2>
+                                    <span data-translate="developer_m">...</span>
                                     <span class="icon-links">
                                         <a href="#" target="_blank"><i class="icon-facebook"></i></a>
                                         <a href="#" target="_blank"><i class="icon-twitter"></i></a>
@@ -202,8 +203,8 @@
                             <div class="cnt-box cnt-box-team boxed">
                                 <img src="http://via.placeholder.com/450x450" alt="" />
                                 <div class="caption">
-                                    <h2>Sarah Alba</h2>
-                                    <span>Climber</span>
+                                    <h2>Pedro</h2>
+                                    <span data-translate="developer_m">...</span>
                                     <span class="icon-links">
                                         <a href="#" target="_blank"><i class="icon-facebook"></i></a>
                                         <a href="#" target="_blank"><i class="icon-twitter"></i></a>
@@ -219,8 +220,8 @@
                             <div class="cnt-box cnt-box-team boxed">
                                 <img src="http://via.placeholder.com/450x450" alt="" />
                                 <div class="caption">
-                                    <h2>Alicia Freddy</h2>
-                                    <span>Terapist</span>
+                                    <h2>Violeta</h2>
+                                    <span data-translate="designer_f">Diseñadora</span>
                                     <span class="icon-links">
                                         <a href="#" target="_blank"><i class="icon-facebook"></i></a>
                                         <a href="#" target="_blank"><i class="icon-twitter"></i></a>
@@ -236,25 +237,8 @@
                             <div class="cnt-box cnt-box-team boxed">
                                 <img src="http://via.placeholder.com/450x450" alt="" />
                                 <div class="caption">
-                                    <h2>Mara Gomez</h2>
-                                    <span>Climber</span>
-                                    <span class="icon-links">
-                                        <a href="#" target="_blank"><i class="icon-facebook"></i></a>
-                                        <a href="#" target="_blank"><i class="icon-twitter"></i></a>
-                                        <a href="#" target="_blank"><i class="icon-instagram"></i></a>
-                                    </span>
-                                    <p>
-                                        Lorem ipsum dolor sitamet consectetur eiusmo.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid-item">
-                            <div class="cnt-box cnt-box-team boxed">
-                                <img src="http://via.placeholder.com/450x450" alt="" />
-                                <div class="caption">
-                                    <h2>Erik Pizz</h2>
-                                    <span>Climber</span>
+                                    <h2>Johnatan </h2>
+                                    <span data-translate="designer_m">Diseñador</span>
                                     <span class="icon-links">
                                         <a href="#" target="_blank"><i class="icon-facebook"></i></a>
                                         <a href="#" target="_blank"><i class="icon-twitter"></i></a>
@@ -272,82 +256,94 @@
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="icon-box icon-box-left">
-                            <i class="im-air-balloon"></i>
+                            <i class="im-forest"></i>
                             <div class="caption">
-                                <h3>El mejor trabajo</h3>
-                                <p>Lorem ipsum dolor sitamet consectetur eiusmo.</p>
+                                <h3 data-translate="the_best_job">El mejor trabajo</h3>
+                                <p data-translate="the_best_job_text">Horario flexible con buen seguimiento y organización laboral.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="icon-box icon-box-left">
-                            <i class="im-bar-chart2"></i>
+                            <i class="im-line-chart"></i>
                             <div class="caption">
-                                <h3>Oportunidades de crecimiento</h3>
-                                <p>Lorem ipsum dolor sitamet consectetur eiusmo.</p>
+                                <h3 data-translate="career_opportunities">Oportunidades de carrera</h3>
+                                <p data-translate="career_opportunities_text">Obtención efectiva de conocimiento y crecimiento rápido en base a habilidades propias.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="icon-box icon-box-left">
-                            <i class="im-bee"></i>
+                            <i class="im-business-manwoman"></i>
                             <div class="caption">
-                                <h3>Conoce grandes personas</h3>
-                                <p>WLorem ipsum dolor sitamet consectetur eiusmo.</p>
+                                <h3 data-translate="meet_great_people">Conoce grandes personas</h3>
+                                <p data-translate="meet_great_people_text">Ambiente agradable con grandes personalidades con gustos semejantes, actividades de integración y teambuilding.</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <hr class="space" />
-                <div class="cnt-box cnt-call">
+                <div class="cnt-box cnt-call" style="box-shadow: none; background-color: transparent; border-top: 3px solid rgb(0, 24, 58);">
                     <div class="caption">
-                        <h2>Únete al equipo</h2>
-                        <p>
-                            Lorem ipsum dolor sitamet consectetur adipisicing elito sed do eiusmod tempore.
+                        <h2 data-translate="check_opportunities" style="text-transform: uppercase;">VER OPORTUNIDADES</h2>
+                        <p style="margin-top: -20px;" data-translate="check_opportunities_text">
+                            Desarrolladores, diseñadores, marketing, comunicación.
                         </p>
-                        <a href="#" class="btn btn-xs background-baby-blue no-border">Contact us</a>
+                        <a href="contacts.html" class="btn btn-xs background-baby-blue no-border" data-translate="join_team" style="text-transform: uppercase;">ÚNETE AL EQUIPO</a>
                     </div>
                 </div>
             </div>
         </section>
        
     </main>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-4">
-                <img src="media/logos/Xlabs_logo_blanco.png" alt="X-LABS logo" style="height: 47px;width: 150px; margin-bottom: 25px;">
-                <!-- <p>Slogan</p> -->
-                <div class="icon-links icon-social icon-links-grid social-colors">
-                    <a><i class="fab fa-youtube"></i></i></a>
-                    <a><i class="fab fa-twitter"></i></a>
-                    <a><i class="fab fa-instagram"></i></a>
-                    <a><i class="fab fa-facebook-square"></i></a>
+    <footer class="dark-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="media/logos/Xlabs_logo_normal.png" alt="X-LABS logo" style="height: 90px;">
+                    <!-- <p>Slogan</p> -->
+                    <div class="icon-links icon-social icon-links-grid social-colors">
+                        <a><i class="fab fa-instagram"></i></a>
+                        <a><i class="fab fa-facebook-square"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <h3 data-translate="resources">Recursos</h3>
+                    <ul class="icon-list icon-line" style="margin-top: 0px;">
+                        <li><a href="about.html" data-translate="aboutus">Cónocenos</a></li>
+                        <li><a href="service.html" data-translate="services">Servicios</a></li>
+                        <li><a href="projects.html" data-translate="projects">Proyectos</a></li>
+                        <li><a href="contacts.html" data-translate="contactus">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h3 data-translate="information">Información</h3>
+                    <ul class="text-list text-list-line blue-border-left">
+                        <li><b data-translate="address">Dirección</b>
+                            <hr />
+                            <p class="dark-blue">Blvd. Lombardo Toledano 6615</p>
+                        </li>
+                        <li><b>Email</b>
+                            <hr />
+                            <p class="dark-blue">info@xlabs.mx</p>
+                        </li>
+                        <li><b data-translate="telephone">Teléfono</b>
+                            <hr />
+                            <p class="dark-blue">(614) 170 2665</p>
+                        </li>
+                        <li><b data-translate="schedule">Horario</b>
+                            <hr />
+                            <p class="dark-blue" data-translate="open_time">8:00am - 5:00pm Lun - Vie</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="col-lg-4">
-                <h3>Recursos</h3>
-                <ul class="icon-list icon-line">
-                    <li><a href="about.html">About us and the company</a></li>
-                    <li><a href="service.html">Services</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contacts.html">Contact us online</a></li>
-                </ul>
-            </div>
-            <div class="col-lg-4" style="padding: 10px;">
-                <ul class="text-list text-list-line">
-                    <li><b>Address</b><hr /><p class="dark-blue">Blvd. Lombardo Toledano 6615</p></li>
-                    <li><b>Email</b><hr /><p class="dark-blue">contact@xlabs.mx</p></li>
-                    <li><b>Phone</b><hr /><p class="dark-blue">+52 1 (614) 170 - 2665</p></li>
-                    <li><b>Opening hours</b><hr /><p class="dark-blue">8am-5pm Mon - Fri</p></li>
-                </ul>
-            </div>
         </div>
-    </div>
         <div class="footer-bar">
             <div class="container">
-                <span>© 2019 Execoore - Technology And Business Template Handmade by <a href="https://schiocco.com" target="_blank">schiocco.com</a>.</span>
-                <span><a href="#">Contact us</a> | <a href="#">Privacy policy</a></span>
+                <span>© 2020 <a href="https://xlabs.mx" target="_blank">xlabs.mx</a></span>
+                <span><a href="contacts.html" data-translate="contactus">Contact us</a></span>
             </div>
         </div>
         <link rel="stylesheet" href="themekit/media/icons/iconsmind/line-icons.min.css">
@@ -363,5 +359,190 @@
         <script src="themekit/scripts/contact-form/contact-form.js" async></script>
         <script src="https://kit.fontawesome.com/5aff25e6c8.js" crossorigin="anonymous"></script>
     </footer>
+
+
+    <script>
+        var dictionary = {
+            'title': {
+                'en': 'Xlabs: a software development company',
+                'es': 'Xlabs: una compania de desarrollo de software',
+            },
+            'home': {
+                'en': 'Home',
+                'es': 'Inicio',
+            },
+            'services': {
+                'en': 'Services',
+                'es': 'Servicios',
+            },
+            'aboutus': {
+                'en': 'About us',
+                'es': 'Conócenos',
+            },
+            'team': {
+                'en': 'Team',
+                'es': 'Equipo',
+            },
+            'projects': {
+                'en': 'Projects',
+                'es': 'Proyectos',
+            },
+            'contactus': {
+                'en': 'Contact us',
+                'es': 'Contáctanos',
+            },
+            
+            'open_time': {
+                'en': '8:00am - 5:00pm Mon - Fri',
+                'es': '8:00am - 5:00pm Lun - Vie',
+            },
+            'schedule': {
+                'en': 'Schedule',
+                'es': 'Horario',
+            },
+            'address': {
+                'en': 'Address',
+                'es': 'Dirección',
+            },
+            'telephone': {
+                'en': 'Telephone',
+                'es': 'Teléfono',
+            },
+            'information': {
+                'en': 'Information',
+                'es': 'Información',
+            },
+            'resources': {
+                'en': 'Resources',
+                'es': 'Recursos',
+            },
+            'company_founders': {
+                'en': 'Company founders',
+                'es': 'Fundadores de la compañía'
+            },
+            'our_team': {
+                'en': 'Our team',
+                'es': 'Nuestro equipo'
+            },
+            'know_us':{
+                'en': 'Get to know us',
+                'es': 'Conócenos'
+            },
+            'leaders':{
+                'en': 'Leaders',
+                'es': 'Líderes'
+            },
+            'founder_ceo':{
+                'en': 'Founder & CEO',
+                'es': 'Fundador & CEO'
+            },
+            'operations_manager':{
+                'en': 'Operations manager',
+                'es': 'Gerente de operaciones'
+            },
+            'founder1_text':{
+                'en': 'Advisor to multiple companies in Strategy, Planning, Innovation and Competitiveness. He has given a large number of chairs and courses for the Tecnológico de Monterrey and other prestigious organizations, as well as lectures at the ICM Congress in Chihuahua and the GASEMAP Congress in Havana, Cuba. Vast experience in strategic planning and missions for Innovation and entrepreneurship.',
+                'es': 'Asesor de múltiples empresas en Estrategia, Planeación, Innovación y competitividad. Ha impartido un gran número de cátedras y cursos para el Tecnológico de Monterrey y otras organizaciones de prestigio, así como ponencias en el Congreso ICM en Chihuahua y el Congreso GASEMAP en La Habana, Cuba. Basta experiencia en planeación estratégica y misiones para la Innovación y el emprendimiento.'
+            },
+            'founder2_text':{
+                'en': 'Multilingual entrepreneur in the service and logistics industry. Visionary focused on creating practical solutions to improve effectiveness and create a pleasant work environment. Processes are important but people are even more so.',
+                'es': 'Empresario multilingüe en la industria de servicio y logística. Visionario enfocado en crear soluciones prácticas para mejorar la efectividad y crear un ambiente de trabajo agradable. Los procesos son importantes pero las personas lo son aun más.'
+            },
+            'team_members':{
+                'en': 'Team members',
+                'es': 'Miembros del equipo'
+            },
+            'expert_team':{
+                'en': 'Our team of experts',
+                'es': 'Nuestro equipo de expertos'
+            },
+            'technical_coordinator':{
+                'en': 'Technical Coordinator',
+                'es': 'Coordinador Técnico'
+            },
+            'developer_m':{
+                'en': 'Developer',
+                'es': 'Desarrollador'
+            },
+            'developer_f':{
+                'en': 'Developer',
+                'es': 'Desarrolladora'
+            },
+            'designer_m':{
+                'en': 'Designer',
+                'es': 'Diseñador'
+            },
+            'designer_f':{
+                'en': 'Designer',
+                'es': 'Diseñadora'
+            },
+            'the_best_job': {
+                'en': 'The best job',
+                'es': 'El mejor trabajo'
+            },
+            'the_best_job_text': {
+                'en': 'Flexible hours with good follow-up and work organization.',
+                'es': 'Horario flexible con buen seguimiento y organización laboral.'
+            },
+            'career_opportunities': {
+                'en': 'Career opportunities',
+                'es': 'Oportunidades de carrera'
+            },
+            'career_opportunities_text': {
+                'en': 'Obtain knowledge effectively and rapid growth based on skills.',
+                'es': 'Obtención efectiva de conocimiento y crecimiento rápido en base a habilidades propias.'
+            },
+            'meet_great_people': {
+                'en': 'Meet great people',
+                'es': 'Conoce grandes personas'
+            },
+            'meet_great_people_text': {
+                'en': 'Pleasant atmosphere with great personalities with similar tastes, integration activities and teambuilding.',
+                'es': 'Ambiente agradable con grandes personalidades con gustos semejantes, actividades de integración y teambuilding.'
+            },
+            'check_opportunities': {
+                'en': 'Check out opportunities',
+                'es': 'Ver oportunidades'
+            },
+            'check_opportunities_text': {
+                'en': 'Developers, designers, marketing, communication.',
+                'es': 'Desarrolladores, diseñadores, marketing, comunicación.'
+            },
+            'join_team': {
+                'en': 'Join the team',
+                'es': 'Únete al equipo'
+            }
+        };
+        var langs = ['en', 'es'];
+        var current_lang_index = 0;
+        var current_lang = langs[current_lang_index];
+
+        window.change_lang = function (lang) {
+            if (lang === "en") {
+                current_lang_index = 0;
+            } else {
+                current_lang_index = 1;
+            }
+            current_lang = langs[current_lang_index];
+            translate();
+        }
+
+        function translate() {
+            $("[data-translate]").each(function () {
+                var key = $(this).data('translate');
+                $(this).html(dictionary[key][current_lang] || "N/A");
+            });
+        }
+
+        window.change_lang_image = function (lang) {
+            if (lang === "en") {
+                $("#current_lang_img").attr("src", "media/us.png");
+            } else {
+                $("#current_lang_img").attr("src", "media/mx.png");
+            }
+        }
+
+        translate();
+        </script>
 </body>
 </html>

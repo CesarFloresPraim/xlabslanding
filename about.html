@@ -1,11 +1,12 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>About | Execoore | Technology And Business Template</title>
-    <meta name="description" content="">
+    <title data-translate="title"></title>
+    <meta name="description" content="Xlabs is a software development company">
     <link rel="stylesheet" href="themekit/css/bootstrap-grid.css">
     <link rel="stylesheet" href="themekit/css/style.css">
     <link rel="stylesheet" href="themekit/css/glide.css">
@@ -17,56 +18,62 @@
     <link rel="stylesheet" href="xlabs.css">
     <link rel="icon" href="media/favicon.png">
 </head>
+
 <body>
     <div id="preloader"></div>
     <nav class="menu-top-logo menu-fixed" data-menu-anima="fade-in">
         <div class="container">
             <div class="menu-brand">
                 <a href="index.html">
-                    <img class="logo-default scroll-hide" src="media/logos/Xlabs_logo_blanco.png" alt="logo" />
-                    <img class="logo-retina scroll-hide" src="media/logos/Xlabs_logo_blanco.png" alt="logo" />
-                    <img class="logo-default scroll-show" src="media/logos/Xlabs_logo_blanco.png" alt="logo" />
-                    <img class="logo-retina scroll-show" src="media/logos/Xlabs_logo_blanco.png" alt="logo" />
+                    <img class="logo-default scroll-hide" src="media/logos/Xlabs_logo_normal.png" alt="logo" />
+                    <img class="logo-retina scroll-hide" src="media/logos/Xlabs_logo_normal.png" alt="logo" />
+                    <img class="logo-default scroll-show" src="media/logos/Xlabs_logo_normal.png" alt="logo" />
+                    <img class="logo-retina scroll-show" src="media/logos/Xlabs_logo_normal.png" alt="logo" />
                 </a>
             </div>
             <i class="menu-btn"></i>
             <div class="menu-cnt">
                 <ul id="main-menu">
                     <li class="dropdown no-after">
-                        <a href="index.html">Home</a>
+                        <a href="index.html" data-translate="home"></a>
                     </li>
                     <li class="dropdown">
-                        <a href="about.html">About us</a>
+                        <a href="service.html" data-translate="services"></a>
                     </li>
                     <li class="dropdown">
-                        <a href="team.html">Team</a>
+                        <a href="about.html" data-translate="aboutus"></a>
                     </li>
                     <li class="dropdown">
-                        <a href="projects.html">Projects</a>
+                        <a href="team.html" data-translate="team"></a>
                     </li>
                     <li class="dropdown">
-                        <a href="contacts.html">Contact</a>
+                        <a href="projects.html" data-translate="projects"></a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="contacts.html" data-translate="contactus"></a>
                     </li>
                     <li class="nav-label">
-                        <a href="contacts.html"><span>Call us: +52 1 (614) 170 - 2665</span> </a>
+                        <a href="contacts.html"><span>Tel: (614) 170-2665</span> </a>
                     </li>
                 </ul>
                 <div class="menu-right">
-                    <div class="custom-area" style="padding-right: 15px;">
+                    <!--<div class="custom-area" style="padding-right: 15px;">
                         Blvd. Lombardo Toledano 6615<br />
                         La Concordia, 31375 Chihuahua, Chih.
-                    </div>
-                    <!--
-                                          <ul class="lan-menu">
+                    </div>-->
+
+                    <ul class="lan-menu">
                         <li class="dropdown">
-                            <a href="#"><img src="media/en.png" alt="lang" />EN </a>
+                            <a><img id="current_lang_img" src="media/us.png" alt="lang" width="20px" />EN</a>
                             <ul>
-                                <li><a href="#"><img src="media/it.png" alt="lang" />IT</a></li>
-                                <li><a href="#"><img src="media/es.png" alt="lang" />ES</a></li>
+                                <li><a onclick="change_lang('en');change_lang_image('en');"><img src="media/us.png"
+                                            alt="lang" width="20px" />EN</a></li>
+                                <li><a onclick="change_lang('es');change_lang_image('es');"><img src="media/mx.png"
+                                            alt="lang" width="20px" />ES</a></li>
                             </ul>
                         </li>
-                    </ul>  
-                    -->
+                    </ul>
+
 
                 </div>
             </div>
@@ -74,33 +81,29 @@
     </nav>
     <header class="header-image ken-burn-center light" data-parallax="true" data-natural-height="500" data-natural-width="1920" data-bleed="0" data-image-src="media/backgrounds/all-01.jpg" data-offset="0">
         <div class="container">
-            <h1>Sobre nosotros</h1>
-            <h2 class="baby-blue">Nuestros valores </h2>
+            <h1 data-translate="about_us">Sobre nosotros</h1>
+            <h2 class="baby-blue" data-translate="our_values">Nuestros valores </h2>
         </div>
     </header>
     <main>
-        <section class="section-base section-color">
+        <section class="section-base" style="background-color: rgba(207,208,210,255);">
             <div class="container">
                 <div class="row row-fit-lg">
                     <div class="col-lg-4">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipiscing elitsed do eiusmod tempor incididunt utlabore et dolore magna aliqua.
-                            Utenim ad minim venia. Duis aute irure dolor in reprehenderite in voluptate velit esse cillum dolore eurtclo
-                            mertiso mortaccio della troia fugiat nulla pariature artolo.
+                        <p data-translate="about_us_p1">
+                            Xlabs es una empresa formada por personas responsables con gran gusto de su profesión, la combinación entre los integrantes con pensamiento critico y creativo se ha vuelto una armonía en el workspace. Cada proyecto lleva su planeación estratégica de principio a fin con el objetivo de llevar un control de progreso efectivo. Sin la necesidad de tener un horario fijo, a través de entregables y juntas diarias, nuestros colaboradores tienen la flexibilidad de trabajar y ser efectivos en su mejor horario. 
                         </p>
                     </div>
                     <div class="col-lg-4">
-                        <p>
-                            Escolo ipsum dolor sit amet consectetur adipiscing elitsed do eiusmod tempore dolor in reprehenderite in voluptate.
-                            Utenim ad minim venia. Duis aute irure dolor in reprehenderite in voluptate velit esse cillum dolore eurtclo
-                            mertiso mortaccio della troia fugiat nulla pariature minollo ratiro.
+                        <p data-translate="about_us_p2">
+                            Nuestra mentalidad entorno al e-commerce y diseño digital es muy sensata, sabemos que los tiempos post pandemia han cambiado mucho y a una gran velocidad. La capacidad de adaptar e introducir tu negocio al mundo digital es de suma importancia en la actualidad. Estamos convencidos de que podemos impulsar el crecimiento de empresas que tengan la visión de la nueva normalidad empresarial.
                         </p>
                     </div>
                     <div class="col-lg-4">
                         <ul class="slider light" data-options="arrows:false,nav:false">
                             <li>
-                                <a class="img-box lightbox" href="media/backgrounds/xlabs-01.jpg">
-                                    <img src="media/backgrounds/xlabs-01.jpg" alt="">
+                                <a class="img-box lightbox" href="media/backgrounds/resources-19.png">
+                                    <img src="media/backgrounds/resources-19.png" alt="">
                                 </a>
                             </li>
                         </ul>
@@ -108,16 +111,19 @@
                 </div>
                 <hr class="space" />
                 <div class="title">
-                    <h2>Nuestra misión y valores</h2>
-                    <p class="baby-blue">Lo que hacemos</p>
+                    <h2 data-translate="our_mission_and_values">Nuestra misión y valores</h2>
+                    <p class="baby-blue" data-translate="what_we_do">Lo que hacemos</p>
                 </div>
                 <div class="row">
-                    <div class="col-lg-8">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipiscing elitsed do eiusmod tempor incididunt utlabore et dolore magna aliqua.
-                            Utenim ad minim veniam quisolor in reprehenderite  nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequate.
+                    <div class="col-lg-12">
+                        <p data-translate="mission_values_text" style="white-space: pre-line;">
+                            Nuestra misión es contribuir al crecimiento económico y social para mejorar la experiencia de compra de los usuarios de nuestras redes. Queremos expandir el conocimiento y beneficios del manejo de ciencia de datos y algoritmos de análisis para la creación de campañas efectivas de publicidad. Que los clientes no sientan que les están vendiendo, sino que les están ayudando a cumplir sus metas y objetivos.
+                            <br><br>
+                            La honestidad, responsabilidad, puntualidad y trabajo en equipo define a nuestros colaboradores. Son tiempos diferentes, son tiempos nuevos, estamos comprometidos a dar lo mejor de nuestra parte para un bien común.
+
                         </p>
                     </div>
+                    <!--
                     <div class="col-lg-4">
                         <div class="box-sign no-margin">
                             <img alt="sign" src="media/sign-dark.png">
@@ -125,8 +131,10 @@
                             <span>Founder &amp; CEO</span>
                         </div>
                     </div>
+                    -->
                 </div>
                 <hr class="space" />
+                <!--
                 <table class="table table-grid table-border align-left table-6-md">
                     <tbody>
                         <tr>
@@ -182,44 +190,56 @@
                     </tbody>
                 </table>
             </div>
+            -->
         </section>
     </main>
-    <footer class="light">
+    <footer class="dark-blue">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">
-                    <img src="media/logos/Xlabs_logo_blanco.png" alt="X-LABS logo" style="height: 47px;width: 150px; margin-bottom: 25px;">
+                    <img src="media/logos/Xlabs_logo_normal.png" alt="X-LABS logo" style="height: 90px;">
                     <!-- <p>Slogan</p> -->
                     <div class="icon-links icon-social icon-links-grid social-colors">
-                        <a><i class="fab fa-youtube"></i></i></a>
-                        <a><i class="fab fa-twitter"></i></a>
                         <a><i class="fab fa-instagram"></i></a>
                         <a><i class="fab fa-facebook-square"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <h3>Recursos</h3>
-                    <ul class="icon-list icon-line">
-                        <li><a href="about.html">About us and the company</a></li>
-                        <li><a href="service.html">Services</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="contacts.html">Contact us online</a></li>
+                    <h3 data-translate="resources">Recursos</h3>
+                    <ul class="icon-list icon-line" style="margin-top: 0px;">
+                        <li><a href="about.html" data-translate="aboutus">Cónocenos</a></li>
+                        <li><a href="service.html" data-translate="services">Servicios</a></li>
+                        <li><a href="projects.html" data-translate="projects">Proyectos</a></li>
+                        <li><a href="contacts.html" data-translate="contactus">Contacto</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-4" style="padding: 10px;">
-                    <ul class="text-list text-list-line">
-                        <li><b>Address</b><hr /><p class="dark-blue">Blvd. Lombardo Toledano 6615</p></li>
-                        <li><b>Email</b><hr /><p class="dark-blue">contact@xlabs.mx</p></li>
-                        <li><b>Phone</b><hr /><p class="dark-blue">+52 1 (614) 170 - 2665</p></li>
-                        <li><b>Opening hours</b><hr /><p class="dark-blue">8am-5pm Mon - Fri</p></li>
+                <div class="col-lg-4">
+                    <h3 data-translate="information">Información</h3>
+                    <ul class="text-list text-list-line blue-border-left">
+                        <li><b data-translate="address">Dirección</b>
+                            <hr />
+                            <p class="dark-blue">Blvd. Lombardo Toledano 6615</p>
+                        </li>
+                        <li><b>Email</b>
+                            <hr />
+                            <p class="dark-blue">info@xlabs.mx</p>
+                        </li>
+                        <li><b data-translate="telephone">Teléfono</b>
+                            <hr />
+                            <p class="dark-blue">(614) 170 2665</p>
+                        </li>
+                        <li><b data-translate="schedule">Horario</b>
+                            <hr />
+                            <p class="dark-blue" data-translate="open_time">8:00am - 5:00pm Lun - Vie</p>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="footer-bar">
             <div class="container">
-                <span>© 2019 Execoore - Technology And Business Template Handmade by <a href="https://schiocco.com" target="_blank">schiocco.com</a>.</span>
-                <span><a href="#">Contact us</a> | <a href="#">Privacy policy</a></span>
+                <span>© 2020 <a href="https://xlabs.mx" target="_blank">xlabs.mx</a></span>
+                <span><a href="contacts.html" data-translate="contactus">Contact us</a></span>
             </div>
         </div>
         <link rel="stylesheet" href="themekit/media/icons/iconsmind/line-icons.min.css">
@@ -227,13 +247,128 @@
         <script src="themekit/scripts/main.js"></script>
         <script src="themekit/scripts/parallax.min.js"></script>
         <script src="themekit/scripts/glide.min.js"></script>
-        <script src="themekit/scripts/magnific-popup.min.js"></script>
+        <script src="themekit/scripts/pagination.min.js"></script>
         <script src="themekit/scripts/tab-accordion.js"></script>
         <script src="themekit/scripts/imagesloaded.min.js"></script>
-        <script src="themekit/scripts/progress.js" async></script>
         <script src="themekit/scripts/custom.js" async></script>
-        <script src="themekit/scripts/contact-form/contact-form.js" async></script>
         <script src="https://kit.fontawesome.com/5aff25e6c8.js" crossorigin="anonymous"></script>
     </footer>
+
+
+    <script>
+        var dictionary = {
+            'title': {
+                'en': 'Xlabs: a software development company',
+                'es': 'Xlabs: una compania de desarrollo de software',
+            },
+            'home': {
+                'en': 'Home',
+                'es': 'Inicio',
+            },
+            'services': {
+                'en': 'Services',
+                'es': 'Servicios',
+            },
+            'aboutus': {
+                'en': 'About us',
+                'es': 'Conócenos',
+            },
+            'team': {
+                'en': 'Team',
+                'es': 'Equipo',
+            },
+            'projects': {
+                'en': 'Projects',
+                'es': 'Proyectos',
+            },
+            'contactus': {
+                'en': 'Contact us',
+                'es': 'Contáctanos',
+            },
+            
+            'open_time': {
+                'en': '8:00am - 5:00pm Mon - Fri',
+                'es': '8:00am - 5:00pm Lun - Vie',
+            },
+            'schedule': {
+                'en': 'Schedule',
+                'es': 'Horario',
+            },
+            'address': {
+                'en': 'Address',
+                'es': 'Dirección',
+            },
+            'telephone': {
+                'en': 'Telephone',
+                'es': 'Teléfono',
+            },
+            'information': {
+                'en': 'Information',
+                'es': 'Información',
+            },
+            'resources': {
+                'en': 'Resources',
+                'es': 'Recursos',
+            },
+            'about_us': {
+                'en': 'About us',
+                'es': 'Sobre nosotros'
+            },
+            'our_values': {
+                'en': 'Our values',
+                'es': 'Nuestros valores'
+            },
+            'about_us_p1': {
+                'en': 'Xlabs is a company composed of responsible people that love their profession; the combination of members with critical and creative thinking has created a very harmonic workspace. Each project has strategic planning from beginning to end with the objective of having an effective progress control. There isn’t need of a fixed schedule: our collaborators have flexible work so they can be effective in the schedule that works best for them through project deliverables and diary meetings.',
+                'es': 'Xlabs es una empresa formada por personas responsables con gran gusto de su profesión, la combinación entre los integrantes con pensamiento critico y creativo se ha vuelto una armonía en el workspace. Cada proyecto lleva su planeación estratégica de principio a fin con el objetivo de llevar un control de progreso efectivo. Sin la necesidad de tener un horario fijo, a través de entregables y juntas diarias, nuestros colaboradores tienen la flexibilidad de trabajar y ser efectivos en su mejor horario.'
+            },
+            'about_us_p2': {
+                'en': 'Our mentality towards e-commerce and digital design is very sensate, we know that the situation post pandemic has enormously and quickly changed. The capacity of adapting and introducing your business to the digital word is now critical. We are convinced that we can boost the potential of companies that have the vision of the new business trends.',
+                'es': 'Nuestra mentalidad entorno al e-commerce y diseño digital es muy sensata, sabemos que los tiempos post pandemia han cambiado mucho y a una gran velocidad. La capacidad de adaptar e introducir tu negocio al mundo digital es de suma importancia en la actualidad. Estamos convencidos de que podemos impulsar el crecimiento de empresas que tengan la visión de la nueva normalidad empresarial.'
+            },
+            'what_we_do': {
+                'en': 'What we do',
+                'es': 'Lo que hacemos'
+            },
+            'our_mission_and_values': {
+                'en': 'Our mission and values',
+                'es': 'Nuestra misión y valores'
+            },
+            'mission_values_text': {
+                'en': 'Our mission is to contribute to the social and economic growth to better the shopping experience of our network users. We want to expand the knowledge and benefits of data science management and analysis algorithms to achieve effective marketing campaigns. Clients shouldn’t feel targeted, but rather that their objectives and goals are being supported. \n\nHonesty, responsibility, punctuality and teamwork define our collaborators. These are different times, new times, and we are compromised to give our best to the greater good.',
+                'es': 'Nuestra misión es contribuir al crecimiento económico y social para mejorar la experiencia de compra de los usuarios de nuestras redes. Queremos expandir el conocimiento y beneficios del manejo de ciencia de datos y algoritmos de análisis para la creación de campañas efectivas de publicidad. Que los clientes no sientan que les están vendiendo, sino que les están ayudando a cumplir sus metas y objetivos.\n\nLa honestidad, responsabilidad, puntualidad y trabajo en equipo define a nuestros colaboradores. Son tiempos diferentes, son tiempos nuevos, estamos comprometidos a dar lo mejor de nuestra parte para un bien común.'
+            },
+        };
+        var langs = ['en', 'es'];
+        var current_lang_index = 0;
+        var current_lang = langs[current_lang_index];
+
+        window.change_lang = function (lang) {
+            if (lang === "en") {
+                current_lang_index = 0;
+            } else {
+                current_lang_index = 1;
+            }
+            current_lang = langs[current_lang_index];
+            translate();
+        }
+
+        function translate() {
+            $("[data-translate]").each(function () {
+                var key = $(this).data('translate');
+                $(this).html(dictionary[key][current_lang] || "N/A");
+            });
+        }
+
+        window.change_lang_image = function (lang) {
+            if (lang === "en") {
+                $("#current_lang_img").attr("src", "media/us.png");
+            } else {
+                $("#current_lang_img").attr("src", "media/mx.png");
+            }
+        }
+
+        translate();
+        </script>
 </body>
 </html>
