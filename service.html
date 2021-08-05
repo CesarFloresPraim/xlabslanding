@@ -1,11 +1,12 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Xlabs: a software development company</title>
-    <meta name="Xlabs: a software development company" content="">
+    <title data-translate="title"></title>
+    <meta name="description" content="Xlabs is a software development company">
     <link rel="stylesheet" href="themekit/css/bootstrap-grid.css">
     <link rel="stylesheet" href="themekit/css/style.css">
     <link rel="stylesheet" href="themekit/css/glide.css">
@@ -17,6 +18,7 @@
     <link rel="stylesheet" href="xlabs.css">
     <link rel="icon" href="media/favicon.png">
 </head>
+
 <body>
     <div id="preloader"></div>
     <nav class="menu-top-logo menu-fixed" data-menu-anima="fade-in">
@@ -33,22 +35,22 @@
             <div class="menu-cnt">
                 <ul id="main-menu">
                     <li class="dropdown no-after">
-                        <a href="index.html">Home</a>
+                        <a href="index.html" data-translate="home"></a>
                     </li>
                     <li class="dropdown">
-                        <a href="service.html">Servicios</a>
+                        <a href="service.html" data-translate="services"></a>
                     </li>
                     <li class="dropdown">
-                        <a href="about.html">Conócenos</a>
+                        <a href="about.html" data-translate="aboutus"></a>
                     </li>
                     <li class="dropdown">
-                        <a href="team.html">Equipo</a>
+                        <a href="team.html" data-translate="team"></a>
                     </li>
                     <li class="dropdown">
-                        <a href="projects.html">Proyectos</a>
+                        <a href="projects.html" data-translate="projects"></a>
                     </li>
                     <li class="dropdown">
-                        <a href="contacts.html">Contacto</a>
+                        <a href="contacts.html" data-translate="contactus"></a>
                     </li>
                     <li class="nav-label">
                         <a href="contacts.html"><span>Tel: (614) 170-2665</span> </a>
@@ -59,16 +61,19 @@
                         Blvd. Lombardo Toledano 6615<br />
                         La Concordia, 31375 Chihuahua, Chih.
                     </div>-->
-                    
+
                     <ul class="lan-menu">
                         <li class="dropdown">
-                            <a href="#"><img src="media/mx.png" alt="lang" width="20px" />ES</a>
+                            <a><img id="current_lang_img" src="media/us.png" alt="lang" width="20px" />EN</a>
                             <ul>
-                                <li><a href="#"><img src="media/us.png" alt="lang" width="20px" />EN</a></li>
+                                <li><a onclick="change_lang('en');change_lang_image('en');"><img src="media/us.png"
+                                            alt="lang" width="20px" />EN</a></li>
+                                <li><a onclick="change_lang('es');change_lang_image('es');"><img src="media/mx.png"
+                                            alt="lang" width="20px" />ES</a></li>
                             </ul>
                         </li>
-                    </ul>  
-                    
+                    </ul>
+
 
                 </div>
             </div>
@@ -76,8 +81,8 @@
     </nav>
     <header class="header-image ken-burn-center light" data-parallax="true" data-natural-height="500" data-natural-width="1920" data-bleed="0" data-image-src="media/backgrounds/all-01.jpg" data-offset="0">
         <div class="container">
-            <h1>Servicios</h1>
-            <h2 class="baby-blue">Para nuestros clientes</h2>
+            <h1 data-translate="services">Servicios</h1>
+            <h2 class="baby-blue" data-translate="for_our_clients">Para nuestros clientes</h2>
             <!-- path 
             <ol class="breadcrumb">
                 <li><a href="index.html">Home</a></li>
@@ -110,17 +115,17 @@
                                             <h2>E-Commerce & CRM</h2>
                                                 <div class="row service-info blue-border-bottom">
                                                     <div class="col">
-                                                        <div class="row dark-blue">TIPO</div>
-                                                        <div class="row baby-blue">SOFTWARE</div>
+                                                        <div class="row dark-blue" data-translate="type" style="text-transform: uppercase;">TIPO</div>
+                                                        <div class="row baby-blue" style="text-transform: uppercase;">SOFTWARE</div>
                                                     </div>
                                                     <div class="col">
-                                                        <div class="row dark-blue">OBJETIVO</div>
-                                                        <div class="row baby-blue">Generar más clientes</div>
+                                                        <div class="row dark-blue" data-translate="objective" style="text-transform: uppercase;">OBJETIVO</div>
+                                                        <div class="row baby-blue" data-translate="customer_acquisition">Generar más clientes</div>
                                                     </div>
                                                 </div>
 
                                             
-                                            <p class="dark-blue">
+                                            <p class="dark-blue" data-translate="ecommerce_text">
                                                 Desarrollo de páginas web que interactúen con el cliente para generar más ventas. Carrito de compras virtual con métodos de pago convencionales y modernos. Plataforma de administración de inventario, catálogos, clientes y promociones para editar el contenido.
                                             </p>
                                         </div>
@@ -130,20 +135,20 @@
                                     <div class="cnt-box cnt-box-side boxed" data-href="">
                                         <a href="#" class="img-box"><img src="media/backgrounds/apis-2.jpg" alt="" /></a>
                                         <div class="caption">
-                                            <h2>Integración de API</h2>
+                                            <h2 data-translate="api_integration">Integración de API</h2>
                                                 <div class="row service-info blue-border-bottom">
                                                     <div class="col">
-                                                        <div class="row dark-blue">TIPO</div>
+                                                        <div class="row dark-blue" data-translate="type" style="text-transform: uppercase;">TIPO</div>
                                                         <div class="row baby-blue">SOFTWARE</div>
                                                     </div>
                                                     <div class="col">
-                                                        <div class="row dark-blue">OBJETIVO</div>
-                                                        <div class="row baby-blue">Facilitar procesos</div>
+                                                        <div class="row dark-blue" data-translate="objective" style="text-transform: uppercase;">OBJETIVO</div>
+                                                        <div class="row baby-blue" data-translate="facilitate_the_process">Facilitar procesos</div>
                                                     </div>
                                                 </div>
 
                                             
-                                            <p class="dark-blue">
+                                            <p class="dark-blue" data-translate="api_text">
                                                 Introducción de aplicaciones de terceros a una página propia para obtener y ligar sus beneficios y obtener información de clientes. UPS – DHL Tracking, Uber, Facebook, Instagram, etc. Ideal para optimización de procesos repetitivos.
                                             </p>
                                         </div>
@@ -154,20 +159,20 @@
                                     <div class="cnt-box cnt-box-side boxed" data-href="">
                                         <a href="#" class="img-box"><img src="media/backgrounds/data_science2.jpg" alt="" /></a>
                                         <div class="caption">
-                                            <h2>Análisis de ciencia de datos</h2>
+                                            <h2 data-translate="data_science_analysis">Análisis de ciencia de datos</h2>
                                                 <div class="row service-info blue-border-bottom">
                                                     <div class="col">
-                                                        <div class="row dark-blue">TIPO</div>
+                                                        <div class="row dark-blue" data-translate="type" style="text-transform: uppercase;">TIPO</div>
                                                         <div class="row baby-blue">SOFTWARE</div>
                                                     </div>
                                                     <div class="col">
-                                                        <div class="row dark-blue">OBJETIVO</div>
-                                                        <div class="row baby-blue">Identificar tendencias</div>
+                                                        <div class="row dark-blue" data-translate="objective" style="text-transform: uppercase;">OBJETIVO</div>
+                                                        <div class="row baby-blue" data-translate="identify_tendencies">Identificar tendencias</div>
                                                     </div>
                                                 </div>
 
                                             
-                                            <p class="dark-blue">
+                                            <p class="dark-blue" data-translate="data_science_text">
                                                 Análisis profundo de información cuantitativa para creación de tendencias de compa y comportamiento del cliente para creación de campañas de marketing y estrategias de venta efectivas.
                                             </p>
                                         </div>
@@ -177,20 +182,20 @@
                                     <div class="cnt-box cnt-box-side boxed" data-href="">
                                         <a href="#" class="img-box"><img src="media/backgrounds/identity2.jpg" alt="" /></a>
                                         <div class="caption">
-                                            <h2>Identidad corporativa</h2>
+                                            <h2 data-translate="corporate_identity">Identidad corporativa</h2>
                                                 <div class="row service-info blue-border-bottom">
                                                     <div class="col">
-                                                        <div class="row dark-blue">TIPO</div>
-                                                        <div class="row baby-blue">DISEÑO</div>
+                                                        <div class="row dark-blue" data-translate="type" style="text-transform: uppercase;">TIPO</div>
+                                                        <div class="row baby-blue" data-translate="design" style="text-transform: uppercase;">DISEÑO</div>
                                                     </div>
                                                     <div class="col">
-                                                        <div class="row dark-blue">OBJETIVO</div>
-                                                        <div class="row baby-blue">Posicionar marca</div>
+                                                        <div class="row dark-blue" data-translate="objective" style="text-transform: uppercase;">OBJETIVO</div>
+                                                        <div class="row baby-blue" data-translate="brand_positioning">Posicionar marca</div>
                                                     </div>
                                                 </div>
 
                                             
-                                            <p class="dark-blue">
+                                            <p class="dark-blue" data-translate="corporate_identity_text">
                                                 Creación de marca e imagen. Logo, paleta de colores, fuentes, diseño de etiquetas, personalización de redes sociales y otros contenidos. El diseño se justifica e implementa de acuerdo al objetivo de la empresa.
                                             </p>
                                         </div>
@@ -204,254 +209,10 @@
                             -->
                         </div>
                     </div>
-                    <div class="panel">
-                        <div class="grid-list" data-columns="2" data-columns-lg="1">
-                            <div class="grid-box">
-                                <div class="grid-item">
-                                    <div class="cnt-box cnt-box-side boxed" data-href="">
-                                        <a href="#" class="img-box"><img src="http://via.placeholder.com/800x500" alt="" /></a>
-                                        <div class="caption">
-                                            <h2>Security and technology</h2>
-                                            <div class="extra-field">Google</div>
-                                            <p>
-                                                Excepteur sint occaecat cupidatat non proidento in culpa qui officia deserunt mollit anim id est laborum.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid-item">
-                                    <div class="cnt-box cnt-box-side boxed" data-href="">
-                                        <a href="#" class="img-box"><img src="http://via.placeholder.com/800x500" alt="" /></a>
-                                        <div class="caption">
-                                            <h2>Marketing campaign</h2>
-                                            <div class="extra-field">Facebook</div>
-                                            <p>
-                                                Excepteur sint occaecat cupidatat non proidento in culpa qui officia deserunt mollit anim id est laborum.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid-item">
-                                    <div class="cnt-box cnt-box-side boxed" data-href="">
-                                        <a href="#" class="img-box"><img src="http://via.placeholder.com/800x500" alt="" /></a>
-                                        <div class="caption">
-                                            <h2>Automated delivering</h2>
-                                            <div class="extra-field">Wallmart</div>
-                                            <p>
-                                                Excepteur sint occaecat cupidatat non proidento in culpa qui officia deserunt mollit anim id est laborum.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid-item">
-                                    <div class="cnt-box cnt-box-side boxed" data-href="">
-                                        <a href="#" class="img-box"><img src="http://via.placeholder.com/800x500" alt="" /></a>
-                                        <div class="caption">
-                                            <h2>Open source and blockchain</h2>
-                                            <div class="extra-field">Microsoft</div>
-                                            <p>
-                                                Excepteur sint occaecat cupidatat non proidento in culpa qui officia deserunt mollit anim id est laborum.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid-item">
-                                    <div class="cnt-box cnt-box-side boxed" data-href="">
-                                        <a href="#" class="img-box"><img src="http://via.placeholder.com/800x500" alt="" /></a>
-                                        <div class="caption">
-                                            <h2>Neural driven database</h2>
-                                            <div class="extra-field">Oracle</div>
-                                            <p>
-                                                Excepteur sint occaecat cupidatat non proidento in culpa qui officia deserunt mollit anim id est laborum.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid-item">
-                                    <div class="cnt-box cnt-box-side boxed" data-href="">
-                                        <a href="#" class="img-box"><img src="http://via.placeholder.com/800x500" alt="" /></a>
-                                        <div class="caption">
-                                            <h2>Mobile banking app</h2>
-                                            <div class="extra-field">Barcleys</div>
-                                            <p>
-                                                Excepteur sint occaecat cupidatat non proidento in culpa qui officia deserunt mollit anim id est laborum.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid-item">
-                                    <div class="cnt-box cnt-box-side boxed" data-href="">
-                                        <a href="#" class="img-box"><img src="http://via.placeholder.com/800x500" alt="" /></a>
-                                        <div class="caption">
-                                            <h2>Cryptocurrencies networks</h2>
-                                            <div class="extra-field">Ethereum foundation</div>
-                                            <p>
-                                                Excepteur sint occaecat cupidatat non proidento in culpa qui officia deserunt mollit anim id est laborum.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="list-pagination">
-                                <ul class="pagination pagination-lg" data-page-items="4" data-pagination-anima="fade-bottom"></ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel">
-                        <div class="grid-list" data-columns="2" data-columns-lg="1">
-                            <div class="grid-box">
-                                <div class="grid-item">
-                                    <div class="cnt-box cnt-box-side boxed" data-href="">
-                                        <a href="#" class="img-box"><img src="http://via.placeholder.com/800x500" alt="" /></a>
-                                        <div class="caption">
-                                            <h2>Security and technology</h2>
-                                            <div class="extra-field">Google</div>
-                                            <p>
-                                                Excepteur sint occaecat cupidatat non proidento in culpa qui officia deserunt mollit anim id est laborum.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid-item">
-                                    <div class="cnt-box cnt-box-side boxed" data-href="">
-                                        <a href="#" class="img-box"><img src="http://via.placeholder.com/800x500" alt="" /></a>
-                                        <div class="caption">
-                                            <h2>Marketing campaign</h2>
-                                            <div class="extra-field">Facebook</div>
-                                            <p>
-                                                Excepteur sint occaecat cupidatat non proidento in culpa qui officia deserunt mollit anim id est laborum.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid-item">
-                                    <div class="cnt-box cnt-box-side boxed" data-href="">
-                                        <a href="#" class="img-box"><img src="http://via.placeholder.com/800x500" alt="" /></a>
-                                        <div class="caption">
-                                            <h2>Automated delivering</h2>
-                                            <div class="extra-field">Wallmart</div>
-                                            <p>
-                                                Excepteur sint occaecat cupidatat non proidento in culpa qui officia deserunt mollit anim id est laborum.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid-item">
-                                    <div class="cnt-box cnt-box-side boxed" data-href="">
-                                        <a href="#" class="img-box"><img src="http://via.placeholder.com/800x500" alt="" /></a>
-                                        <div class="caption">
-                                            <h2>Open source and blockchain</h2>
-                                            <div class="extra-field">Microsoft</div>
-                                            <p>
-                                                Excepteur sint occaecat cupidatat non proidento in culpa qui officia deserunt mollit anim id est laborum.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid-item">
-                                    <div class="cnt-box cnt-box-side boxed" data-href="">
-                                        <a href="#" class="img-box"><img src="http://via.placeholder.com/800x500" alt="" /></a>
-                                        <div class="caption">
-                                            <h2>Neural driven database</h2>
-                                            <div class="extra-field">Oracle</div>
-                                            <p>
-                                                Excepteur sint occaecat cupidatat non proidento in culpa qui officia deserunt mollit anim id est laborum.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid-item">
-                                    <div class="cnt-box cnt-box-side boxed" data-href="">
-                                        <a href="#" class="img-box"><img src="http://via.placeholder.com/800x500" alt="" /></a>
-                                        <div class="caption">
-                                            <h2>Mobile banking app</h2>
-                                            <div class="extra-field">Barcleys</div>
-                                            <p>
-                                                Excepteur sint occaecat cupidatat non proidento in culpa qui officia deserunt mollit anim id est laborum.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid-item">
-                                    <div class="cnt-box cnt-box-side boxed" data-href="">
-                                        <a href="#" class="img-box"><img src="http://via.placeholder.com/800x500" alt="" /></a>
-                                        <div class="caption">
-                                            <h2>Cryptocurrencies networks</h2>
-                                            <div class="extra-field">Ethereum foundation</div>
-                                            <p>
-                                                Excepteur sint occaecat cupidatat non proidento in culpa qui officia deserunt mollit anim id est laborum.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="list-pagination">
-                                <ul class="pagination pagination-lg" data-page-items="4" data-pagination-anima="fade-bottom"></ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel">
-                        <div class="grid-list" data-columns="2" data-columns-lg="1">
-                            <div class="grid-box">
-                                <div class="grid-item">
-                                    <div class="cnt-box cnt-box-side boxed" data-href="">
-                                        <a href="#" class="img-box"><img src="http://via.placeholder.com/800x500" alt="" /></a>
-                                        <div class="caption">
-                                            <h2>Security and technology</h2>
-                                            <div class="extra-field">Google</div>
-                                            <p>
-                                                Excepteur sint occaecat cupidatat non proidento in culpa qui officia deserunt mollit anim id est laborum.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid-item">
-                                    <div class="cnt-box cnt-box-side boxed" data-href="">
-                                        <a href="#" class="img-box"><img src="http://via.placeholder.com/800x500" alt="" /></a>
-                                        <div class="caption">
-                                            <h2>Marketing campaign</h2>
-                                            <div class="extra-field">Facebook</div>
-                                            <p>
-                                                Excepteur sint occaecat cupidatat non proidento in culpa qui officia deserunt mollit anim id est laborum.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid-item">
-                                    <div class="cnt-box cnt-box-side boxed" data-href="">
-                                        <a href="#" class="img-box"><img src="http://via.placeholder.com/800x500" alt="" /></a>
-                                        <div class="caption">
-                                            <h2>Automated delivering</h2>
-                                            <div class="extra-field">Wallmart</div>
-                                            <p>
-                                                Excepteur sint occaecat cupidatat non proidento in culpa qui officia deserunt mollit anim id est laborum.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid-item">
-                                    <div class="cnt-box cnt-box-side boxed" data-href="">
-                                        <a href="#" class="img-box"><img src="http://via.placeholder.com/800x500" alt="" /></a>
-                                        <div class="caption">
-                                            <h2>Open source and blockchain</h2>
-                                            <div class="extra-field">Microsoft</div>
-                                            <p>
-                                                Excepteur sint occaecat cupidatat non proidento in culpa qui officia deserunt mollit anim id est laborum.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="list-pagination">
-                                <ul class="pagination pagination-lg" data-page-items="4" data-pagination-anima="fade-bottom"></ul>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
-    </main>
-    <footer class="dark-blue">
+    </main>    <footer class="dark-blue">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">
@@ -463,21 +224,33 @@
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <h3>Recursos</h3>
+                    <h3 data-translate="resources">Recursos</h3>
                     <ul class="icon-list icon-line" style="margin-top: 0px;">
-                        <li><a href="about.html">Conócenos</a></li>
-                        <li><a href="service.html">Servicios</a></li>
-                        <li><a href="projects.html">Proyectos</a></li>
-                        <li><a href="contacts.html">Contacto</a></li>
+                        <li><a href="about.html" data-translate="aboutus">Cónocenos</a></li>
+                        <li><a href="service.html" data-translate="services">Servicios</a></li>
+                        <li><a href="projects.html" data-translate="projects">Proyectos</a></li>
+                        <li><a href="contacts.html" data-translate="contactus">Contacto</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-4" >
-                    <h3>Información</h3>
+                <div class="col-lg-4">
+                    <h3 data-translate="information">Información</h3>
                     <ul class="text-list text-list-line blue-border-left">
-                        <li><b>Dirección</b><hr /><p class="dark-blue">Blvd. Lombardo Toledano 6615</p></li>
-                        <li><b>Email</b><hr /><p class="dark-blue">info@xlabs.mx</p></li>
-                        <li><b>Teléfono</b><hr /><p class="dark-blue">(614) 170 2665</p></li>
-                        <li><b>Horario</b><hr /><p class="dark-blue">8:00am - 5:00pm Lun - Vie</p></li>
+                        <li><b data-translate="address">Dirección</b>
+                            <hr />
+                            <p class="dark-blue">Blvd. Lombardo Toledano 6615</p>
+                        </li>
+                        <li><b>Email</b>
+                            <hr />
+                            <p class="dark-blue">info@xlabs.mx</p>
+                        </li>
+                        <li><b data-translate="telephone">Teléfono</b>
+                            <hr />
+                            <p class="dark-blue">(614) 170 2665</p>
+                        </li>
+                        <li><b data-translate="schedule">Horario</b>
+                            <hr />
+                            <p class="dark-blue" data-translate="open_time">8:00am - 5:00pm Lun - Vie</p>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -485,7 +258,7 @@
         <div class="footer-bar">
             <div class="container">
                 <span>© 2020 <a href="https://xlabs.mx" target="_blank">xlabs.mx</a></span>
-                <span><a href="contacts.html">Contact us</a></span>
+                <span><a href="contacts.html" data-translate="contactus">Contact us</a></span>
             </div>
         </div>
         <link rel="stylesheet" href="themekit/media/icons/iconsmind/line-icons.min.css">
@@ -493,13 +266,165 @@
         <script src="themekit/scripts/main.js"></script>
         <script src="themekit/scripts/parallax.min.js"></script>
         <script src="themekit/scripts/glide.min.js"></script>
-        <script src="themekit/scripts/magnific-popup.min.js"></script>
+        <script src="themekit/scripts/pagination.min.js"></script>
         <script src="themekit/scripts/tab-accordion.js"></script>
         <script src="themekit/scripts/imagesloaded.min.js"></script>
-        <script src="themekit/scripts/progress.js" async></script>
         <script src="themekit/scripts/custom.js" async></script>
-        <script src="themekit/scripts/contact-form/contact-form.js" async></script>
         <script src="https://kit.fontawesome.com/5aff25e6c8.js" crossorigin="anonymous"></script>
     </footer>
+
+
+    <script>
+        var dictionary = {
+            'title': {
+                'en': 'Xlabs: a software development company',
+                'es': 'Xlabs: una compania de desarrollo de software',
+            },
+            'home': {
+                'en': 'Home',
+                'es': 'Inicio',
+            },
+            'services': {
+                'en': 'Services',
+                'es': 'Servicios',
+            },
+            'aboutus': {
+                'en': 'About us',
+                'es': 'Conócenos',
+            },
+            'team': {
+                'en': 'Team',
+                'es': 'Equipo',
+            },
+            'projects': {
+                'en': 'Projects',
+                'es': 'Proyectos',
+            },
+            'contactus': {
+                'en': 'Contact us',
+                'es': 'Contáctanos',
+            },
+            
+            'open_time': {
+                'en': '8:00am - 5:00pm Mon - Fri',
+                'es': '8:00am - 5:00pm Lun - Vie',
+            },
+            'schedule': {
+                'en': 'Schedule',
+                'es': 'Horario',
+            },
+            'address': {
+                'en': 'Address',
+                'es': 'Dirección',
+            },
+            'telephone': {
+                'en': 'Telephone',
+                'es': 'Teléfono',
+            },
+            'information': {
+                'en': 'Information',
+                'es': 'Información',
+            },
+            'resources': {
+                'en': 'Resources',
+                'es': 'Recursos',
+            },
+            'services': {
+                'en': 'Services',
+                'es': 'Servicios'
+            },
+            'for_our_clients': {
+                'en': 'For our clients',
+                'es': 'Para nuestros clientes'
+            },
+            'type': {
+                'en': 'Type',
+                'es': 'Tipo'
+            },
+            'objective': {
+                'en': 'Objective',
+                'es': 'Objetivo'
+            },
+            'customer_acquisition': {
+                'en': 'Customer acquisition',
+                'es': 'Generar más clientes'
+            },
+            'facilitate_the_process': {
+                'en': 'Facilitate the process',
+                'es': 'Facilitar el proceso'
+            },
+            'data_science_analysis': {
+                'en': 'Data Science Analysis',
+                'es': 'Análisis de Ciencia de Datos'
+            },
+            'identify_tendencies': {
+                'en': 'Identify tendencies',
+                'es': 'Identificar tendencias'
+            },
+            'corporate_identity': {
+                'en': 'Corporate identity',
+                'es': 'Identidad corporativa'
+            },
+            'ecommerce_text': {
+                'en': 'Development of web pages that interact with the client to generate more sales. Virtual shopping cart with conventional and modern payment methods. Platform to manage and edit stock, catalogues, clients and promotions.',
+                'es': 'Desarrollo de páginas web que interactúen con el cliente para generar más ventas. Carrito de compras virtual con métodos de pago convencionales y modernos. Plataforma de administración de inventario, catálogos, clientes y promociones para editar el contenido.'
+            },
+            'api_text': {
+                'en': 'Incorporation of third party apps to own website in order to get their benefits and obtain client information. UPS - DHL Tracking, Uber, Facebook, Instagram, etc. Ideal to optimize repetitive processes.',
+                'es': 'Introducción de aplicaciones de terceros a una página propia para obtener y ligar sus beneficios y obtener información de clientes. UPS – DHL Tracking, Uber, Facebook, Instagram, etc. Ideal para optimización de procesos repetitivos.'
+            },
+            'api_integration': {
+                'en': 'API integration',
+                'es': 'Integración de API'
+            },
+            'data_science_text': {
+                'en': 'Deep analysis of cuantitative data to identify client shopping and behaviour tendencies to create marketing campaigns and effective sale estrategies.',
+                'es': 'Análisis profundo de información cuantitativa para creación de tendencias de compra y comportamiento del cliente para creación de campañas de marketing y estrategias de venta efectivas.'
+            },
+            'design': {
+                'en': 'Design',
+                'es': 'Diseño'
+            },
+            'brand_positioning': {
+                'en': 'Brand positioning',
+                'es': 'Posicionar marca'
+            },
+            'corporate_identity_text': {
+                'en': 'Creation of brand and image. Logo, color palette, fonts, label design, social media personalization, and other contents. Design is justified in accordance with with the company\'s objective',
+                'es': 'Creación de marca e imagen. Logo, paleta de colores, fuentes, diseño de etiquetas, personalización de redes sociales y otros contenidos. El diseño se justifica e implementa de acuerdo al objetivo de la empresa.'
+            },
+
+        };
+        var langs = ['en', 'es'];
+        var current_lang_index = 0;
+        var current_lang = langs[current_lang_index];
+
+        window.change_lang = function (lang) {
+            if (lang === "en") {
+                current_lang_index = 0;
+            } else {
+                current_lang_index = 1;
+            }
+            current_lang = langs[current_lang_index];
+            translate();
+        }
+
+        function translate() {
+            $("[data-translate]").each(function () {
+                var key = $(this).data('translate');
+                $(this).html(dictionary[key][current_lang] || "N/A");
+            });
+        }
+
+        window.change_lang_image = function (lang) {
+            if (lang === "en") {
+                $("#current_lang_img").attr("src", "media/us.png");
+            } else {
+                $("#current_lang_img").attr("src", "media/mx.png");
+            }
+        }
+
+        translate();
+        </script>
 </body>
 </html>
