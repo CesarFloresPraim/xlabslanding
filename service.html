@@ -111,8 +111,8 @@
                             <div class="grid-box">
                                 <div class="grid-item" id="service-ecommerce">
                                     <div class="cnt-box cnt-box-side boxed" data-href="" style="height: 100%;">
-                                        <a href="#" class="img-box" style="height: 100%;"><img src="media/backgrounds/ecommerce-2.jpg"
-                                                alt="" /></a>
+                                        <a href="#" class="img-box" style="height: 100%;"><img
+                                                src="media/backgrounds/ecommerce-2.jpg" alt="" /></a>
                                         <div class="caption">
                                             <h2>E-Commerce & CRM</h2>
                                             <div class="row service-info blue-border-bottom">
@@ -142,8 +142,8 @@
                                 </div>
                                 <div class="grid-item" id="service-api">
                                     <div class="cnt-box cnt-box-side boxed" data-href="" style="height: 100%;">
-                                        <a href="#" class="img-box" style="height: 100%;"><img src="media/backgrounds/apis-2.jpg"
-                                                alt="" /></a>
+                                        <a href="#" class="img-box" style="height: 100%;"><img
+                                                src="media/backgrounds/apis-2.jpg" alt="" /></a>
                                         <div class="caption">
                                             <h2 data-translate="api_integration">Integración de API</h2>
                                             <div class="row service-info blue-border-bottom">
@@ -173,8 +173,8 @@
 
                                 <div class="grid-item" id="service-data">
                                     <div class="cnt-box cnt-box-side boxed" data-href="" style="height: 100%;">
-                                        <a href="#" class="img-box" style="height: 100%;"><img src="media/backgrounds/data_science2.jpg"
-                                                alt="" /></a>
+                                        <a href="#" class="img-box" style="height: 100%;"><img
+                                                src="media/backgrounds/data_science2.jpg" alt="" /></a>
                                         <div class="caption">
                                             <h2 data-translate="data_science_analysis">Análisis de ciencia de datos</h2>
                                             <div class="row service-info blue-border-bottom">
@@ -202,8 +202,8 @@
                                 </div>
                                 <div class="grid-item" id="service-identity">
                                     <div class="cnt-box cnt-box-side boxed" data-href="" style="height: 100%;">
-                                        <a href="#" class="img-box" style="height: 100%;"><img src="media/backgrounds/identity2.jpg"
-                                                alt="" /></a>
+                                        <a href="#" class="img-box" style="height: 100%;"><img
+                                                src="media/backgrounds/identity2.jpg" alt="" /></a>
                                         <div class="caption">
                                             <h2 data-translate="corporate_identity">Identidad corporativa</h2>
                                             <div class="row service-info blue-border-bottom">
@@ -426,7 +426,10 @@
 
         };
         var langs = ['en', 'es'];
-        var current_lang_index = 0;
+        if (localStorage.getItem('langidx') == null) {
+            localStorage.setItem('langidx', '0');
+        }
+        var current_lang_index = localStorage.getItem('langidx');
         var current_lang = langs[current_lang_index];
 
         window.change_lang = function (lang) {
@@ -435,6 +438,7 @@
             } else {
                 current_lang_index = 1;
             }
+            localStorage.setItem('langidx', current_lang_index);
             current_lang = langs[current_lang_index];
             translate();
         }
@@ -447,7 +451,11 @@
         }
 
         window.change_lang_image = function (lang) {
-            if (lang === "en") {
+            changeFlag();
+        }
+
+        function changeFlag() {
+            if (langs[localStorage.getItem('langidx')] === "en") {
                 $("#current_lang_img").attr("src", "media/us.png");
             } else {
                 $("#current_lang_img").attr("src", "media/mx.png");
@@ -455,13 +463,16 @@
         }
 
         translate();
+        changeFlag();
 
         $(document).ready(function () {
             setServiceCardSize();
         });
 
         function setServiceCardSize() {
-            let arr = [$('#service-ecommerce').outerHeight(),$('#service-api').outerHeight(),$('#service-data').outerHeight(),$('#service-identity').outerHeight()];
+            let arr = [$('#service-ecommerce').outerHeight(), $('#service-api').outerHeight(), $('#service-data')
+                .outerHeight(), $('#service-identity').outerHeight()
+            ];
             let maxVal = Math.max(...arr);
             console.log(maxVal);
             $('#service-ecommerce').height(maxVal);

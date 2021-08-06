@@ -546,7 +546,11 @@
             },
         };
         var langs = ['en', 'es'];
-        var current_lang_index = 0;
+
+        if (localStorage.getItem('langidx') == null) {
+            localStorage.setItem('langidx', '0');
+        }
+        var current_lang_index = localStorage.getItem('langidx');
         var current_lang = langs[current_lang_index];
 
         window.change_lang = function (lang) {
@@ -555,6 +559,7 @@
             } else {
                 current_lang_index = 1;
             }
+            localStorage.setItem('langidx', current_lang_index);
             current_lang = langs[current_lang_index];
             translate();
         }
@@ -567,15 +572,19 @@
         }
 
         window.change_lang_image = function (lang) {
-            if (lang === "en") {
+            changeFlag();
+        }
+
+        function changeFlag() {
+            if (langs[localStorage.getItem('langidx')] === "en") {
                 $("#current_lang_img").attr("src", "media/us.png");
             } else {
                 $("#current_lang_img").attr("src", "media/mx.png");
             }
         }
 
-
         translate();
+        changeFlag();
 
         $('#service-ecommerce').click(function () {
             window.location.href = "service.html";
@@ -594,11 +603,14 @@
 
 
         $(document).ready(function () {
+            document.cookie = "langidx=0";
             setServiceCardSize();
         });
 
         function setServiceCardSize() {
-            let arr = [$('#service-ecommerce').outerHeight(),$('#service-api').outerHeight(),$('#service-data').outerHeight(),$('#service-identity').outerHeight()];
+            let arr = [$('#service-ecommerce').outerHeight(), $('#service-api').outerHeight(), $('#service-data')
+                .outerHeight(), $('#service-identity').outerHeight()
+            ];
             let maxVal = Math.max(...arr);
             $('#service-ecommerce').outerHeight(maxVal);
             $('#service-api').outerHeight(maxVal);
