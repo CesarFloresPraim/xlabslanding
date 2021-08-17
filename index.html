@@ -599,17 +599,17 @@
             window.location.href = "service.html";
         });
 
-
-        $(document).ready(function () {
+        window.onload = function() {
             document.cookie = "langidx=0";
             setServiceCardSize();
-        });
-
+        };
+   
         function setServiceCardSize() {
             let arr = [$('#service-ecommerce').outerHeight(), $('#service-api').outerHeight(), $('#service-data')
                 .outerHeight(), $('#service-identity').outerHeight()
             ];
             let maxVal = Math.max(...arr);
+
             $('#service-ecommerce').outerHeight(maxVal);
             $('#service-api').outerHeight(maxVal);
             $('#service-data').outerHeight(maxVal);
