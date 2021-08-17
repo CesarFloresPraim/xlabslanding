@@ -467,9 +467,9 @@
         translate();
         changeFlag();
 
-        $(document).ready(function () {
+        window.onload = function() {
             setServiceCardSize();
-        });
+        };
 
         function setServiceCardSize() {
             let arr = [$('#service-ecommerce').outerHeight(), $('#service-api').outerHeight(), $('#service-data')
