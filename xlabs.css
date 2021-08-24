@@ -357,3 +357,14 @@ PROJECT LIST
 .full-height {
     height: 100%;
 }
+
+.text-justify {
+    text-align: justify !important;
+}
+
+
+/** imgs for slider **/
+.slider-img {
+    width: 800px !important;
+    height: 550px !important;
+}
