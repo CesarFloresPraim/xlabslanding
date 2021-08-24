@@ -361,3 +361,9 @@ PROJECT LIST
 .text-justify {
     text-align: justify !important;
 }
+
+
+/** imgs for slider **/
+.slider-img {
+    width: 50% !important;
+}

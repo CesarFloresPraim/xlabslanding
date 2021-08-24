@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="xlabs.css">
     <link rel="stylesheet" href="index.css">
     <link rel="icon" href="media/favicon.png">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
 </head>
 
 <body>
@@ -54,7 +56,7 @@
                         <a href="contacts.html" data-translate="contactus"></a>
                     </li>
                     <li class="nav-label">
-                        <a href="contacts.html"><span>Tel: (614) 170-2665</span> </a>
+                        <a href="contacts.html"><span data-translate="phone">Tel: (614) 170-2665</span> </a>
                     </li>
                 </ul>
                 <div class="menu-right">
@@ -90,15 +92,19 @@
                         <ul class="slider" data-options="arrows:false,nav:false,autoplay:3000,controls:out">
                             <li>
                                 <h1 class="text-uppercase white" data-translate="home_list_1"></h1>
+                                <img class="slider-img" src="media/backgrounds/ec.jpeg">
                             </li>
                             <li>
                                 <h1 class="text-uppercase white" data-translate="home_list_2"></h1>
+                                <img class="slider-img" src="media/backgrounds/sf.jpeg">
                             </li>
                             <li>
                                 <h1 class="text-uppercase white" data-translate="home_list_3"></h1>
+                                <img class="slider-img" src="media/backgrounds/crm.jpeg">
                             </li>
                             <li>
                                 <h1 class="text-uppercase white" data-translate="home_list_4"></h1>
+                                <img class="slider-img" src="media/backgrounds/cms.jpeg">
                             </li>
                         </ul>
                         <p class="white" data-translate="description_1">
@@ -191,6 +197,37 @@
                     </div>
                 </div>
             </div>
+
+            <div class="container" style="margin-top: 7em;">
+
+                <div class="row d-flex justify-content-center align-content-center">
+                    <div class="col-12 col-lg-8">
+                        <div class="splide">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide"><img src="media/projects/bn-alifera.png"
+                                            style="max-width: 150px; max-height: 100px;"></li>
+                                    <li class="splide__slide"><img src="media/projects/bn-hangar.png"
+                                            style="max-width: 150px; max-height: 100px;"></li>
+                                    <li class="splide__slide"><img src="media/projects/bn-happykorea.png"
+                                            style="max-width: 150px; max-height: 100px;"></li>
+                                    <li class="splide__slide"><img src="media/projects/bn-innovak.png"
+                                            style="max-width: 150px; max-height: 100px;"></li>
+                                    <li class="splide__slide"><img src="media/projects/bn-kimchica.png"
+                                            style="max-width: 150px; max-height: 100px;"></li>
+                                    <li class="splide__slide"><img src="media/projects/bn-onesupply.png"
+                                            style="max-width: 150px; max-height: 100px;"></li>
+                                    <li class="splide__slide"><img src="media/projects/bn-rivadi.png"
+                                            style="max-width: 150px; max-height: 100px;"></li>
+                                    <li class="splide__slide"><img src="media/projects/bn-valentinos.png"
+                                            style="max-width: 150px; max-height: 100px;"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </section>
         <section class="section-base section-color" style="background-image:url(media/backgrounds/home_bg2.png)">
             <br>
@@ -217,7 +254,8 @@
                                 <a href="#" class="img-box maximum-height"><img src="media/backgrounds/ecommerce.png"
                                         alt="" /></a>
                                 <div class="caption full-height">
-                                    <h2 style="text-align: center;" data-translate="services_title_1">E-commerce & CMS</h2>
+                                    <h2 style="text-align: center;" data-translate="services_title_1">E-commerce & CMS
+                                    </h2>
                                     <div class="cnt-info">
                                         <div style="text-align: center;"><span
                                                 data-translate="type">Type</span><span>Software</span></div>
@@ -238,7 +276,8 @@
                                 <a href="#" class="img-box maximum-height"><img src="media/backgrounds/apis.png"
                                         alt="" /></a>
                                 <div class="caption full-height">
-                                    <h2 style="text-align: center;" data-translate="services_title_2">API integration</h2>
+                                    <h2 style="text-align: center;" data-translate="services_title_2">API integration
+                                    </h2>
                                     <div class="cnt-info">
                                         <div style="text-align: center;"><span
                                                 data-translate="type">Type</span><span>Software</span></div>
@@ -338,7 +377,7 @@
                         </li>
                         <li><b data-translate="telephone">Teléfono</b>
                             <hr />
-                            <p class="dark-blue">(614) 170 2665</p>
+                            <p class="dark-blue" data-translate="phone">(614) 170 2665</p>
                         </li>
                         <li><b data-translate="schedule">Horario</b>
                             <hr />
@@ -367,6 +406,8 @@
         <script src="themekit/scripts/contact-form/contact-form.js" async></script>
         <script src="https://kit.fontawesome.com/5aff25e6c8.js" crossorigin="anonymous"></script>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
 
     <script>
         var dictionary = {
@@ -419,7 +460,7 @@
                 'es': 'Content Management System (CMS)',
             },
             'description_1': {
-                'en': 'Introduce your business into the digital market with e-commerce and position or brand online <br> Development of tools to optimze processes.',
+                'en': 'Introduce your business into the digital market with e-commerce and position or brand online <br> Development of tools to optimize processes.',
                 'es': 'Introducción al mercado digital con e-commerce y posicionamiento de la marca en línea. <br>Desarrollo de herramientas de utilidad para optimización de procesos.',
             },
             'attr_title_1': {
@@ -535,13 +576,17 @@
                 'es': 'Recursos',
             },
             'what_we_do': {
-                'en': '',
+                'en': 'At Xlabs we create software for companies to generate a presence in the digital world through e-commerce, data analysis and brand development. We work to build long-term relationships with our clients and be part of their value proposition.',
                 'es': 'En Xlabs creamos software para que las empresas generen presencia en el mundo digital a través de e-commerce, análisis de datos y desarrollo de marca. Trabajamos para lograr construir relaciones de largo plazo con nuestros clientes y ser parte de su propuesta de valor.',
             },
             'img_text': {
                 'en': 'Look at our projects',
                 'es': 'Conoce nuestros proyectos',
             },
+            'phone': {
+                'en': '+52 1(614) 170 2665',
+                'es': 'Tel: (614) 170-2665'
+            }
         };
         var langs = ['en', 'es'];
 
@@ -615,6 +660,15 @@
             $('#service-data').outerHeight(maxVal);
             $('#service-identity').outerHeight(maxVal);
         }
+    </script>
+
+    <script>
+        new Splide('.splide', {
+            perPage: 4,
+            type: 'loop',
+            autoplay: true,
+            pagination: false
+        }).mount();
     </script>
 </body>
 
