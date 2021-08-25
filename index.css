@@ -1,3 +1,30 @@
 .cnt-box-top-icon.boxed > i, .cnt-box.boxed .caption, .cnt-box-top-icon.boxed{
     background-color: #47BBEC;
 }
+
+@media (max-width: 767.98px) {
+    [class*=col-]:not([class*=col-sm]) + [class*=col-]:not([class*=col-sm]) {
+        margin-top: 0px !important;
+    }
+}
+
+/** imgs for slider **/
+.slider-img {
+    width: 800px !important;
+    height: 550px !important;
+}
+
+.margin-bg-idx {
+    margin-top: -100px !important;
+}
+
+@media (max-width: 991.98px){
+    .slider-img {
+        height: 200px !important;
+    }
+
+    .margin-bg-idx {
+        margin-top: -50px !important;
+    }
+    
+}
