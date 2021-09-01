@@ -111,7 +111,7 @@
                             <div class="grid-box">
                                 <div class="grid-item" id="service-ecommerce">
                                     <div class="cnt-box cnt-box-side boxed" data-href="" style="height: 100%;">
-                                        <a href="#" class="img-box" style="height: 100%;"><img
+                                        <a href="#" class="img-box"><img
                                                 src="media/backgrounds/ecommerce-2.jpg" alt="" /></a>
                                         <div class="caption">
                                             <h2>E-Commerce & CRM</h2>
@@ -142,7 +142,7 @@
                                 </div>
                                 <div class="grid-item" id="service-api">
                                     <div class="cnt-box cnt-box-side boxed" data-href="" style="height: 100%;">
-                                        <a href="#" class="img-box" style="height: 100%;"><img
+                                        <a href="#" class="img-box"><img
                                                 src="media/backgrounds/apis-2.jpg" alt="" /></a>
                                         <div class="caption">
                                             <h2 data-translate="api_integration">Integración de API</h2>
@@ -174,7 +174,7 @@
 
                                 <div class="grid-item" id="service-data">
                                     <div class="cnt-box cnt-box-side boxed" data-href="" style="height: 100%;">
-                                        <a href="#" class="img-box" style="height: 100%;"><img
+                                        <a href="#" class="img-box"><img
                                                 src="media/backgrounds/data_science2.jpg" alt="" /></a>
                                         <div class="caption">
                                             <h2 data-translate="data_science_analysis">Análisis de ciencia de datos</h2>
@@ -204,7 +204,7 @@
                                 </div>
                                 <div class="grid-item" id="service-identity">
                                     <div class="cnt-box cnt-box-side boxed" data-href="" style="height: 100%;">
-                                        <a href="#" class="img-box" style="height: 100%;"><img
+                                        <a href="#" class="img-box"><img
                                                 src="media/backgrounds/identity2.jpg" alt="" /></a>
                                         <div class="caption">
                                             <h2 data-translate="corporate_identity">Identidad corporativa</h2>
@@ -398,11 +398,11 @@
                 'es': 'Identidad corporativa'
             },
             'ecommerce_text': {
-                'en': 'Development of web pages that interact with the client to generate more sales. Virtual shopping cart with conventional and modern payment methods. Platform to manage and edit stock, catalogues, clients and promotions.',
+                'en': 'Website development that interacts with the client to generate more sales. Virtual shopping cart with conventional and modern payment methods. Platform to manage and edit stock, catalogues, clients and promotions.',
                 'es': 'Desarrollo de páginas web interactivas para incremento de tráfico y ventas. Carrito de compras virtual con métodos de pago convencionales y modernos. Plataforma de administración de inventario, catálogos, clientes y promociones.'
             },
             'api_text': {
-                'en': 'Incorporation of third party apps to own website in order to get their benefits and obtain client information. UPS - DHL Tracking, Uber, Facebook, Instagram, etc. Ideal to optimize repetitive processes.',
+                'en': 'Incorporation of third-party apps to your own website to get their benefits and obtain client information. UPS - DHL Tracking, Uber, Facebook, Instagram, etc. Ideal to optimize repetitive processes.',
                 'es': 'Introducción de aplicaciones de terceros a una página propia para ligar sus beneficios y obtener información de clientes. UPS – DHL Tracking, Uber, Facebook, Instagram, etc. Ideal para optimización de procesos repetitivos.'
             },
             'api_integration': {
@@ -410,7 +410,7 @@
                 'es': 'Integración de API'
             },
             'data_science_text': {
-                'en': 'Deep analysis of cuantitative data to identify client shopping and behaviour tendencies to create marketing campaigns and effective sale estrategies.',
+                'en': 'Deep analysis of quantitative data to identify client shopping and behavior tendencies to create marketing campaigns and effective sale strategies.',
                 'es': 'Análisis profundo de información cuantitativa para creación de tendencias de compra y comportamiento del cliente para creación de campañas de marketing y estrategias de venta efectivas.'
             },
             'design': {
@@ -422,7 +422,7 @@
                 'es': 'Posicionar marca'
             },
             'corporate_identity_text': {
-                'en': 'Creation of brand and image. Logo, color palette, fonts, label design, social media personalization, and other contents. Design is justified in accordance with with the company\'s objective',
+                'en': 'Creation of brand and image. Logo, color palette, fonts, label design, social media personalization, and other contents. Design is justified in accordance with the company\'s objective',
                 'es': 'Creación de marca e imagen. Logo, paleta de colores, fuentes, diseño de etiquetas, personalización de redes sociales y otros contenidos. El diseño se justifica e implementa de acuerdo al objetivo de la empresa.'
             },
             'phone': {
@@ -471,9 +471,9 @@
         translate();
         changeFlag();
 
-        $(document).ready(function () {
+        window.onload = function() {
             setServiceCardSize();
-        });
+        };
 
         function setServiceCardSize() {
             let arr = [$('#service-ecommerce').outerHeight(), $('#service-api').outerHeight(), $('#service-data')
